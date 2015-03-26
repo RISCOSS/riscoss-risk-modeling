@@ -1,4 +1,4 @@
-# Riscoss Risk Modeling
+# RISCOSS Risk Modeling
 
 The [RISCOSS project](http://www.riscoss.eu) will offer novel risk identification, management and mitigation tools and methods for community-based and industry-supported OSS development. 
 
