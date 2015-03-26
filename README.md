@@ -11,8 +11,8 @@ In the RISCOSS platform we have 2 kinds of models (risk and goal models), these 
 Detailed information about the RISCOSS models in this repository wiki.
 
 #Repository Structure
-risk-models contains the files corresponding to the Risk Models (using RiskML modelling language)
-goal-models contains the files corresponding to the Goal Models (using i* modelling language)
+* risk-models contains the files corresponding to the Risk Models (using RiskML modelling language)
+* goal-models contains the files corresponding to the Goal Models (using i* modelling language)
 
 Please see https://github.com/RISCOSS/riscoss-data-collector for detailed information about the data collectors.
 
