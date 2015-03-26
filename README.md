@@ -8,7 +8,7 @@ This repository cointains the models that can be used in the RISCOSS platform (c
 
 In the RISCOSS platform we have 2 kinds of models (risk and goal models), these models are needed to describe the assessed risks and the impacted goals for a concrete entity. In order to perform the risk analysis for an specific entity, the risk models can use some data gathered by the data collectors configured for this entity.
 
-Detailed information about the RISCOSS models in this repository wiki.
+Detailed information about the RISCOSS models in [this repository wiki](https://github.com/RISCOSS/riscoss-risk-modeling/wiki).
 
 #Repository Structure
 * risk-models contains the files corresponding to the Risk Models (using RiskML modelling language)
