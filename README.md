@@ -10,9 +10,13 @@ In the RISCOSS platform we have 2 kinds of models (risk and goal models), these 
 
 Detailed information about the RISCOSS models in [this repository wiki](https://github.com/RISCOSS/riscoss-risk-modeling/wiki).
 
-#Repository Structure
+#How to contribute to this repository
+The models will be placed in the corresponding folder depending on the model kind (risk or goal model). For each model uploaded to this repository, a new wiki page will be created describing the content of the model.
+
+## Repository Structure
 * **risk-models folder** contains the files corresponding to the Risk Models (using RiskML modelling language)
 * **goal-models folder** contains the files corresponding to the Goal Models (using i* modelling language)
+
 
 Please see https://github.com/RISCOSS/riscoss-data-collector for detailed information about the data collectors.
 
