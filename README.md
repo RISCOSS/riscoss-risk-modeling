@@ -10,8 +10,7 @@ In the RISCOSS platform we have 2 kinds of models (risk and goal models), these 
 
 Please see https://github.com/RISCOSS/riscoss-data-collector for detailed information about the data collectors.
 
-#Tutorials/Guides for modellers
- [RISCOSS Models](https://github.com/RISCOSS/riscoss-risk-modeling/wiki)
+Detailed information about RISCOSS models in [this repository wiki](https://github.com/RISCOSS/riscoss-risk-modeling/wiki)
 
 #How to contribute to this repository
 The models will be placed in the corresponding folder depending on the model kind (risk or goal model). For each model uploaded to this repository, a new wiki page will be created describing the content of the model.
