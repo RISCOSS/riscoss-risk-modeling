@@ -51,7 +51,7 @@
 						<ielement id='GOAL-LicenseCompatible' name='License compatibility preserved' type='goal' output='true' />
                     </ielementLink>	
                 </ielement>
-				<ielement id='GOAL-MinimiseEffort' name='Adoption effort minimised' type='softgoal' output="true">
+				<ielement id='GOAL-MinimiseInvolvement' name='OSS involvement minimised' type='softgoal' output="true">
 					<ielementLink type='contribution' value='help'>
 						<ielement iref='OSS-ACQ'/>
 					</ielementLink>

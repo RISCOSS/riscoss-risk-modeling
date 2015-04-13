@@ -64,7 +64,7 @@
       <intentions xmi:type="edu.toronto.cs.openome_model:Task" xmi:id="_6fNl4StEEeOAMOxSi3AbBA" name="Test product" decompositions="_7vQRcCtEEeOAMOxSi3AbBA"/>
       <intentions xmi:type="edu.toronto.cs.openome_model:Goal" xmi:id="_xWukECwYEeO4Zs0ZjcDF9w" name="OSS component used" decompositions="_AFgFoCwZEeO4Zs0ZjcDF9w" parentDecompositions="_BQyNACwZEeO4Zs0ZjcDF9w _EcTt0CwZEeO4Zs0ZjcDF9w"/>
       <intentions xmi:type="edu.toronto.cs.openome_model:Goal" xmi:id="_2OzGEM-GEeO-lJImoQkYgg" name="Take benefit from OSS Community" parentDecompositions="_8gGsEM-GEeO-lJImoQkYgg"/>
-      <intentions xmi:type="edu.toronto.cs.openome_model:Softgoal" xmi:id="_5IMVEM-GEeO-lJImoQkYgg" name="Adoption effort minimised" contributesFrom="_-TxpIM-GEeO-lJImoQkYgg"/>
+      <intentions xmi:type="edu.toronto.cs.openome_model:Softgoal" xmi:id="_5IMVEM-GEeO-lJImoQkYgg" name="OSS involvement minimised" contributesFrom="_-TxpIM-GEeO-lJImoQkYgg"/>
       <intentions xmi:type="edu.toronto.cs.openome_model:Goal" xmi:id="_AgOSkM-HEeO-lJImoQkYgg" name="Do not care OSS evolution for maintenace" parentDecompositions="_GXvfkM-HEeO-lJImoQkYgg"/>
       <intentions xmi:type="edu.toronto.cs.openome_model:Task" xmi:id="_2m1cUAA-EeSwfeOm8nApow" dependencyFrom="__YMkQAA-EeSwfeOm8nApow" name="Ask doubts to the community" decompositions="_4endUAA-EeSwfeOm8nApow _42GwQAA-EeSwfeOm8nApow _5NJXQAA-EeSwfeOm8nApow"/>
       <intentions xmi:type="edu.toronto.cs.openome_model:Goal" xmi:id="_HlOQEAA_EeSwfeOm8nApow" name="License compatibility preserved" decompositions="_LkrIMAA_EeSwfeOm8nApow" contributesTo="_NrCwEABFEeSwfeOm8nApow"/>
