@@ -49,10 +49,10 @@
 											<ielementLink type='decomposition'>
 												<ielement id='Goal-COMM-Practices' name='According to OSS community practices' type='softgoal' output="true">
 													<ielementLink type='contribution' value='And'>
-														<ielement id='Act-ACQ-Man' name= 'Acquire management skills' type='task'/ output="true">
+														<ielement id='Act-ACQ-Man' name= 'Acquire management skills' type='task' output="true"/>
 													</ielementLink>
 												</ielement>
-												<ielement id='Act-RepPATCH' name='Report patch' type='task'/ output="true">
+												<ielement id='Act-RepPATCH' name='Report patch' type='task' output="true"/>
 											</ielementLink>	
 										</ielement>
 										<ielement id='Act-RepBUG' name='Report bug' type='task' output="true"/>
@@ -77,14 +77,14 @@
 					<ielementLink type='contribution' value='Help' iref='GOAL-LicenseCompatible'/>
 				</ielement>
 				<ielement id='GOAL-InfluenceEvolution' name='OSS evolution influenced' type='softgoal' output="true">
-					<ielementLink type='contribution' type='Help' iref='Goal-Evolve-DF'/>
+					<ielementLink type='contribution' value='Help' iref='Goal-Evolve-DF'/>
 				</ielement>
 				<ielement id='GOAL-OSSInvolvement' name='OSS involvement' type='softgoal' output="true">
 					<ielementLink type='contribution' value='help' iref='OSS-ACQ'/>
 				</ielement>
 				<ielement id='GOAL-CoCreation' name='Benefit from co-creation taken' type='softgoal' output="true">
-					<ielementLink type='contribution' type='Help' iref='GOAL-InfluenceEvolution'/>
-					<ielementLink type='contribution' type='Help' iref='Goal-COMM-Contribute'/>
+					<ielementLink type='contribution' value='Help' iref='GOAL-InfluenceEvolution'/>
+					<ielementLink type='contribution' value='Help' iref='Goal-COMM-Contribute'/>
 				</ielement>
             </boundary>
         </actor>
