@@ -51,10 +51,8 @@
 						<ielement id='GOAL-LicenseCompatible' name='License compatibility preserved' type='goal' output='true' />
                     </ielementLink>	
                 </ielement>
-				<ielement id='GOAL-MinimiseInvolvement' name='OSS involvement minimised' type='softgoal' output="true">
-					<ielementLink type='contribution' value='help'>
-						<ielement iref='OSS-ACQ'/>
-					</ielementLink>
+				<ielement id='GOAL-MinimiseOSSInvolvement' name='OSS involvement minimised' type='softgoal' output="true">
+					<ielementLink type='contribution' value='Help' iref='OSS-ACQ'/>
 				</ielement>
 				<ielement id='GOAL-TakeBenefit' name='Take benefit from OSS Community' type='goal' output="true">
 					<ielementLink type='means-end'>
@@ -67,9 +65,7 @@
 					</ielementLink>
 				</ielement>
 				<ielement id='GOAL-LicenseControl' name='License controlled' type='softgoal' output="true">
-					<ielementLink type='contribution' value='help'>
-						<ielement iref='OSS-ACQ'/>
-					</ielementLink>
+					<ielementLink type='contribution' value='help' iref='OSS-ACQ'/>
 				</ielement>
             </boundary>
         </actor>
