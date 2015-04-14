@@ -13,9 +13,9 @@ Please see https://github.com/RISCOSS/riscoss-data-collector for detailed inform
 Detailed information about RISCOSS models in [this repository wiki](https://github.com/RISCOSS/riscoss-risk-modeling/wiki)
 
 #How to contribute to this repository
-The models will be placed in the corresponding folder depending on the model kind (risk or goal model). For each model uploaded to this repository, the information to be
-* a new wiki page describing the content of the model
-* a new link to the new wiki page in the wiki Sidebar, in the Section *Models*
+The models will be placed in the corresponding folder depending on the model kind (risk or goal model). And some documentation should be provided for each model.
+
+Detailed information in [How to contribute to the riscoss risk modeling repository](How to contribute to the riscoss risk modeling repository)
 
 ## Repository Structure
 * **risk-models folder** contains the files corresponding to the Risk Models (using RiskML modelling language)
