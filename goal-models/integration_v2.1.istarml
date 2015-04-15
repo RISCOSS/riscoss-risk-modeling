@@ -29,7 +29,7 @@
 												<ielement iref='Act-ASK' output="true"/>
 											</ielementLink>
 										</ielement>
-										<ielement id='GOAL-PreserveSell' name='Preserving selling capability' type='softgoal' output="true"/>
+										<ielement id='GOAL-LicenseCompatible' name='License compatibility preserved' type='goal' output='true' />
 									</ielementLink>
 								</ielement>
 							</ielementLink>
@@ -69,12 +69,14 @@
 								<ielement id='Goal-Evolve-Q' name='Quality of the evolved OSS component' type='softgoal'/>
 							</ielementLink>
 						</ielement>
-						<ielement id='GOAL-LicenseCompatible' name='License compatibility preserved' type='goal' output="true"/>
 						<ielement id='Act-DECIDE-Wishlist' name='Decide OSS wishlist' type='task' output="true"/>
                     </ielementLink>
                 </ielement>
-				<ielement id='GOAL-LicenceControl' name='License controlled' type='softgoal' output="true">
-					<ielementLink type='contribution' value='Help' iref='GOAL-LicenseCompatible'/>
+				<ielement id='GOAL-EasyLicenseManagement' name='Easy license management' type='softgoal' output="true"/>
+				<ielement id='GOAL-LawCompliance' name='Law compliance' type='goal' output="true">
+					<ielementLink type='means-end'>
+						<ielement iref='GOAL-EasyLicenseManagement'/>
+					</ielementLink>
 				</ielement>
 				<ielement id='GOAL-InfluenceEvolution' name='OSS evolution influenced' type='softgoal' output="true">
 					<ielementLink type='contribution' value='Help' iref='Goal-Evolve-DF'/>

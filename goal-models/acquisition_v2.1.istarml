@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <istarml version='1.0'>
-    <diagram name='OSS Acquisition' description='Goal model describing the relationship between the adopter organization and the OSS community when the adopter is not contributing to the community.' strategy_version='2.0' last_modification='14/10/2014'>
+    <diagram name='OSS Acquisition' strategy_version='2.1' description='Goal model describing the relationship between the adopter organization and the OSS community when the adopter is not contributing to the community.' last_modification='15/04/2015'>
         <actor id='COMM' name='OSS Community'>
         </actor>
         <actor id='CMP' name='OSS Adopter'>
@@ -28,10 +28,9 @@
 										<ielement id='Act-ACQ-Tech' name='Acquire technical skills' type='task' output="true">
 											<ielementLink type='decomposition'>
 												<ielement iref='Act-ASK'/>
-												<ielement id='GOAL-PreserveSell' name='Preserving selling capability' type='softgoal' output="true"/>
 											</ielementLink>
 										</ielement>
-										<ielement id='GOAL-PreserveSell' name='Preserving selling capability' type='softgoal' output="true"/>
+										<ielement id='GOAL-LicenseCompatible' name='License compatibility preserved' type='goal' output='true'/>
 									</ielementLink>
 								</ielement>
 							</ielementLink>
@@ -48,7 +47,6 @@
 								<ielement iref='Act-ASK'/>
 							</ielementLink>
 						</ielement>
-						<ielement id='GOAL-LicenseCompatible' name='License compatibility preserved' type='goal' output='true' />
                     </ielementLink>	
                 </ielement>
 				<ielement id='GOAL-MinimiseOSSInvolvement' name='OSS involvement minimised' type='softgoal' output="true">
@@ -64,8 +62,11 @@
 						<ielement iref='OSS-ACQ'/>
 					</ielementLink>
 				</ielement>
-				<ielement id='GOAL-LicenseControl' name='License controlled' type='softgoal' output="true">
-					<ielementLink type='contribution' value='help' iref='OSS-ACQ'/>
+				<ielement id='GOAL-EasyLicenseManagement' name='Easy license management' type='softgoal' output="true"/>
+				<ielement id='GOAL-LawCompliance' name='Law compliance' type='goal' output="true">
+					<ielementLink type='means-end'>
+						<ielement iref='GOAL-EasyLicenseManagement'/>
+					</ielementLink>
 				</ielement>
             </boundary>
         </actor>
