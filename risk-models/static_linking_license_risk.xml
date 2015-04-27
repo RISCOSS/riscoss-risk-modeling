@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <satisfy source="def-sit-LGPL3+,comp-lic-eupl" target="[comp-lic-eupl]-[def-sit-LGPL3+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-AGPL3,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-AGPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-ASL1,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-ASL1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD4,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-ASL1,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-ASL1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-MIT,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-GPL3,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-GPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL2.1+,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-LGPL2.1+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-Artistic2,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[target-lic-Artistic2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-AGPL3,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-AGPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-ASL2,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-ASL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-CDDL,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-CDDL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-AGPL3,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-AGPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD4,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-EUPL,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-EUPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD3,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-CDDL,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-CDDL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-EUPL,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-EUPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-CPL-EPL,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-CPL-EPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-MPL,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[def-sit-MPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-LGPL2.1,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-LGPL2.1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-agpl3,comp-lic-cddl" target="[comp-lic-cddl]-[comp-lic-agpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="comp-lic-gpl2,comp-lic-bsd4" target="[comp-lic-bsd4]-[comp-lic-gpl2]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-LGPL2.1,comp-lic-asl1" target="[comp-lic-asl1]-[target-lic-LGPL2.1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-ASL2,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-ASL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[target-lic-ASL1],[comp-lic-agpl3]-[target-lic-ASL2],[comp-lic-agpl3]-[target-lic-Artistic2],[comp-lic-agpl3]-[target-lic-BSD3],[comp-lic-agpl3]-[target-lic-BSD4],[comp-lic-agpl3]-[target-lic-CDDL],[comp-lic-agpl3]-[target-lic-CPL-EPL],[comp-lic-agpl3]-[target-lic-EUPL],[comp-lic-agpl3]-[target-lic-GPL2+],[comp-lic-agpl3]-[target-lic-GPL2],[comp-lic-agpl3]-[target-lic-LGPL2.1+],[comp-lic-agpl3]-[target-lic-LGPL2.1],[comp-lic-agpl3]-[target-lic-LGPL3+],[comp-lic-agpl3]-[target-lic-MIT],[comp-lic-agpl3]-[target-lic-MPL],[comp-lic-artistic2]-[target-lic-ASL1],[comp-lic-artistic2]-[target-lic-ASL2],[comp-lic-artistic2]-[target-lic-BSD3],[comp-lic-artistic2]-[target-lic-BSD4],[comp-lic-artistic2]-[target-lic-MIT],[comp-lic-asl1]-[target-lic-AGPL3],[comp-lic-asl1]-[target-lic-BSD3],[comp-lic-asl1]-[target-lic-BSD4],[comp-lic-asl1]-[target-lic-GPL2+],[comp-lic-asl1]-[target-lic-GPL2],[comp-lic-asl1]-[target-lic-GPL3],[comp-lic-asl1]-[target-lic-LGPL2.1+],[comp-lic-asl1]-[target-lic-LGPL2.1],[comp-lic-asl1]-[target-lic-LGPL3+],[comp-lic-asl1]-[target-lic-MIT],[comp-lic-asl2]-[target-lic-ASL1],[comp-lic-asl2]-[target-lic-BSD3],[comp-lic-asl2]-[target-lic-BSD4],[comp-lic-asl2]-[target-lic-GPL2+],[comp-lic-asl2]-[target-lic-GPL2],[comp-lic-asl2]-[target-lic-MIT],[comp-lic-bsd4]-[target-lic-AGPL3],[comp-lic-bsd4]-[target-lic-GPL2+],[comp-lic-bsd4]-[target-lic-GPL2],[comp-lic-bsd4]-[target-lic-GPL3],[comp-lic-bsd4]-[target-lic-LGPL2.1+],[comp-lic-bsd4]-[target-lic-LGPL2.1],[comp-lic-bsd4]-[target-lic-LGPL3+],[comp-lic-cddl]-[target-lic-AGPL3],[comp-lic-cddl]-[target-lic-ASL1],[comp-lic-cddl]-[target-lic-ASL2],[comp-lic-cddl]-[target-lic-Artistic2],[comp-lic-cddl]-[target-lic-BSD3],[comp-lic-cddl]-[target-lic-BSD4],[comp-lic-cddl]-[target-lic-CPL-EPL],[comp-lic-cddl]-[target-lic-EUPL],[comp-lic-cddl]-[target-lic-GPL2+],[comp-lic-cddl]-[target-lic-GPL2],[comp-lic-cddl]-[target-lic-GPL3],[comp-lic-cddl]-[target-lic-LGPL2.1+],[comp-lic-cddl]-[target-lic-LGPL2.1],[comp-lic-cddl]-[target-lic-LGPL3+],[comp-lic-cddl]-[target-lic-MIT],[comp-lic-cddl]-[target-lic-MPL],[comp-lic-cpl-epl]-[target-lic-AGPL3],[comp-lic-cpl-epl]-[target-lic-ASL1],[comp-lic-cpl-epl]-[target-lic-ASL2],[comp-lic-cpl-epl]-[target-lic-Artistic2],[comp-lic-cpl-epl]-[target-lic-BSD3],[comp-lic-cpl-epl]-[target-lic-BSD4],[comp-lic-cpl-epl]-[target-lic-CDDL],[comp-lic-cpl-epl]-[target-lic-EUPL],[comp-lic-cpl-epl]-[target-lic-GPL2+],[comp-lic-cpl-epl]-[target-lic-GPL2],[comp-lic-cpl-epl]-[target-lic-GPL3],[comp-lic-cpl-epl]-[target-lic-LGPL2.1+],[comp-lic-cpl-epl]-[target-lic-LGPL2.1],[comp-lic-cpl-epl]-[target-lic-LGPL3+],[comp-lic-cpl-epl]-[target-lic-MIT],[comp-lic-cpl-epl]-[target-lic-MPL],[comp-lic-eupl]-[target-lic-AGPL3],[comp-lic-eupl]-[target-lic-ASL1],[comp-lic-eupl]-[target-lic-ASL2],[comp-lic-eupl]-[target-lic-Artistic2],[comp-lic-eupl]-[target-lic-BSD3],[comp-lic-eupl]-[target-lic-BSD4],[comp-lic-eupl]-[target-lic-GPL3],[comp-lic-eupl]-[target-lic-LGPL3+],[comp-lic-eupl]-[target-lic-MIT],[comp-lic-gpl2+]-[target-lic-ASL1],[comp-lic-gpl2+]-[target-lic-ASL2],[comp-lic-gpl2+]-[target-lic-Artistic2],[comp-lic-gpl2+]-[target-lic-BSD3],[comp-lic-gpl2+]-[target-lic-BSD4],[comp-lic-gpl2+]-[target-lic-CDDL],[comp-lic-gpl2+]-[target-lic-CPL-EPL],[comp-lic-gpl2+]-[target-lic-EUPL],[comp-lic-gpl2+]-[target-lic-GPL2],[comp-lic-gpl2+]-[target-lic-LGPL2.1+],[comp-lic-gpl2+]-[target-lic-LGPL2.1],[comp-lic-gpl2+]-[target-lic-LGPL3+],[comp-lic-gpl2+]-[target-lic-MIT],[comp-lic-gpl2+]-[target-lic-MPL],[comp-lic-gpl2]-[target-lic-AGPL3],[comp-lic-gpl2]-[target-lic-ASL1],[comp-lic-gpl2]-[target-lic-ASL2],[comp-lic-gpl2]-[target-lic-Artistic2],[comp-lic-gpl2]-[target-lic-BSD3],[comp-lic-gpl2]-[target-lic-BSD4],[comp-lic-gpl2]-[target-lic-CDDL],[comp-lic-gpl2]-[target-lic-CPL-EPL],[comp-lic-gpl2]-[target-lic-EUPL],[comp-lic-gpl2]-[target-lic-GPL3],[comp-lic-gpl2]-[target-lic-LGPL2.1+],[comp-lic-gpl2]-[target-lic-LGPL2.1],[comp-lic-gpl2]-[target-lic-LGPL3+],[comp-lic-gpl2]-[target-lic-MIT],[comp-lic-gpl2]-[target-lic-MPL],[comp-lic-gpl3]-[target-lic-ASL1],[comp-lic-gpl3]-[target-lic-ASL2],[comp-lic-gpl3]-[target-lic-Artistic2],[comp-lic-gpl3]-[target-lic-BSD3],[comp-lic-gpl3]-[target-lic-BSD4],[comp-lic-gpl3]-[target-lic-CDDL],[comp-lic-gpl3]-[target-lic-CPL-EPL],[comp-lic-gpl3]-[target-lic-EUPL],[comp-lic-gpl3]-[target-lic-GPL2+],[comp-lic-gpl3]-[target-lic-GPL2],[comp-lic-gpl3]-[target-lic-LGPL2.1+],[comp-lic-gpl3]-[target-lic-LGPL2.1],[comp-lic-gpl3]-[target-lic-LGPL3+],[comp-lic-gpl3]-[target-lic-MIT],[comp-lic-gpl3]-[target-lic-MPL],[comp-lic-lgpl2.1+]-[target-lic-ASL1],[comp-lic-lgpl2.1+]-[target-lic-ASL2],[comp-lic-lgpl2.1+]-[target-lic-Artistic2],[comp-lic-lgpl2.1+]-[target-lic-BSD3],[comp-lic-lgpl2.1+]-[target-lic-BSD4],[comp-lic-lgpl2.1+]-[target-lic-CPL-EPL],[comp-lic-lgpl2.1+]-[target-lic-MIT],[comp-lic-lgpl2.1+]-[target-lic-MPL],[comp-lic-lgpl2.1]-[target-lic-ASL1],[comp-lic-lgpl2.1]-[target-lic-ASL2],[comp-lic-lgpl2.1]-[target-lic-Artistic2],[comp-lic-lgpl2.1]-[target-lic-BSD3],[comp-lic-lgpl2.1]-[target-lic-BSD4],[comp-lic-lgpl2.1]-[target-lic-CDDL],[comp-lic-lgpl2.1]-[target-lic-CPL-EPL],[comp-lic-lgpl2.1]-[target-lic-LGPL2.1+],[comp-lic-lgpl2.1]-[target-lic-LGPL3+],[comp-lic-lgpl2.1]-[target-lic-MIT],[comp-lic-lgpl2.1]-[target-lic-MPL],[comp-lic-lgpl3+]-[target-lic-ASL1],[comp-lic-lgpl3+]-[target-lic-ASL2],[comp-lic-lgpl3+]-[target-lic-Artistic2],[comp-lic-lgpl3+]-[target-lic-BSD3],[comp-lic-lgpl3+]-[target-lic-BSD4],[comp-lic-lgpl3+]-[target-lic-CDDL],[comp-lic-lgpl3+]-[target-lic-CPL-EPL],[comp-lic-lgpl3+]-[target-lic-EUPL],[comp-lic-lgpl3+]-[target-lic-GPL2],[comp-lic-lgpl3+]-[target-lic-LGPL2.1+],[comp-lic-lgpl3+]-[target-lic-LGPL2.1],[comp-lic-lgpl3+]-[target-lic-MIT],[comp-lic-lgpl3+]-[target-lic-MPL],[comp-lic-mpl]-[target-lic-AGPL3],[comp-lic-mpl]-[target-lic-ASL1],[comp-lic-mpl]-[target-lic-ASL2],[comp-lic-mpl]-[target-lic-Artistic2],[comp-lic-mpl]-[target-lic-BSD3],[comp-lic-mpl]-[target-lic-BSD4],[comp-lic-mpl]-[target-lic-CDDL],[comp-lic-mpl]-[target-lic-CPL-EPL],[comp-lic-mpl]-[target-lic-EUPL],[comp-lic-mpl]-[target-lic-GPL2+],[comp-lic-mpl]-[target-lic-GPL2],[comp-lic-mpl]-[target-lic-GPL3],[comp-lic-mpl]-[target-lic-LGPL2.1+],[comp-lic-mpl]-[target-lic-LGPL2.1],[comp-lic-mpl]-[target-lic-LGPL3+],[comp-lic-mpl]-[target-lic-MIT],[comp-lic-agpl3]-[target-lic-GPL3],[comp-lic-gpl2]-[target-lic-GPL2+],[comp-lic-gpl3]-[target-lic-AGPL3],[comp-lic-lgpl2.1+]-[target-lic-CDDL],[comp-lic-lgpl2.1]-[target-lic-GPL2],[comp-lic-lgpl2.1]-[target-lic-GPL3],[comp-lic-lgpl2.1]-[target-lic-AGPL3],[comp-lic-lgpl2.1]-[target-lic-GPL2+]" target="external-incompatibility" function="fx.join.or(sources)"/>
+            <satisfy weight="0.66" source="target-lic-LGPL3+,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-LGPL3+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-ASL1,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[def-sit-ASL1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-ASL1,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-ASL1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-ASL1,comp-lic-eupl" target="[comp-lic-eupl]-[def-sit-ASL1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-LGPL2.1,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-LGPL2.1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-ASL2,comp-lic-artistic2" target="[comp-lic-artistic2]-[def-sit-ASL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-ASL2,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[def-sit-ASL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-EUPL],[comp-lic-cddl]-[def-sit-EUPL],[comp-lic-cpl-epl]-[def-sit-EUPL],[comp-lic-gpl2+]-[def-sit-EUPL],[comp-lic-gpl2]-[def-sit-EUPL],[comp-lic-gpl3]-[def-sit-EUPL],[comp-lic-lgpl3+]-[def-sit-EUPL],[comp-lic-mpl]-[def-sit-EUPL]" target="EUPL-locked" function="atLeastOne(sources)"/>
+            <satisfy source="comp-lic-gpl3,comp-lic-cddl" target="[comp-lic-cddl]-[comp-lic-gpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-GPL2+,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-GPL2+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL2.1+,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-LGPL2.1+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-LGPL3+,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-LGPL3+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-BSD3,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-Artistic2,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-Artistic2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-BSD3,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD3,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-asl1" target="[comp-lic-asl1]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-MPL,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-MPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-ASL1,comp-lic-asl2" target="[comp-lic-asl2]-[def-sit-ASL1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-CDDL,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-CDDL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-AGPL3,comp-lic-asl1" target="[comp-lic-asl1]-[target-lic-AGPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-CDDL,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[def-sit-CDDL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-GPL2,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-GPL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-MPL],[comp-lic-cddl]-[def-sit-MPL],[comp-lic-cpl-epl]-[def-sit-MPL],[comp-lic-gpl2+]-[def-sit-MPL],[comp-lic-gpl2]-[def-sit-MPL],[comp-lic-gpl3]-[def-sit-MPL],[comp-lic-lgpl2.1+]-[def-sit-MPL],[comp-lic-lgpl2.1]-[def-sit-MPL],[comp-lic-lgpl3+]-[def-sit-MPL]" target="MPL-locked" function="atLeastOne(sources)"/>
+            <satisfy source="target-lic-GPL2+,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-GPL2+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-eupl" target="[comp-lic-eupl]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-GPL2+,comp-lic-bsd4" target="[comp-lic-bsd4]-[def-sit-GPL2+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-MIT,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-BSD3,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-ASL1,comp-lic-asl2" target="[comp-lic-asl2]-[target-lic-ASL1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-MPL,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-MPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD4,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-CPL-EPL,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[target-lic-CPL-EPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-GPL3,comp-lic-eupl" target="[comp-lic-eupl]-[target-lic-GPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD3,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-AGPL3,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-AGPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-asl2" target="[comp-lic-asl2]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-gpl3,comp-lic-eupl" target="[comp-lic-eupl]-[comp-lic-gpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-EUPL,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-EUPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-MPL,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-MPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-CDDL,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-CDDL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-EUPL,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[def-sit-EUPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-ASL1,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-ASL1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-MPL,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-MPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-LGPL2.1,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-LGPL2.1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-MIT,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-MPL,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[def-sit-MPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-mpl,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[comp-lic-mpl]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="comp-lic-cpl-epl,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[comp-lic-cpl-epl]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-CPL-EPL,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-CPL-EPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-MIT,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-gpl2+,comp-lic-asl1" target="[comp-lic-asl1]-[comp-lic-gpl2+]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-Artistic2,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-Artistic2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="AGPL3-locked,ASL1-locked,ASL2-locked,Artistic2-locked,BSD3-locked,BSD4-locked,CDDL-locked,CPL-EPL-locked,EUPL-locked,GPL2+-locked,GPL2-locked,GPL3-locked,LGPL2.1+-locked,LGPL2.1-locked,LGPL3+-locked,MIT-locked,MPL-locked" target="low-integration" function="fx.join.avg(sources)"/>
+            <satisfy source="def-sit-CDDL,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[def-sit-CDDL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-AGPL3,comp-lic-bsd4" target="[comp-lic-bsd4]-[target-lic-AGPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL2.1,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-LGPL2.1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-CDDL,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-CDDL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-CDDL,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-CDDL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-eupl" target="[comp-lic-eupl]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-MIT,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-GPL3,comp-lic-asl1" target="[comp-lic-asl1]-[target-lic-GPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD4,comp-lic-eupl" target="[comp-lic-eupl]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-gpl2+,comp-lic-mpl" target="[comp-lic-mpl]-[comp-lic-gpl2+]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-gpl3,comp-lic-gpl2" target="[comp-lic-gpl2]-[comp-lic-gpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-LGPL2.1,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-LGPL2.1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD4,comp-lic-artistic2" target="[comp-lic-artistic2]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-CPL-EPL,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-CPL-EPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-CPL-EPL],[comp-lic-cddl]-[def-sit-CPL-EPL],[comp-lic-gpl2+]-[def-sit-CPL-EPL],[comp-lic-gpl2]-[def-sit-CPL-EPL],[comp-lic-gpl3]-[def-sit-CPL-EPL],[comp-lic-lgpl2.1+]-[def-sit-CPL-EPL],[comp-lic-lgpl2.1]-[def-sit-CPL-EPL],[comp-lic-lgpl3+]-[def-sit-CPL-EPL],[comp-lic-mpl]-[def-sit-CPL-EPL]" target="CPL-EPL-locked" function="atLeastOne(sources)"/>
+            <satisfy source="def-sit-GPL3,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-GPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-LGPL2.1+,comp-lic-bsd4" target="[comp-lic-bsd4]-[target-lic-LGPL2.1+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL2,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-GPL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-artistic2" target="[comp-lic-artistic2]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-GPL2],[comp-lic-asl1]-[def-sit-GPL2],[comp-lic-asl2]-[def-sit-GPL2],[comp-lic-bsd4]-[def-sit-GPL2],[comp-lic-cddl]-[def-sit-GPL2],[comp-lic-cpl-epl]-[def-sit-GPL2],[comp-lic-gpl2+]-[def-sit-GPL2],[comp-lic-gpl3]-[def-sit-GPL2],[comp-lic-lgpl3+]-[def-sit-GPL2],[comp-lic-mpl]-[def-sit-GPL2]" target="GPL2-locked" function="atLeastOne(sources)"/>
+            <satisfy source="target-lic-GPL3,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-GPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy weight="0.66" source="target-lic-GPL2+,comp-lic-asl2" target="[comp-lic-asl2]-[target-lic-GPL2+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy weight="0.33" source="target-lic-AGPL3,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-AGPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD4,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-LGPL2.1+,comp-lic-bsd4" target="[comp-lic-bsd4]-[def-sit-LGPL2.1+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-Artistic2],[comp-lic-cddl]-[def-sit-Artistic2],[comp-lic-cpl-epl]-[def-sit-Artistic2],[comp-lic-eupl]-[def-sit-Artistic2],[comp-lic-gpl2+]-[def-sit-Artistic2],[comp-lic-gpl2]-[def-sit-Artistic2],[comp-lic-gpl3]-[def-sit-Artistic2],[comp-lic-lgpl2.1+]-[def-sit-Artistic2],[comp-lic-lgpl2.1]-[def-sit-Artistic2],[comp-lic-lgpl3+]-[def-sit-Artistic2],[comp-lic-mpl]-[def-sit-Artistic2]" target="Artistic2-locked" function="atLeastOne(sources)"/>
+            <satisfy source="def-sit-MIT,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-LGPL2.1+,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-LGPL2.1+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-ASL2,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-ASL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-CPL-EPL,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[def-sit-CPL-EPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-BSD3,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-GPL2+,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-GPL2+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD3,comp-lic-artistic2" target="[comp-lic-artistic2]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL3,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-GPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-LGPL2.1,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-LGPL2.1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-MIT],[comp-lic-artistic2]-[def-sit-MIT],[comp-lic-asl1]-[def-sit-MIT],[comp-lic-asl2]-[def-sit-MIT],[comp-lic-cddl]-[def-sit-MIT],[comp-lic-cpl-epl]-[def-sit-MIT],[comp-lic-eupl]-[def-sit-MIT],[comp-lic-gpl2+]-[def-sit-MIT],[comp-lic-gpl2]-[def-sit-MIT],[comp-lic-gpl3]-[def-sit-MIT],[comp-lic-lgpl2.1+]-[def-sit-MIT],[comp-lic-lgpl2.1]-[def-sit-MIT],[comp-lic-lgpl3+]-[def-sit-MIT],[comp-lic-mpl]-[def-sit-MIT]" target="MIT-locked" function="atLeastOne(sources)"/>
+            <satisfy source="target-lic-GPL2,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-GPL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL2+,comp-lic-asl1" target="[comp-lic-asl1]-[def-sit-GPL2+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-EUPL,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-EUPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-GPL2+,comp-lic-asl1" target="[comp-lic-asl1]-[target-lic-GPL2+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-BSD4],[comp-lic-artistic2]-[def-sit-BSD4],[comp-lic-asl1]-[def-sit-BSD4],[comp-lic-asl2]-[def-sit-BSD4],[comp-lic-cddl]-[def-sit-BSD4],[comp-lic-cpl-epl]-[def-sit-BSD4],[comp-lic-eupl]-[def-sit-BSD4],[comp-lic-gpl2+]-[def-sit-BSD4],[comp-lic-gpl2]-[def-sit-BSD4],[comp-lic-gpl3]-[def-sit-BSD4],[comp-lic-lgpl2.1+]-[def-sit-BSD4],[comp-lic-lgpl2.1]-[def-sit-BSD4],[comp-lic-lgpl3+]-[def-sit-BSD4],[comp-lic-mpl]-[def-sit-BSD4]" target="BSD4-locked" function="atLeastOne(sources)"/>
+            <satisfy source="[comp-lic-asl1]-[comp-lic-agpl3],[comp-lic-asl1]-[comp-lic-gpl2+],[comp-lic-asl1]-[comp-lic-gpl2],[comp-lic-asl1]-[comp-lic-gpl3],[comp-lic-asl1]-[comp-lic-lgpl3+],[comp-lic-asl2]-[comp-lic-gpl2],[comp-lic-bsd4]-[comp-lic-agpl3],[comp-lic-bsd4]-[comp-lic-gpl2+],[comp-lic-bsd4]-[comp-lic-gpl2],[comp-lic-bsd4]-[comp-lic-gpl3],[comp-lic-bsd4]-[comp-lic-lgpl3+],[comp-lic-cddl]-[comp-lic-agpl3],[comp-lic-cddl]-[comp-lic-cpl-epl],[comp-lic-cddl]-[comp-lic-gpl2+],[comp-lic-cddl]-[comp-lic-gpl2],[comp-lic-cddl]-[comp-lic-gpl3],[comp-lic-cpl-epl]-[comp-lic-agpl3],[comp-lic-cpl-epl]-[comp-lic-gpl2+],[comp-lic-cpl-epl]-[comp-lic-gpl2],[comp-lic-cpl-epl]-[comp-lic-gpl3],[comp-lic-eupl]-[comp-lic-agpl3],[comp-lic-eupl]-[comp-lic-gpl3],[comp-lic-gpl2]-[comp-lic-agpl3],[comp-lic-gpl2]-[comp-lic-gpl3],[comp-lic-lgpl2.1+]-[comp-lic-cddl],[comp-lic-lgpl2.1+]-[comp-lic-cpl-epl],[comp-lic-lgpl2.1+]-[comp-lic-mpl],[comp-lic-lgpl2.1]-[comp-lic-cddl],[comp-lic-lgpl2.1]-[comp-lic-cpl-epl],[comp-lic-lgpl2.1]-[comp-lic-mpl],[comp-lic-lgpl3+]-[comp-lic-cddl],[comp-lic-lgpl3+]-[comp-lic-cpl-epl],[comp-lic-lgpl3+]-[comp-lic-mpl],[comp-lic-mpl]-[comp-lic-agpl3],[comp-lic-mpl]-[comp-lic-cddl],[comp-lic-mpl]-[comp-lic-cpl-epl],[comp-lic-mpl]-[comp-lic-gpl2+],[comp-lic-mpl]-[comp-lic-gpl2],[comp-lic-mpl]-[comp-lic-gpl3]" target="internal-incompatibility" function="fx.join.or(sources)"/>
+            <satisfy source="target-lic-LGPL2.1,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-LGPL2.1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL2.1+,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-LGPL2.1+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-MPL,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-MPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL3,comp-lic-bsd4" target="[comp-lic-bsd4]-[def-sit-GPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-CDDL,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-CDDL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-LGPL3+,comp-lic-eupl" target="[comp-lic-eupl]-[target-lic-LGPL3+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-LGPL2.1+],[comp-lic-asl1]-[def-sit-LGPL2.1+],[comp-lic-bsd4]-[def-sit-LGPL2.1+],[comp-lic-cddl]-[def-sit-LGPL2.1+],[comp-lic-cpl-epl]-[def-sit-LGPL2.1+],[comp-lic-gpl2+]-[def-sit-LGPL2.1+],[comp-lic-gpl2]-[def-sit-LGPL2.1+],[comp-lic-gpl3]-[def-sit-LGPL2.1+],[comp-lic-lgpl2.1]-[def-sit-LGPL2.1+],[comp-lic-lgpl3+]-[def-sit-LGPL2.1+],[comp-lic-mpl]-[def-sit-LGPL2.1+]" target="LGPL2.1+-locked" function="atLeastOne(sources)"/>
+            <satisfy source="target-lic-BSD3,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL2+,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-GPL2+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-MIT,comp-lic-eupl" target="[comp-lic-eupl]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-EUPL,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-EUPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL3+,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-LGPL3+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL2.1,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-LGPL2.1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-LGPL3+,comp-lic-bsd4" target="[comp-lic-bsd4]-[def-sit-LGPL3+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-agpl3,comp-lic-bsd4" target="[comp-lic-bsd4]-[comp-lic-agpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="comp-lic-gpl2,comp-lic-asl1" target="[comp-lic-asl1]-[comp-lic-gpl2]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy weight="0.33" source="target-lic-CDDL,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[target-lic-CDDL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-EUPL,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-EUPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-CPL-EPL,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-CPL-EPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-GPL3,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-GPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-agpl3,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[comp-lic-agpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD4,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-ASL2,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-ASL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-LGPL2.1,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[def-sit-LGPL2.1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-AGPL3,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-AGPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy weight="0.66" source="target-lic-LGPL2.1,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[target-lic-LGPL2.1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL2+,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-GPL2+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-LGPL3+,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-LGPL3+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-ASL2,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-ASL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-LGPL2.1],[comp-lic-asl1]-[def-sit-LGPL2.1],[comp-lic-bsd4]-[def-sit-LGPL2.1],[comp-lic-cddl]-[def-sit-LGPL2.1],[comp-lic-cpl-epl]-[def-sit-LGPL2.1],[comp-lic-gpl2+]-[def-sit-LGPL2.1],[comp-lic-gpl2]-[def-sit-LGPL2.1],[comp-lic-gpl3]-[def-sit-LGPL2.1],[comp-lic-lgpl3+]-[def-sit-LGPL2.1],[comp-lic-mpl]-[def-sit-LGPL2.1]" target="LGPL2.1-locked" function="atLeastOne(sources)"/>
+            <satisfy source="def-sit-LGPL2.1,comp-lic-asl1" target="[comp-lic-asl1]-[def-sit-LGPL2.1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-LGPL2.1,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-LGPL2.1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-gpl2,comp-lic-mpl" target="[comp-lic-mpl]-[comp-lic-gpl2]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-LGPL2.1+,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-LGPL2.1+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-CDDL,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-CDDL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-AGPL3,comp-lic-eupl" target="[comp-lic-eupl]-[target-lic-AGPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL2,comp-lic-asl1" target="[comp-lic-asl1]-[def-sit-GPL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-ASL2,comp-lic-artistic2" target="[comp-lic-artistic2]-[target-lic-ASL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-ASL1,comp-lic-artistic2" target="[comp-lic-artistic2]-[target-lic-ASL1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-GPL2,comp-lic-bsd4" target="[comp-lic-bsd4]-[target-lic-GPL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-MIT,comp-lic-asl1" target="[comp-lic-asl1]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-BSD4,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy weight="0.66" source="target-lic-LGPL3+,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-LGPL3+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-eupl" target="[comp-lic-eupl]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-MIT,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-BSD3,comp-lic-asl1" target="[comp-lic-asl1]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-CDDL,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-CDDL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-LGPL2.1,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-LGPL2.1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-gpl3,comp-lic-mpl" target="[comp-lic-mpl]-[comp-lic-gpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL2.1+,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-LGPL2.1+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-MPL,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[target-lic-MPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL2.1,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-LGPL2.1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-LGPL3+,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-LGPL3+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-Artistic2,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-Artistic2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-ASL2,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[def-sit-ASL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-LGPL2.1,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-LGPL2.1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-artistic2" target="[comp-lic-artistic2]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-artistic2" target="[comp-lic-artistic2]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-CPL-EPL,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-CPL-EPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL2,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-GPL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-MPL,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-MPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-LGPL2.1+,comp-lic-asl1" target="[comp-lic-asl1]-[target-lic-LGPL2.1+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="[comp-lic-asl1]-[def-sit-AGPL3],[comp-lic-asl1]-[def-sit-GPL3],[comp-lic-bsd4]-[def-sit-AGPL3],[comp-lic-bsd4]-[def-sit-GPL3],[comp-lic-cddl]-[def-sit-AGPL3],[comp-lic-cddl]-[def-sit-GPL3],[comp-lic-cpl-epl]-[def-sit-AGPL3],[comp-lic-cpl-epl]-[def-sit-GPL3],[comp-lic-eupl]-[def-sit-AGPL3],[comp-lic-eupl]-[def-sit-GPL3],[comp-lic-gpl2]-[def-sit-AGPL3],[comp-lic-gpl2]-[def-sit-GPL3],[comp-lic-mpl]-[def-sit-AGPL3],[comp-lic-mpl]-[def-sit-GPL3]" target="GPL3-locked" function="atLeastOne(sources)"/>
+            <satisfy source="def-sit-AGPL3,comp-lic-asl1" target="[comp-lic-asl1]-[def-sit-AGPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-ASL1,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[target-lic-ASL1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-asl2" target="[comp-lic-asl2]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-ASL1,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-ASL1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL2,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-GPL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-ASL1,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-ASL1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-ASL2,comp-lic-eupl" target="[comp-lic-eupl]-[target-lic-ASL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-agpl3,comp-lic-asl1" target="[comp-lic-asl1]-[comp-lic-agpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy weight="0.66" source="target-lic-LGPL3+,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-LGPL3+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL2,comp-lic-bsd4" target="[comp-lic-bsd4]-[def-sit-GPL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-gpl2,comp-lic-asl2" target="[comp-lic-asl2]-[comp-lic-gpl2]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-MPL,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-MPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-ASL2,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-ASL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-CPL-EPL,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-CPL-EPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-CPL-EPL,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-CPL-EPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-LGPL2.1+,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-LGPL2.1+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-MIT,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-CPL-EPL,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-CPL-EPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-LGPL3+,comp-lic-asl1" target="[comp-lic-asl1]-[target-lic-LGPL3+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-gpl3,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[comp-lic-gpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy weight="0.33" source="target-lic-GPL2+,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-GPL2+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-GPL2+,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-GPL2+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy weight="0.66" source="target-lic-LGPL3+,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-LGPL3+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-ASL2,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-ASL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-gpl3,comp-lic-asl1" target="[comp-lic-asl1]-[comp-lic-gpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-ASL1],[comp-lic-artistic2]-[def-sit-ASL1],[comp-lic-asl2]-[def-sit-ASL1],[comp-lic-cddl]-[def-sit-ASL1],[comp-lic-cpl-epl]-[def-sit-ASL1],[comp-lic-eupl]-[def-sit-ASL1],[comp-lic-gpl2+]-[def-sit-ASL1],[comp-lic-gpl2]-[def-sit-ASL1],[comp-lic-gpl3]-[def-sit-ASL1],[comp-lic-lgpl2.1+]-[def-sit-ASL1],[comp-lic-lgpl2.1]-[def-sit-ASL1],[comp-lic-lgpl3+]-[def-sit-ASL1],[comp-lic-mpl]-[def-sit-ASL1]" target="ASL1-locked" function="atLeastOne(sources)"/>
+            <satisfy source="comp-lic-agpl3,comp-lic-gpl2" target="[comp-lic-gpl2]-[comp-lic-agpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-LGPL2.1+,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-LGPL2.1+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-cpl-epl,comp-lic-cddl" target="[comp-lic-cddl]-[comp-lic-cpl-epl]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-ASL2,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-ASL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-Artistic2,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[def-sit-Artistic2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-ASL2,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-ASL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-ASL1,comp-lic-artistic2" target="[comp-lic-artistic2]-[def-sit-ASL1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-ASL2,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-ASL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-MPL,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-MPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-MPL,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[target-lic-MPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-LGPL3+,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-LGPL3+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL2.1+,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[def-sit-LGPL2.1+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-CPL-EPL,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[def-sit-CPL-EPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-MIT,comp-lic-asl2" target="[comp-lic-asl2]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-GPL3,comp-lic-eupl" target="[comp-lic-eupl]-[def-sit-GPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-ASL2,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-ASL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL3,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-GPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-Artistic2,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-Artistic2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-asl1" target="[comp-lic-asl1]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-GPL2,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-GPL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-ASL1,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[def-sit-ASL1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-Artistic2,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-Artistic2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-GPL2,comp-lic-asl2" target="[comp-lic-asl2]-[target-lic-GPL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-cddl,comp-lic-mpl" target="[comp-lic-mpl]-[comp-lic-cddl]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-LGPL2.1+,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-LGPL2.1+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-asl1" target="[comp-lic-asl1]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-lgpl3+,comp-lic-asl1" target="[comp-lic-asl1]-[comp-lic-lgpl3+]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD4,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-LGPL3+,comp-lic-bsd4" target="[comp-lic-bsd4]-[target-lic-LGPL3+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL2+,comp-lic-asl2" target="[comp-lic-asl2]-[def-sit-GPL2+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-EUPL,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-EUPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-GPL2+],[comp-lic-asl1]-[def-sit-GPL2+],[comp-lic-asl2]-[def-sit-GPL2+],[comp-lic-bsd4]-[def-sit-GPL2+],[comp-lic-cddl]-[def-sit-GPL2+],[comp-lic-cpl-epl]-[def-sit-GPL2+],[comp-lic-gpl3]-[def-sit-GPL2+],[comp-lic-mpl]-[def-sit-GPL2+]" target="GPL2+-locked" function="atLeastOne(sources)"/>
+            <satisfy source="target-lic-BSD3,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL2,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-GPL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-Artistic2,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-Artistic2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-cddl,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[comp-lic-cddl]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-ASL2,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[def-sit-ASL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-LGPL3+,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-LGPL3+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-lgpl3+,comp-lic-bsd4" target="[comp-lic-bsd4]-[comp-lic-lgpl3+]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-Artistic2,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[target-lic-Artistic2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-LGPL3+],[comp-lic-asl1]-[def-sit-LGPL3+],[comp-lic-bsd4]-[def-sit-LGPL3+],[comp-lic-cddl]-[def-sit-LGPL3+],[comp-lic-cpl-epl]-[def-sit-LGPL3+],[comp-lic-eupl]-[def-sit-LGPL3+],[comp-lic-gpl2+]-[def-sit-LGPL3+],[comp-lic-gpl2]-[def-sit-LGPL3+],[comp-lic-gpl3]-[def-sit-LGPL3+],[comp-lic-lgpl2.1]-[def-sit-LGPL3+],[comp-lic-mpl]-[def-sit-LGPL3+]" target="LGPL3+-locked" function="atLeastOne(sources)"/>
+            <satisfy source="def-sit-BSD4,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-Artistic2,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[def-sit-Artistic2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-ASL1,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[def-sit-ASL1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-gpl2+,comp-lic-bsd4" target="[comp-lic-bsd4]-[comp-lic-gpl2+]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL3+,comp-lic-asl1" target="[comp-lic-asl1]-[def-sit-LGPL3+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-ASL2,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[target-lic-ASL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy weight="0.33" source="target-lic-GPL3,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-GPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-EUPL,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-EUPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL3+,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-LGPL3+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-GPL2+,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-GPL2+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-ASL2,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-ASL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-CDDL,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-CDDL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy weight="0.66" source="target-lic-EUPL,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-EUPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-Artistic2,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-Artistic2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-AGPL3,comp-lic-eupl" target="[comp-lic-eupl]-[def-sit-AGPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-ASL1,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-ASL1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-agpl3,comp-lic-eupl" target="[comp-lic-eupl]-[comp-lic-agpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL2,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-GPL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-BSD4,comp-lic-asl1" target="[comp-lic-asl1]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-gpl2,comp-lic-cddl" target="[comp-lic-cddl]-[comp-lic-gpl2]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-LGPL3+,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-LGPL3+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="cenatic-risk-situation" target="affinity-indicator-2" function="fx.join.avg(sources)"/>
+            <satisfy source="target-lic-ASL1,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[target-lic-ASL1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-ASL1,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-ASL1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-LGPL2.1,comp-lic-bsd4" target="[comp-lic-bsd4]-[target-lic-LGPL2.1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD4,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-ASL1,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-ASL1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD3,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-GPL2,comp-lic-asl1" target="[comp-lic-asl1]-[target-lic-GPL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-CDDL,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-CDDL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-CPL-EPL,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-CPL-EPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy weight="0.33" source="target-lic-GPL2,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-GPL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-gpl2+,comp-lic-cddl" target="[comp-lic-cddl]-[comp-lic-gpl2+]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-LGPL2.1,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-LGPL2.1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-MPL,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-MPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-ASL2],[comp-lic-artistic2]-[def-sit-ASL2],[comp-lic-cddl]-[def-sit-ASL2],[comp-lic-cpl-epl]-[def-sit-ASL2],[comp-lic-eupl]-[def-sit-ASL2],[comp-lic-gpl2+]-[def-sit-ASL2],[comp-lic-gpl2]-[def-sit-ASL2],[comp-lic-gpl3]-[def-sit-ASL2],[comp-lic-lgpl2.1+]-[def-sit-ASL2],[comp-lic-lgpl2.1]-[def-sit-ASL2],[comp-lic-lgpl3+]-[def-sit-ASL2],[comp-lic-mpl]-[def-sit-ASL2]" target="ASL2-locked" function="atLeastOne(sources)"/>
+            <satisfy source="comp-lic-cpl-epl,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[comp-lic-cpl-epl]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-EUPL,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-EUPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-GPL3,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-GPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy weight="0.66" source="target-lic-LGPL2.1+,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[target-lic-LGPL2.1+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-ASL2,comp-lic-eupl" target="[comp-lic-eupl]-[def-sit-ASL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-ASL2,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[target-lic-ASL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy weight="0.33" source="target-lic-GPL3,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-GPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-CDDL,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[target-lic-CDDL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-mpl,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[comp-lic-mpl]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL3+,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[def-sit-LGPL3+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-LGPL2.1+,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[def-sit-LGPL2.1+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-MIT,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="[comp-lic-asl1]-[def-sit-AGPL3],[comp-lic-bsd4]-[def-sit-AGPL3],[comp-lic-cddl]-[def-sit-AGPL3],[comp-lic-cpl-epl]-[def-sit-AGPL3],[comp-lic-eupl]-[def-sit-AGPL3],[comp-lic-gpl2]-[def-sit-AGPL3],[comp-lic-mpl]-[def-sit-AGPL3]" target="AGPL3-locked" function="atLeastOne(sources)"/>
+            <satisfy source="def-sit-ASL1,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-ASL1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-GPL2,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-GPL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-Artistic2,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-Artistic2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-gpl2+,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[comp-lic-gpl2+]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-ASL2,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-ASL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD4,comp-lic-asl2" target="[comp-lic-asl2]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-BSD3,comp-lic-eupl" target="[comp-lic-eupl]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD3,comp-lic-asl2" target="[comp-lic-asl2]-[target-lic-BSD3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-EUPL,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[target-lic-EUPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-GPL2+,comp-lic-bsd4" target="[comp-lic-bsd4]-[target-lic-GPL2+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL3+,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-LGPL3+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-CPL-EPL,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-CPL-EPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-GPL2,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[def-sit-GPL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-GPL2,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[target-lic-GPL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL2.1+,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-LGPL2.1+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-cpl-epl,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[comp-lic-cpl-epl]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-EUPL,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-EUPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-LGPL2.1+,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-LGPL2.1+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-MIT,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-ASL2,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-ASL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-MIT,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-MIT]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-CPL-EPL,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-CPL-EPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL2.1+,comp-lic-asl1" target="[comp-lic-asl1]-[def-sit-LGPL2.1+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-ASL1,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-ASL1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-ASL1,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-ASL1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-CDDL,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-CDDL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-MPL,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[def-sit-MPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-LGPL2.1+,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[target-lic-LGPL2.1+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-Artistic2,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-Artistic2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-MPL,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-MPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy weight="0.33" source="target-lic-GPL2+,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-GPL2+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-asl2" target="[comp-lic-asl2]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-agpl3,comp-lic-mpl" target="[comp-lic-mpl]-[comp-lic-agpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL3,comp-lic-asl1" target="[comp-lic-asl1]-[def-sit-GPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-GPL2+,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-GPL2+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-GPL3,comp-lic-bsd4" target="[comp-lic-bsd4]-[target-lic-GPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-Artistic2,comp-lic-eupl" target="[comp-lic-eupl]-[def-sit-Artistic2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-CPL-EPL,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[target-lic-CPL-EPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="comp-lic-cddl,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[comp-lic-cddl]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-EUPL,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-EUPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL2.1+,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-LGPL2.1+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-Artistic2,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-Artistic2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-Artistic2,comp-lic-eupl" target="[comp-lic-eupl]-[target-lic-Artistic2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-GPL2,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-GPL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-GPL2,comp-lic-asl2" target="[comp-lic-asl2]-[def-sit-GPL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-GPL2,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-GPL2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-CPL-EPL,comp-lic-agpl3" target="[comp-lic-agpl3]-[target-lic-CPL-EPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-ASL2,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[target-lic-ASL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-MPL,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-MPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-Artistic2,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-Artistic2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-LGPL2.1,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-LGPL2.1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-ASL1,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[target-lic-ASL1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-Artistic2,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-Artistic2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-CDDL],[comp-lic-cpl-epl]-[def-sit-CDDL],[comp-lic-gpl2+]-[def-sit-CDDL],[comp-lic-gpl2]-[def-sit-CDDL],[comp-lic-gpl3]-[def-sit-CDDL],[comp-lic-lgpl2.1+]-[def-sit-CDDL],[comp-lic-lgpl2.1]-[def-sit-CDDL],[comp-lic-lgpl3+]-[def-sit-CDDL],[comp-lic-mpl]-[def-sit-CDDL]" target="CDDL-locked" function="atLeastOne(sources)"/>
+            <satisfy source="target-lic-CDDL,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-CDDL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-AGPL3,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-AGPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-CPL-EPL,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[def-sit-CPL-EPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-BSD4,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-BSD4]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-CDDL,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[def-sit-CDDL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-Artistic2,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-Artistic2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-gpl3,comp-lic-bsd4" target="[comp-lic-bsd4]-[comp-lic-gpl3]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-ASL1,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-ASL1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-BSD3,comp-lic-lgpl2.1+" target="[comp-lic-lgpl2.1+]-[def-sit-BSD3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-LGPL2.1,comp-lic-bsd4" target="[comp-lic-bsd4]-[def-sit-LGPL2.1]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-CPL-EPL,comp-lic-cddl" target="[comp-lic-cddl]-[def-sit-CPL-EPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-LGPL2.1+,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-LGPL2.1+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-EUPL,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-EUPL]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL2.1+,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-LGPL2.1+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-GPL2+,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-GPL2+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-cddl,comp-lic-lgpl2.1" target="[comp-lic-lgpl2.1]-[comp-lic-cddl]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-EUPL,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-EUPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-mpl,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[comp-lic-mpl]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="target-lic-LGPL3+,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-LGPL3+]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-AGPL3,comp-lic-bsd4" target="[comp-lic-bsd4]-[def-sit-AGPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-MPL,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[def-sit-MPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-gpl2,comp-lic-cpl-epl" target="[comp-lic-cpl-epl]-[comp-lic-gpl2]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-Artistic2,comp-lic-agpl3" target="[comp-lic-agpl3]-[def-sit-Artistic2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-Artistic2,comp-lic-lgpl3+" target="[comp-lic-lgpl3+]-[def-sit-Artistic2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy weight="0.33" source="target-lic-AGPL3,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-AGPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-ASL1,comp-lic-eupl" target="[comp-lic-eupl]-[target-lic-ASL1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-LGPL3+,comp-lic-gpl3" target="[comp-lic-gpl3]-[def-sit-LGPL3+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-ASL1,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-ASL1]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-MIT,comp-lic-artistic2" target="[comp-lic-artistic2]-[def-sit-MIT]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-AGPL3,comp-lic-cddl" target="[comp-lic-cddl]-[target-lic-AGPL3]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="[comp-lic-agpl3]-[def-sit-BSD3],[comp-lic-artistic2]-[def-sit-BSD3],[comp-lic-asl1]-[def-sit-BSD3],[comp-lic-asl2]-[def-sit-BSD3],[comp-lic-cddl]-[def-sit-BSD3],[comp-lic-cpl-epl]-[def-sit-BSD3],[comp-lic-eupl]-[def-sit-BSD3],[comp-lic-gpl2+]-[def-sit-BSD3],[comp-lic-gpl2]-[def-sit-BSD3],[comp-lic-gpl3]-[def-sit-BSD3],[comp-lic-lgpl2.1+]-[def-sit-BSD3],[comp-lic-lgpl2.1]-[def-sit-BSD3],[comp-lic-lgpl3+]-[def-sit-BSD3],[comp-lic-mpl]-[def-sit-BSD3]" target="BSD3-locked" function="atLeastOne(sources)"/>
+            <satisfy source="def-sit-GPL2+,comp-lic-mpl" target="[comp-lic-mpl]-[def-sit-GPL2+]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-GPL2,comp-lic-mpl" target="[comp-lic-mpl]-[target-lic-GPL2]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="target-lic-BSD4,comp-lic-gpl3" target="[comp-lic-gpl3]-[target-lic-BSD4]" ccmatrix="external-compatibility-matrix"/>
+            <satisfy source="def-sit-MPL,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-MPL]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="def-sit-GPL3,comp-lic-gpl2" target="[comp-lic-gpl2]-[def-sit-GPL3]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="comp-lic-cpl-epl,comp-lic-mpl" target="[comp-lic-mpl]-[comp-lic-cpl-epl]" ccmatrix="internal-compatibility-matrix"/>
+            <satisfy source="def-sit-Artistic2,comp-lic-gpl2+" target="[comp-lic-gpl2+]-[def-sit-Artistic2]" ccmatrix="future-uncertainty-matrix"/>
+            <satisfy source="target-lic-AGPL3,comp-lic-gpl2" target="[comp-lic-gpl2]-[target-lic-AGPL3]" ccmatrix="external-compatibility-matrix"/>
+            <expose source="low-integration" target="Future integration risk"/>
+            <expose source="external-incompatibility" target="External Compatibility Risk"/>
+            <expose source="affinity-indicator-2" target="Affinity Risk"/>
+            <expose source="internal-incompatibility" target="Internal Compatibility Risk"/>
+            <indicate source="#GPL2+" target="comp-lic-gpl2+"/>
+            <indicate source="#EUPL" target="comp-lic-eupl"/>
+            <indicate source="#def:LGPL2.1" target="def-sit-LGPL2.1" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#def:GPL3" target="def-sit-GPL3" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#target:CPL-EPL" target="target-lic-CPL-EPL"/>
+            <indicate source="#target:LGPL3+" target="target-lic-LGPL3+"/>
+            <indicate source="#ASL1" target="comp-lic-asl1"/>
+            <indicate source="#target:GPL2" target="target-lic-GPL2"/>
+            <indicate source="#def:GPL2+" target="def-sit-GPL2+" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#def:LGPL3+" target="def-sit-LGPL3+" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#target:BSD4" target="target-lic-BSD4"/>
+            <indicate source="#Artistic2" target="comp-lic-artistic2"/>
+            <indicate source="#def:CPL-EPL" target="def-sit-CPL-EPL" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#target:ASL1" target="target-lic-ASL1"/>
+            <indicate source="#CDDL" target="comp-lic-cddl"/>
+            <indicate source="#def:CDDL" target="def-sit-CDDL" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#CPL-EPL" target="comp-lic-cpl-epl"/>
+            <indicate source="#target:LGPL2.1" target="target-lic-LGPL2.1"/>
+            <indicate source="#def:MIT" target="def-sit-MIT" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#target:Artistic2" target="target-lic-Artistic2"/>
+            <indicate source="#def:AGPL3" target="def-sit-AGPL3" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#LGPL2.1" target="comp-lic-lgpl2.1"/>
+            <indicate source="#ASL2" target="comp-lic-asl2"/>
+            <indicate source="#MPL" target="comp-lic-mpl"/>
+            <indicate source="#MIT" target="comp-lic-gpl"/>
+            <indicate source="#target:GPL2+" target="target-lic-GPL2+"/>
+            <indicate source="#target:LGPL2.1+" target="target-lic-LGPL2.1+"/>
+            <indicate source="#BSD3" target="comp-lic-bsd3"/>
+            <indicate source="#def:MPL" target="def-sit-MPL" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#def:Artistic2" target="def-sit-Artistic2" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#def:EUPL" target="def-sit-EUPL" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="NCompatibleLicenses" target="percentage-of-compatible-licenses"/>
+            <indicate source="#AGPL3" target="comp-lic-agpl3"/>
+            <indicate source="#target:MPL" target="target-lic-MPL"/>
+            <indicate source="#target:BSD3" target="target-lic-BSD3"/>
+            <indicate source="#target:MIT" target="target-lic-MIT"/>
+            <indicate source="#def:LGPL2.1+" target="def-sit-LGPL2.1+" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#def:BSD3" target="def-sit-BSD3" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#target:GPL3" target="target-lic-GPL3"/>
+            <indicate source="NLicenseTypes" target="fraction-of-license-types"/>
+            <indicate source="#GPL3" target="comp-lic-gpl3"/>
+            <indicate source="#LGPL3+" target="comp-lic-lgpl3+"/>
+            <indicate source="#target:EUPL" target="target-lic-EUPL"/>
+            <indicate source="NLicenses" target="cenatic-risk-situation" function="calcCenaticAffinityRisk( sources )"/>
+            <indicate source="#GPL2" target="comp-lic-gpl2"/>
+            <indicate source="#def:ASL2" target="def-sit-ASL2" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="NEqualLicenses" target="percentage-of-equal-license"/>
+            <indicate source="#LGPL2.1+" target="comp-lic-lgpl2.1+"/>
+            <indicate source="#def:ASL1" target="def-sit-ASL1" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#target:ASL2" target="target-lic-ASL2"/>
+            <indicate source="#def:BSD4" target="def-sit-BSD4" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#target:CDDL" target="target-lic-CDDL"/>
+            <indicate source="#def:GPL2" target="def-sit-GPL2" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="#BSD4" target="comp-lic-bsd4"/>
+            <indicate source="#target:AGPL3" target="target-lic-AGPL3"/>
+        </relationships>
+        <entities>
+            <indicator id="#MIT">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of MIT licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#BSD4">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of BSD4 licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#BSD3">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of BSD3 licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#ASL1">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of ASL1 licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#ASL2">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of ASL2 licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#Artistic2">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of Artistic2 licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#LGPL2.1">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of LGPL2.1 licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#LGPL2.1+">
+                <property name="input" value="true"/>
+                <property name="description" value="LGPL2.1+"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#LGPL3+">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of LGPL3+ licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#MPL">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of MPL licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#CDDL">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of CDDL licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#CPL-EPL">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of CPL-EPL licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#EUPL">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of EUPL licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#GPL2">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of GPL2 licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#GPL2+">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of GPL2+ licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#GPL3">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of GPL3 licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#AGPL3">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of AGPL3 licenses in the adopted OSS component(s)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:MIT">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under MIT license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:BSD4">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under BSD4 license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:BSD3">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under BSD3 license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:ASL1">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under ASL1 license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:ASL2">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under ASL2 license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:Artistic2">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under Artistic2 license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:LGPL2.1">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under LGPL2.1 license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:LGPL2.1+">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under LGPL2.1+ license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:LGPL3+">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under LGPL3+ license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:MPL">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under MPL license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:CDDL">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under CDDL license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:CPL-EPL">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under CPL-EPL license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:EUPL">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under EUPL license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:GPL2">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under GPL2 license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:GPL2+">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under GPL2+ license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:GPL3">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under GPL3 license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#target:AGPL3">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Non zero = the software product going to be released under AGPL3license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="NLicenses">
+                <property name="input" value="false"/>
+                <property name="descrip" value="Overall number of licenses (e.g., 3 GPL + 2 BSD4 licenses = 5 overall licenses)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="NEqualLicenses">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of component licenses that are exactly the same as the target license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="NCompatibleLicenses">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of component licenses that are compatible, but not exatly the same, as the target license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="NLicenseTypes">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of license types (e.g., 3 GPL + 2 BSD4 licenses = 2 license types)"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:MIT">
+                <property name="input" value="false"/>
+                <property name="datatype" value="integer"/>
+                <property name="default-value" value="1"/>
+            </indicator>
+            <indicator id="#def:BSD4">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:BSD3">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:ASL1">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:ASL2">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:Artistic2">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:LGPL2.1">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:LGPL2.1+">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:LGPL3+">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:MPL">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:CDDL">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:CPL-EPL">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:EUPL">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:GPL2">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:GPL2+">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:GPL3">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#def:AGPL3">
+                <property name="input" value="false"/>
+                <property name="default-value" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <event id="Internal Compatibility Risk">
+                <property name="description" value="Risk that two (or more) of the adopted components have licenses that are compatible with each other"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="External Compatibility Risk">
+                <property name="description" value="Risk that the target license(s, in case of dual licensing) is incompatible with one or more of the component licenses"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Affinity Risk">
+                <property name="description" value="Risk that arises from the need to manage licenses that are compatible but different from each other, thus requiring special care"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Future integration risk">
+                <property name="description" value="Risk due to the low degree of freedom in the choice of the target license"/>
+                <property name="output" value="true"/>
+            </event>
+            <situation id="comp-lic-gpl"/>
+            <situation id="comp-lic-bsd4"/>
+            <situation id="comp-lic-bsd3"/>
+            <situation id="comp-lic-asl1"/>
+            <situation id="comp-lic-asl2"/>
+            <situation id="comp-lic-artistic2"/>
+            <situation id="comp-lic-lgpl2.1"/>
+            <situation id="comp-lic-lgpl2.1+"/>
+            <situation id="comp-lic-lgpl3+"/>
+            <situation id="comp-lic-mpl"/>
+            <situation id="comp-lic-cddl"/>
+            <situation id="comp-lic-cpl-epl"/>
+            <situation id="comp-lic-eupl"/>
+            <situation id="comp-lic-gpl2"/>
+            <situation id="comp-lic-gpl2+"/>
+            <situation id="comp-lic-gpl3"/>
+            <situation id="comp-lic-agpl3"/>
+            <situation id="[comp-lic-bsd4]-[comp-lic-lgpl3+]"/>
+            <situation id="[comp-lic-bsd4]-[comp-lic-gpl2]"/>
+            <situation id="[comp-lic-bsd4]-[comp-lic-gpl2+]"/>
+            <situation id="[comp-lic-bsd4]-[comp-lic-gpl3]"/>
+            <situation id="[comp-lic-bsd4]-[comp-lic-agpl3]"/>
+            <situation id="[comp-lic-asl1]-[comp-lic-lgpl3+]"/>
+            <situation id="[comp-lic-asl1]-[comp-lic-gpl2]"/>
+            <situation id="[comp-lic-asl1]-[comp-lic-gpl2+]"/>
+            <situation id="[comp-lic-asl1]-[comp-lic-gpl3]"/>
+            <situation id="[comp-lic-asl1]-[comp-lic-agpl3]"/>
+            <situation id="[comp-lic-asl2]-[comp-lic-gpl2]"/>
+            <situation id="[comp-lic-lgpl2.1]-[comp-lic-mpl]"/>
+            <situation id="[comp-lic-lgpl2.1]-[comp-lic-cddl]"/>
+            <situation id="[comp-lic-lgpl2.1]-[comp-lic-cpl-epl]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[comp-lic-mpl]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[comp-lic-cddl]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[comp-lic-cpl-epl]"/>
+            <situation id="[comp-lic-lgpl3+]-[comp-lic-mpl]"/>
+            <situation id="[comp-lic-lgpl3+]-[comp-lic-cddl]"/>
+            <situation id="[comp-lic-lgpl3+]-[comp-lic-cpl-epl]"/>
+            <situation id="[comp-lic-mpl]-[comp-lic-cddl]"/>
+            <situation id="[comp-lic-mpl]-[comp-lic-cpl-epl]"/>
+            <situation id="[comp-lic-mpl]-[comp-lic-gpl2]"/>
+            <situation id="[comp-lic-mpl]-[comp-lic-gpl2+]"/>
+            <situation id="[comp-lic-mpl]-[comp-lic-gpl3]"/>
+            <situation id="[comp-lic-mpl]-[comp-lic-agpl3]"/>
+            <situation id="[comp-lic-cddl]-[comp-lic-cpl-epl]"/>
+            <situation id="[comp-lic-cddl]-[comp-lic-gpl2]"/>
+            <situation id="[comp-lic-cddl]-[comp-lic-gpl2+]"/>
+            <situation id="[comp-lic-cddl]-[comp-lic-gpl3]"/>
+            <situation id="[comp-lic-cddl]-[comp-lic-agpl3]"/>
+            <situation id="[comp-lic-cpl-epl]-[comp-lic-gpl2]"/>
+            <situation id="[comp-lic-cpl-epl]-[comp-lic-gpl2+]"/>
+            <situation id="[comp-lic-cpl-epl]-[comp-lic-gpl3]"/>
+            <situation id="[comp-lic-cpl-epl]-[comp-lic-agpl3]"/>
+            <situation id="[comp-lic-eupl]-[comp-lic-gpl3]"/>
+            <situation id="[comp-lic-eupl]-[comp-lic-agpl3]"/>
+            <situation id="[comp-lic-gpl2]-[comp-lic-gpl3]"/>
+            <situation id="[comp-lic-gpl2]-[comp-lic-agpl3]"/>
+            <situation id="internal-incompatibility"/>
+            <situation id="target-lic-MIT"/>
+            <situation id="target-lic-BSD4"/>
+            <situation id="target-lic-BSD3"/>
+            <situation id="target-lic-ASL1"/>
+            <situation id="target-lic-ASL2"/>
+            <situation id="target-lic-Artistic2"/>
+            <situation id="target-lic-LGPL2.1"/>
+            <situation id="target-lic-LGPL2.1+"/>
+            <situation id="target-lic-LGPL3+"/>
+            <situation id="target-lic-MPL"/>
+            <situation id="target-lic-CDDL"/>
+            <situation id="target-lic-CPL-EPL"/>
+            <situation id="target-lic-EUPL"/>
+            <situation id="target-lic-GPL2"/>
+            <situation id="target-lic-GPL2+"/>
+            <situation id="target-lic-GPL3"/>
+            <situation id="target-lic-AGPL3"/>
+            <situation id="[comp-lic-bsd4]-[target-lic-LGPL2.1]"/>
+            <situation id="[comp-lic-bsd4]-[target-lic-LGPL2.1+]"/>
+            <situation id="[comp-lic-bsd4]-[target-lic-LGPL3+]"/>
+            <situation id="[comp-lic-bsd4]-[target-lic-GPL2]"/>
+            <situation id="[comp-lic-bsd4]-[target-lic-GPL2+]"/>
+            <situation id="[comp-lic-bsd4]-[target-lic-GPL3]"/>
+            <situation id="[comp-lic-bsd4]-[target-lic-AGPL3]"/>
+            <situation id="[comp-lic-asl1]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-asl1]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-asl1]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-asl1]-[target-lic-LGPL2.1]"/>
+            <situation id="[comp-lic-asl1]-[target-lic-LGPL2.1+]"/>
+            <situation id="[comp-lic-asl1]-[target-lic-LGPL3+]"/>
+            <situation id="[comp-lic-asl1]-[target-lic-GPL2]"/>
+            <situation id="[comp-lic-asl1]-[target-lic-GPL2+]"/>
+            <situation id="[comp-lic-asl1]-[target-lic-GPL3]"/>
+            <situation id="[comp-lic-asl1]-[target-lic-AGPL3]"/>
+            <situation id="[comp-lic-asl2]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-asl2]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-asl2]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-asl2]-[target-lic-ASL1]"/>
+            <situation id="[comp-lic-asl2]-[target-lic-GPL2]"/>
+            <situation id="[comp-lic-asl2]-[target-lic-GPL2+]"/>
+            <situation id="[comp-lic-artistic2]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-artistic2]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-artistic2]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-artistic2]-[target-lic-ASL1]"/>
+            <situation id="[comp-lic-artistic2]-[target-lic-ASL2]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-ASL1]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-ASL2]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-Artistic2]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-LGPL2.1+]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-LGPL3+]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-MPL]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-CDDL]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-CPL-EPL]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[target-lic-ASL1]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[target-lic-ASL2]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[target-lic-Artistic2]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[target-lic-MPL]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[target-lic-CPL-EPL]"/>
+            <situation id="[comp-lic-lgpl3+]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-lgpl3+]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-lgpl3+]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-lgpl3+]-[target-lic-ASL1]"/>
+            <situation id="[comp-lic-lgpl3+]-[target-lic-ASL2]"/>
+            <situation id="[comp-lic-lgpl3+]-[target-lic-Artistic2]"/>
+            <situation id="[comp-lic-lgpl3+]-[target-lic-LGPL2.1]"/>
+            <situation id="[comp-lic-lgpl3+]-[target-lic-LGPL2.1+]"/>
+            <situation id="[comp-lic-lgpl3+]-[target-lic-MPL]"/>
+            <situation id="[comp-lic-lgpl3+]-[target-lic-CDDL]"/>
+            <situation id="[comp-lic-lgpl3+]-[target-lic-CPL-EPL]"/>
+            <situation id="[comp-lic-lgpl3+]-[target-lic-EUPL]"/>
+            <situation id="[comp-lic-lgpl3+]-[target-lic-GPL2]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-ASL1]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-ASL2]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-Artistic2]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-LGPL2.1]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-LGPL2.1+]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-LGPL3+]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-CDDL]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-CPL-EPL]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-EUPL]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-GPL2]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-GPL2+]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-GPL3]"/>
+            <situation id="[comp-lic-mpl]-[target-lic-AGPL3]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-ASL1]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-ASL2]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-Artistic2]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-LGPL2.1]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-LGPL2.1+]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-LGPL3+]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-MPL]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-CPL-EPL]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-EUPL]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-GPL2]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-GPL2+]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-GPL3]"/>
+            <situation id="[comp-lic-cddl]-[target-lic-AGPL3]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-ASL1]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-ASL2]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-Artistic2]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-LGPL2.1]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-LGPL2.1+]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-LGPL3+]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-MPL]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-CDDL]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-EUPL]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-GPL2]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-GPL2+]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-GPL3]"/>
+            <situation id="[comp-lic-cpl-epl]-[target-lic-AGPL3]"/>
+            <situation id="[comp-lic-eupl]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-eupl]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-eupl]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-eupl]-[target-lic-ASL1]"/>
+            <situation id="[comp-lic-eupl]-[target-lic-ASL2]"/>
+            <situation id="[comp-lic-eupl]-[target-lic-Artistic2]"/>
+            <situation id="[comp-lic-eupl]-[target-lic-LGPL3+]"/>
+            <situation id="[comp-lic-eupl]-[target-lic-GPL3]"/>
+            <situation id="[comp-lic-eupl]-[target-lic-AGPL3]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-ASL1]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-ASL2]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-Artistic2]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-LGPL2.1]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-LGPL2.1+]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-LGPL3+]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-MPL]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-CDDL]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-CPL-EPL]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-EUPL]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-GPL3]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-AGPL3]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-ASL1]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-ASL2]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-Artistic2]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-LGPL2.1]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-LGPL2.1+]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-LGPL3+]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-MPL]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-CDDL]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-CPL-EPL]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-EUPL]"/>
+            <situation id="[comp-lic-gpl2+]-[target-lic-GPL2]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-ASL1]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-ASL2]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-Artistic2]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-LGPL2.1]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-LGPL2.1+]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-LGPL3+]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-MPL]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-CDDL]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-CPL-EPL]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-EUPL]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-GPL2]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-GPL2+]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-MIT]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-BSD4]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-BSD3]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-ASL1]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-ASL2]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-Artistic2]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-LGPL2.1]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-LGPL2.1+]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-LGPL3+]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-MPL]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-CDDL]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-CPL-EPL]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-EUPL]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-GPL2]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-GPL2+]"/>
+            <situation id="external-incompatibility"/>
+            <situation id="licenses-are-equal"/>
+            <situation id="percentage-of-equal-license"/>
+            <situation id="percentage-of-compatible-licenses"/>
+            <situation id="fraction-of-license-types"/>
+            <situation id="affinity-indicator-1"/>
+            <situation id="affinity-indicator-2"/>
+            <situation id="cenatic-risk-situation"/>
+            <situation id="[comp-lic-lgpl2.1+]-[target-lic-CDDL]"/>
+            <situation id="[comp-lic-agpl3]-[target-lic-GPL3]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-AGPL3]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-GPL2]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-GPL3]"/>
+            <situation id="[comp-lic-gpl3]-[target-lic-AGPL3]"/>
+            <situation id="[comp-lic-gpl2]-[target-lic-GPL2+]"/>
+            <situation id="[comp-lic-lgpl2.1]-[target-lic-GPL2+]"/>
+            <situation id="def-sit-MIT"/>
+            <situation id="def-sit-BSD4"/>
+            <situation id="def-sit-BSD3"/>
+            <situation id="def-sit-ASL1"/>
+            <situation id="def-sit-ASL2"/>
+            <situation id="def-sit-Artistic2"/>
+            <situation id="def-sit-LGPL2.1"/>
+            <situation id="def-sit-LGPL2.1+"/>
+            <situation id="def-sit-LGPL3+"/>
+            <situation id="def-sit-MPL"/>
+            <situation id="def-sit-CDDL"/>
+            <situation id="def-sit-CPL-EPL"/>
+            <situation id="def-sit-EUPL"/>
+            <situation id="def-sit-GPL2"/>
+            <situation id="def-sit-GPL2+"/>
+            <situation id="def-sit-GPL3"/>
+            <situation id="def-sit-AGPL3"/>
+            <situation id="[comp-lic-bsd4]-[def-sit-LGPL2.1]"/>
+            <situation id="[comp-lic-bsd4]-[def-sit-LGPL2.1+]"/>
+            <situation id="[comp-lic-bsd4]-[def-sit-LGPL3+]"/>
+            <situation id="[comp-lic-bsd4]-[def-sit-GPL2]"/>
+            <situation id="[comp-lic-bsd4]-[def-sit-GPL2+]"/>
+            <situation id="[comp-lic-bsd4]-[def-sit-GPL3]"/>
+            <situation id="[comp-lic-bsd4]-[def-sit-AGPL3]"/>
+            <situation id="[comp-lic-asl1]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-asl1]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-asl1]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-asl1]-[def-sit-LGPL2.1]"/>
+            <situation id="[comp-lic-asl1]-[def-sit-LGPL2.1+]"/>
+            <situation id="[comp-lic-asl1]-[def-sit-LGPL3+]"/>
+            <situation id="[comp-lic-asl1]-[def-sit-GPL2]"/>
+            <situation id="[comp-lic-asl1]-[def-sit-GPL2+]"/>
+            <situation id="[comp-lic-asl1]-[def-sit-GPL3]"/>
+            <situation id="[comp-lic-asl1]-[def-sit-AGPL3]"/>
+            <situation id="[comp-lic-asl2]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-asl2]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-asl2]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-asl2]-[def-sit-ASL1]"/>
+            <situation id="[comp-lic-asl2]-[def-sit-GPL2]"/>
+            <situation id="[comp-lic-asl2]-[def-sit-GPL2+]"/>
+            <situation id="[comp-lic-artistic2]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-artistic2]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-artistic2]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-artistic2]-[def-sit-ASL1]"/>
+            <situation id="[comp-lic-artistic2]-[def-sit-ASL2]"/>
+            <situation id="[comp-lic-lgpl2.1]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-lgpl2.1]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-lgpl2.1]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-lgpl2.1]-[def-sit-ASL1]"/>
+            <situation id="[comp-lic-lgpl2.1]-[def-sit-ASL2]"/>
+            <situation id="[comp-lic-lgpl2.1]-[def-sit-Artistic2]"/>
+            <situation id="[comp-lic-lgpl2.1]-[def-sit-LGPL2.1+]"/>
+            <situation id="[comp-lic-lgpl2.1]-[def-sit-LGPL3+]"/>
+            <situation id="[comp-lic-lgpl2.1]-[def-sit-MPL]"/>
+            <situation id="[comp-lic-lgpl2.1]-[def-sit-CDDL]"/>
+            <situation id="[comp-lic-lgpl2.1]-[def-sit-CPL-EPL]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[def-sit-ASL1]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[def-sit-ASL2]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[def-sit-Artistic2]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[def-sit-MPL]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[def-sit-CDDL]"/>
+            <situation id="[comp-lic-lgpl2.1+]-[def-sit-CPL-EPL]"/>
+            <situation id="[comp-lic-lgpl3+]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-lgpl3+]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-lgpl3+]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-lgpl3+]-[def-sit-ASL1]"/>
+            <situation id="[comp-lic-lgpl3+]-[def-sit-ASL2]"/>
+            <situation id="[comp-lic-lgpl3+]-[def-sit-Artistic2]"/>
+            <situation id="[comp-lic-lgpl3+]-[def-sit-LGPL2.1]"/>
+            <situation id="[comp-lic-lgpl3+]-[def-sit-LGPL2.1+]"/>
+            <situation id="[comp-lic-lgpl3+]-[def-sit-MPL]"/>
+            <situation id="[comp-lic-lgpl3+]-[def-sit-CDDL]"/>
+            <situation id="[comp-lic-lgpl3+]-[def-sit-CPL-EPL]"/>
+            <situation id="[comp-lic-lgpl3+]-[def-sit-EUPL]"/>
+            <situation id="[comp-lic-lgpl3+]-[def-sit-GPL2]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-ASL1]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-ASL2]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-Artistic2]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-LGPL2.1]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-LGPL2.1+]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-LGPL3+]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-CDDL]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-CPL-EPL]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-EUPL]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-GPL2]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-GPL2+]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-GPL3]"/>
+            <situation id="[comp-lic-mpl]-[def-sit-AGPL3]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-ASL1]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-ASL2]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-Artistic2]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-LGPL2.1]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-LGPL2.1+]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-LGPL3+]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-MPL]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-CPL-EPL]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-EUPL]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-GPL2]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-GPL2+]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-GPL3]"/>
+            <situation id="[comp-lic-cddl]-[def-sit-AGPL3]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-ASL1]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-ASL2]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-Artistic2]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-LGPL2.1]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-LGPL2.1+]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-LGPL3+]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-MPL]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-CDDL]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-EUPL]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-GPL2]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-GPL2+]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-GPL3]"/>
+            <situation id="[comp-lic-cpl-epl]-[def-sit-AGPL3]"/>
+            <situation id="[comp-lic-eupl]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-eupl]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-eupl]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-eupl]-[def-sit-ASL1]"/>
+            <situation id="[comp-lic-eupl]-[def-sit-ASL2]"/>
+            <situation id="[comp-lic-eupl]-[def-sit-Artistic2]"/>
+            <situation id="[comp-lic-eupl]-[def-sit-LGPL3+]"/>
+            <situation id="[comp-lic-eupl]-[def-sit-GPL3]"/>
+            <situation id="[comp-lic-eupl]-[def-sit-AGPL3]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-ASL1]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-ASL2]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-Artistic2]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-LGPL2.1]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-LGPL2.1+]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-LGPL3+]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-MPL]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-CDDL]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-CPL-EPL]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-EUPL]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-GPL3]"/>
+            <situation id="[comp-lic-gpl2]-[def-sit-AGPL3]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-ASL1]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-ASL2]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-Artistic2]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-LGPL2.1]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-LGPL2.1+]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-LGPL3+]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-MPL]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-CDDL]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-CPL-EPL]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-EUPL]"/>
+            <situation id="[comp-lic-gpl2+]-[def-sit-GPL2]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-ASL1]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-ASL2]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-Artistic2]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-LGPL2.1]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-LGPL2.1+]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-LGPL3+]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-MPL]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-CDDL]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-CPL-EPL]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-EUPL]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-GPL2]"/>
+            <situation id="[comp-lic-gpl3]-[def-sit-GPL2+]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-MIT]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-BSD4]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-BSD3]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-ASL1]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-ASL2]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-Artistic2]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-LGPL2.1]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-LGPL2.1+]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-LGPL3+]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-MPL]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-CDDL]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-CPL-EPL]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-EUPL]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-GPL2]"/>
+            <situation id="[comp-lic-agpl3]-[def-sit-GPL2+]"/>
+            <situation id="MIT-locked"/>
+            <situation id="BSD4-locked"/>
+            <situation id="BSD3-locked"/>
+            <situation id="ASL1-locked"/>
+            <situation id="ASL2-locked"/>
+            <situation id="Artistic2-locked"/>
+            <situation id="LGPL2.1-locked"/>
+            <situation id="LGPL2.1+-locked"/>
+            <situation id="LGPL3+-locked"/>
+            <situation id="MPL-locked"/>
+            <situation id="CDDL-locked"/>
+            <situation id="CPL-EPL-locked"/>
+            <situation id="EUPL-locked"/>
+            <situation id="GPL2-locked"/>
+            <situation id="GPL2+-locked"/>
+            <situation id="GPL3-locked"/>
+            <situation id="AGPL3-locked"/>
+            <situation id="low-integration"/>
+        </entities>
+    </model>
+    <script><![CDATA[function calcCenaticAffinityRisk( sources ) {
+var n_of_lic = program.getScenario().getConstraint( "NLicenses", "st" );
+var n_of_eq_lic = program.getScenario().getConstraint( "NEqualLicenses", "st" );
+var n_of_comp_lic = program.getScenario().getConstraint( "NCompatibleLicenses", "st" );
+var n_of_lic_ty = program.getScenario().getConstraint( "NLicenseTypes", "st" );
+
+var n1 = Number(n_of_eq_lic) / Number(n_of_lic);
+var n2 = Number(n_of_comp_lic) / Number(n_of_lic);
+var n3_1 = (Number(n_of_lic_ty) + Number(1));
+var n3_2 = (n3_1 / Number(n_of_lic)) * 100;
+var n3 = (1 / n3_2 );
+
+var r = 1 - ( Number(n1) + Number( n2 * n3) );
+
+return fx.e( r, 0 );
+}
+
+function atLeastOne( sources ) {
+var i;
+for( i = 0; i < sources.size(); i++ ) {
+  if( sources.get(i).getPositive() > 0 ) {
+    return fx.e( 1, 0 );
+    }
+  }
+return fx.e( 0, 0 );
+}
+
+var n_of_eq_lic = program.getScenario().getConstraint( "NEqualLicenses", "st" );
+var n_of_comp_lic = program.getScenario().getConstraint( "NCompatibleLicenses", "st" );
+
+program.getScenario().setConstraint( "NLicenses", "st", Number(n_of_eq_lic) + Number(n_of_comp_lic) );]]></script>
+</riscoss>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <satisfy weight="0.2" source="fuzzified:github:repository-has_wiki" target="documentation-unavailable" function="fx.join.avg(sources)"/>
+            <satisfy source="fuzzified:github:repository-ci_link" target="CI-not-available"/>
+            <satisfy source="fuzzified:i:low_popularity" target="repository-not-popular" function="fx.join.or(sources)"/>
+            <satisfy source="documentation-unavailable,high-open-closed-issues-ratio,inactive-repository,license-unavailable,repository-not-popular" target="unmaintained-repository" function="fx.join.avg(sources)"/>
+            <satisfy source="fuzzified:github:repository-license" target="license-unavailable"/>
+            <satisfy source="fuzzified:i:low_forks_count" target="inactive-repository"/>
+            <satisfy source="fuzzified:github:repository-size" target="large-repository"/>
+            <expose source="unmaintained-repository" target="Obsolescence Risk"/>
+            <expose source="Analysability Risk,Bug Risk,Obsolescence Risk" target="Maintenance Risk" function="fx.join.or(sources)"/>
+            <expose source="CI-not-available,high-open-closed-issues-ratio,large-repository,young-repository" target="Bug Risk" function="fx.join.avg(sources)"/>
+            <expose source="documentation-unavailable,large-repository" target="Analysability Risk" function="fx.join.or(sources)"/>
+            <indicate source="github:repository-closed_issues" target="fuzzified:github:repository-closed_issues"/>
+            <indicate source="github:repository-size" target="fuzzified:github:repository-size" function="fx.join.avg(fx.transform.asynt(sources,1000))"/>
+            <indicate source="github:repository-license" target="fuzzified:github:repository-license" function="zeroes( sources )"/>
+            <indicate source="github:repository-updated_at" target="fuzzified:github:repository-updated_at"/>
+            <indicate source="github:repository-has_wiki" target="fuzzified:github:repository-has_wiki" function="zeroes( sources )"/>
+            <indicate source="github:repository-ci_link" target="fuzzified:github:repository-ci_link" function="zeroes( sources )"/>
+            <indicate source="github:repository-open_issues" target="fuzzified:github:repository-open_issues"/>
+            <indicate source="i:low_forks_count" target="fuzzified:i:low_forks_count" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="i:low_popularity" target="fuzzified:i:low_popularity" function="fx.join.avg(fx.transform.tanh(sources,1))"/>
+            <indicate source="github:repository-created_at" target="fuzzified:github:repository-created_at"/>
+        </relationships>
+        <entities>
+            <indicator id="github:repository-size">
+                <property name="input" value="true"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-ci_link">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-license">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-watchers">
+                <property name="input" value="true"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-stargazers">
+                <property name="input" value="true"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-contributors">
+                <property name="input" value="true"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-subscribers">
+                <property name="input" value="true"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-has_wiki">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-updated_at">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="github:repository-forks_count">
+                <property name="input" value="true"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-open_issues">
+                <property name="input" value="true"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-closed_issues">
+                <property name="input" value="true"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-created_at">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="i:low_popularity">
+                <property name="input" value="false"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="i:low_forks_count">
+                <property name="input" value="false"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="i:inactivity">
+                <property name="input" value="false"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <event id="Maintenance Risk">
+                <property name="output" value="true"/>
+            </event>
+            <event id="Bug Risk">
+                <property name="output" value="true"/>
+            </event>
+            <event id="Obsolescence Risk">
+                <property name="output" value="true"/>
+            </event>
+            <event id="Analysability Risk">
+                <property name="output" value="true"/>
+            </event>
+            <situation id="unmaintained-repository"/>
+            <situation id="large-repository"/>
+            <situation id="CI-not-available"/>
+            <situation id="license-unavailable"/>
+            <situation id="repository-not-popular"/>
+            <situation id="documentation-unavailable"/>
+            <situation id="inactive-repository"/>
+            <situation id="high-open-closed-issues-ratio"/>
+            <situation id="young-repository"/>
+            <situation id="fuzzified:github:repository-ci_link"/>
+            <situation id="fuzzified:github:repository-size"/>
+            <situation id="fuzzified:github:repository-license"/>
+            <situation id="fuzzified:github:repository-has_wiki"/>
+            <situation id="fuzzified:github:repository-updated_at"/>
+            <situation id="fuzzified:github:repository-open_issues"/>
+            <situation id="fuzzified:github:repository-closed_issues"/>
+            <situation id="fuzzified:github:repository-created_at"/>
+            <situation id="fuzzified:i:low_popularity"/>
+            <situation id="fuzzified:i:low_forks_count"/>
+        </entities>
+    </model>
+    <script><![CDATA[function zeroes( sources ) {
+  for( i = 0; i < sources.size(); i++ ) {
+    if( sources.get( i ).getPositive() > 0 ) return fx.e( 0, 0 );
+  }
+  return fx.e( 1, 0 );
+}
+
+function inverse( sources ) {
+  if( sources.size() < 1 ) return fx.e( 0, 0 );
+  return fx.e( 1 - sources.get(0).getPositive(), 0 );
+}
+
+var watchers = program.getScenario().getConstraint( "github:repository-watchers", "st" );
+var stargazers = program.getScenario().getConstraint( "github:repository-stargazers", "st" );
+var contributors = program.getScenario().getConstraint( "github:repository-contributors", "st" );
+var subscribers = program.getScenario().getConstraint( "github:repository-subscribers", "st" );
+var forks = program.getScenario().getConstraint( "github:repository-forks_count", "st" );
+
+var low_pop = Number(watchers) + Number(stargazers) + Number(contributors) + Number(subscribers);
+low_pop = low_pop /4;
+
+//println( low_pop );
+
+//program.getScenario().setConstraint( "i:low_popularity", "st", low_pop );
+program.getScenario().setConstraint( "i:low_popularity", "st", 1 - fx.asynt2( Number(low_pop), 10 ) );
+program.getScenario().setConstraint( "i:low_forks_count", "st", 1 - fx.asynt2( Number(forks), 10 ) );
+
+ptr( "i:low_popularity" );
+ptr( "i:low_forks_count" );
+
+function ptr( name ) {
+  println( name + ": " + program.getScenario().getConstraint( name, "st" ) );
+}]]></script>
+</riscoss>

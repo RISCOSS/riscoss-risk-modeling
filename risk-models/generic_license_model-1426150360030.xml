@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <satisfy source="license-is-public-domain,license-is-unknown,license-not-provided" target="license-is-unclear" function="fx.join.or(sources)"/>
+            <satisfy source="license-is-permissive,license-is-public-domain" target="license-does-not- put-restrictions" function="fx.join.or(sources)"/>
+            <expose source="license-is-commercial" target="impossibility-to-use-as-oss-component"/>
+            <expose source="license-uncertainty,advertisement-restrictions,impossibility-to-use-as-oss-component,inability-to-modify-the-oss-component,need-to-release-product-under-copyleft-license" target="license-violation" function="fx.join.or(sources)"/>
+            <expose source="license-is-copyleft-with-linking" target="inability-to-modify-the-oss-component"/>
+            <expose source="files-with-ads-required-liceses" target="advertisement-restrictions"/>
+            <expose source="license-is-copyleft" target="need-to-release-product-under-copyleft-license"/>
+            <expose source="license-is-unclear,too-many-different-licenses" target="license-uncertainty" function="fx.join.or(sources)"/>
+            <indicate source="number-of-different-licenses" target="too-many-different-licenses" function="fx.join.avg(fx.transform.asynt(sources,10))"/>
+            <indicate source="percentage-of-files-with-permissive-license" target="license-is-permissive"/>
+            <indicate source="percentage-of-files-without-license" target="license-not-provided"/>
+            <indicate source="files-with-commercial-license" target="license-is-commercial"/>
+            <indicate source="copyleft-licenses-with-linking" target="license-is-copyleft-with-linking"/>
+            <indicate source="files-with-unknown-license" target="license-is-unknown"/>
+            <indicate source="copyleft-licenses" target="license-is-copyleft"/>
+            <indicate source="files-with-ads-required-liceses" target="license-requires-ads"/>
+            <indicate source="percentage-of-files-with-public-domain-license" target="license-is-public-domain"/>
+            <protect source="license-does-not- put-restrictions" target="license-violation"/>
+            <protect source="license-is-commercial" target="need-to-release-product-under-copyleft-license"/>
+        </relationships>
+        <entities>
+            <indicator id="files-with-ads-required-liceses">
+                <property name="input" value="true"/>
+                <property name="label" value="Percentage of files with a license that require some kind of advertisement or attribution disclaimer"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="copyleft-licenses">
+                <property name="input" value="true"/>
+                <property name="label" value="Percentage of files covered by a copyleft license"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="files-with-unknown-license">
+                <property name="input" value="true"/>
+                <property name="label" value="Percentage of files covered by an unknown license"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="copyleft-licenses-with-linking">
+                <property name="input" value="true"/>
+                <property name="label" value="Percentage of files covered by a copyleft licenses which permits linking"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="percentage-of-files-with-permissive-license">
+                <property name="input" value="true"/>
+                <property name="label" value="Percentage of files covered by a permissive license"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="percentage-of-files-with-public-domain-license">
+                <property name="input" value="true"/>
+                <property name="label" value="Percentage of files covered by a public domain license"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="percentage-of-files-without-license">
+                <property name="input" value="true"/>
+                <property name="label" value="Percentage of files not covered by a license (or the license has not been found)"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="files-with-commercial-license">
+                <property name="input" value="true"/>
+                <property name="label" value="Percentage of files with a commercial license"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="number-of-different-licenses">
+                <property name="input" value="true"/>
+                <property name="label" value="Number of different license types"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <event id="license-violation">
+                <property name="description" value="Summarizes the risk that comes form other risks"/>
+                <property name="label" value="License violation risk"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="need-to-release-product-under-copyleft-license">
+                <property name="description" value="The adopter may want to release under a more permissive license or embed the component into commercial software, so a copyleft license may be a danger"/>
+                <property name="label" value="Need to release product under copyleft license"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="inability-to-modify-the-oss-component">
+                <property name="description" value="It is possible to embed the component into a product with a less permissive license, but in case a modification to the sources is needed, this will require a revision of licensing"/>
+                <property name="label" value="Inability to modify the OSS component"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="impossibility-to-use-as-oss-component">
+                <property name="description" value="The component contains proprietary code"/>
+                <property name="label" value="Impossibility to use as OSS component"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="advertisement-restrictions">
+                <property name="description" value="It may be required for the final product to be accompanied IP disclaimers"/>
+                <property name="label" value="Advertisement restrictions"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="license-uncertainty">
+                <property name="description" value="Licensing of the component is unknown or conflicting"/>
+                <property name="label" value="License uncertainty"/>
+                <property name="output" value="true"/>
+            </event>
+            <situation id="too-many-different-licenses"/>
+            <situation id="license-is-copyleft"/>
+            <situation id="license-is-unknown"/>
+            <situation id="license-is-copyleft-with-linking"/>
+            <situation id="license-is-permissive"/>
+            <situation id="license-is-public-domain"/>
+            <situation id="license-not-provided"/>
+            <situation id="license-requires-ads"/>
+            <situation id="license-is-commercial"/>
+            <situation id="license-is-unclear"/>
+            <situation id="license-does-not- put-restrictions"/>
+        </entities>
+    </model>
+</riscoss>

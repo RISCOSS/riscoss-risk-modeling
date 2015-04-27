@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships/>
+        <entities>
+            <indicator id="#complexity">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#class_complexity">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#file_complexity">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#function_complexity">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#file_cycles">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#file_edges_weight">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#package_tangles">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#file_tangles">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#package_cycles">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#package_feedback_edges">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#package_tangle_index">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#package_edges_weight">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#file_feedback_edges">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#comment_lines">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+        </entities>
+    </model>
+</riscoss>
