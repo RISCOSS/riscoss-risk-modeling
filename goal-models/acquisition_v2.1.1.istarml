@@ -65,7 +65,7 @@
 				<ielement id='GOAL-EasyLicenseManagement' name='Easy license management' type='softgoal' output="true"/>
 				<ielement id='GOAL-LawCompliance' name='Law compliance' type='goal' output="true">
 					<ielementLink type='means-end'>
-						<ielement iref='GOAL-EasyLicenseManagement'/>
+						<ielement iref='GOAL-LicenseCompatible'/>
 					</ielementLink>
 				</ielement>
             </boundary>
