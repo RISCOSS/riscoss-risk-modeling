@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <satisfy source="fuzzified:SkillRel" target="ability-in-integrating-modifications"/>
+            <satisfy source="fuzzified:github:repository-size" target="large-repository"/>
+            <satisfy source="fuzzified:github:repository-has_license" target="license-unavailable"/>
+            <satisfy weight="0.2" source="fuzzified:github:repository-has_wiki" target="documentation-unavailable" function="fx.join.avg(sources)"/>
+            <satisfy source="documentation-unavailable,high-open-closed-issues-ratio,inactive-repository,license-unavailable,repository-not-popular" target="unmaintained-repository" function="fx.join.avg(sources)"/>
+            <satisfy source="fuzzified:SkillPatch" target="ability-in-patching-code"/>
+            <satisfy source="fuzzified:github:repository-ci_link" target="CI-not-available"/>
+            <satisfy source="fuzzified:SkillComm" target="ability-of-interaction-with-community"/>
+            <satisfy source="fuzzified:i:low_popularity" target="repository-not-popular" function="fx.join.or(sources)"/>
+            <satisfy source="fuzzified:i:low_forks_count" target="inactive-repository"/>
+            <expose source="documentation-unavailable,large-repository" target="Analysability Risk" function="fx.join.or(sources)"/>
+            <expose source="unmaintained-repository" target="Obsolescence Risk"/>
+            <expose source="Analysability Risk,Bug Risk,Obsolescence Risk" target="Maintenance Risk" function="fx.join.or(sources)"/>
+            <expose source="CI-not-available,high-open-closed-issues-ratio,large-repository,young-repository" target="Bug Risk" function="fx.join.avg(sources)"/>
+            <indicate source="github:repository-created_at" target="fuzzified:github:repository-created_at"/>
+            <indicate source="SkillRel" target="fuzzified:SkillRel" function="fx.join.avg(fx.transform.asynt(sources))"/>
+            <indicate source="github:repository-has_wiki" target="fuzzified:github:repository-has_wiki" function="zeroes( sources )"/>
+            <indicate source="i:low_popularity" target="fuzzified:i:low_popularity" function="fx.join.avg(fx.transform.tanh(sources,1))"/>
+            <indicate source="github:repository-open_issues" target="fuzzified:github:repository-open_issues"/>
+            <indicate source="github:repository-closed_issues" target="fuzzified:github:repository-closed_issues"/>
+            <indicate source="github:repository-size" target="fuzzified:github:repository-size" function="fx.join.avg(fx.transform.asynt(sources,1000))"/>
+            <indicate source="github:repository-has_license" target="fuzzified:github:repository-has_license" function="zeroes( sources )"/>
+            <indicate source="github:repository-ci_link" target="fuzzified:github:repository-ci_link" function="zeroes( sources )"/>
+            <indicate source="i:low_forks_count" target="fuzzified:i:low_forks_count" function="fx.join.avg(fx.transform.tanh(sources))"/>
+            <indicate source="github:repository-updated_at" target="fuzzified:github:repository-updated_at"/>
+            <indicate source="SkillPatch" target="fuzzified:SkillPatch" function="fx.join.avg(fx.transform.asynt(sources))"/>
+            <indicate source="SkillComm" target="fuzzified:SkillComm" function="fx.join.avg(fx.transform.asynt(sources))"/>
+            <protect source="ability-of-interaction-with-community" target="Obsolescence Risk"/>
+            <protect source="ability-in-patching-code" target="Bug Risk"/>
+            <protect source="ability-in-integrating-modifications" target="Maintenance Risk"/>
+        </relationships>
+        <entities>
+            <indicator id="github:repository-size">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of files stored in the repository"/>
+                <property name="label" value="Size of the repository"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-ci_link">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="Link to TravisCI service (www.travis-ci.org). TravisCI is a continuous integration  framework, which automatically tests the build of a given Github project. Although this is not   directly contained in the Github API, it can be extracted from the list of files present in the   repository"/>
+                <property name="label" value="Link to Travis CI"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-has_license">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="true if the developer(s) has specified a license according to the Github license  specification rules"/>
+                <property name="label" value="Presence of a license"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-watchers_count">
+                <property name="input" value="true"/>
+                <property name="description" value="Watching a Repository registers the user to receive notifications on new discussions, as well as events in the user?s activity feed"/>
+                <property name="label" value="Number of watchers"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-stargazers_count">
+                <property name="input" value="true"/>
+                <property name="description" value="Repository Starring is a feature that lets users bookmark repositories. Stars are shown next to repositories to show an approximate level of interest. Stars have no effect on notifications or the activity feed"/>
+                <property name="label" value="Number of stargazers"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-contributors">
+                <property name="input" value="true"/>
+                <property name="description" value=""/>
+                <property name="label" value="Number of contributors"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-subscribers_count">
+                <property name="input" value="true"/>
+                <property name="description" value=""/>
+                <property name="label" value="Number of subscribers"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-has_wiki">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="description" value="true is a wiki has been set up in the repository."/>
+                <property name="label" value="Presence of a wiki"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-updated_at">
+                <property name="input" value="true"/>
+                <property name="description" value="Time stamp of the last activity recorded in the repository."/>
+                <property name="label" value="Date of last update"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="github:repository-forks_count">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of forks"/>
+                <property name="label" value="Number of forks"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-open_issues">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of issues currently open"/>
+                <property name="label" value="Number of open issues"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-closed_issues">
+                <property name="input" value="true"/>
+                <property name="description" value=""/>
+                <property name="label" value="Number of closed issues"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-created_at">
+                <property name="input" value="true"/>
+                <property name="description" value="This indicator represents the time stamp of the creation date of the repository.  The lower is the value of created_at, the older is the repository"/>
+                <property name="label" value="Date of repository creation"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="i:low_popularity">
+                <property name="input" value="false"/>
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="i:low_forks_count">
+                <property name="input" value="false"/>
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="i:inactivity">
+                <property name="input" value="false"/>
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="SkillPatch">
+                <property name="input" value="true"/>
+                <property name="description" value="Competence in patching OSS  components. Levels are: 0: Low, 0.5: Medium, 1:High"/>
+                <property name="label" value="Skill in patching the code"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="SkillComm">
+                <property name="input" value="true"/>
+                <property name="description" value="Competence in OSS  communication practices tool. Values: 0: Low  0.5: Medium  1:High"/>
+                <property name="label" value="Skill in communication"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="SkillRel">
+                <property name="input" value="true"/>
+                <property name="description" value="Competence in OSS release  practices tolos. Values: 0: Low  0.5: Medium  1:High"/>
+                <property name="label" value=""/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <event id="Maintenance Risk">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Bug Risk">
+                <property name="description" value="This type of risk refers to possible presence of bugs in the code due to either the large repository (difficult to  be kept under control), or to a high open/closed issue ratio, which may mean low effectiveness in closing bugs"/>
+                <property name="label" value=""/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Obsolescence Risk">
+                <property name="description" value="This type of risk mainly refers to the lack of activeness of the development  community, which causes the risk of the software component being out-of-date"/>
+                <property name="label" value=""/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Analysability Risk">
+                <property name="description" value="This type of risk refers to the (lack of) quality of the software to be easily  understood from the adopter"/>
+                <property name="label" value=""/>
+                <property name="output" value="true"/>
+            </event>
+            <situation id="unmaintained-repository">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="large-repository">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="CI-not-available">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="license-unavailable">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="repository-not-popular">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="documentation-unavailable">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="inactive-repository">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="high-open-closed-issues-ratio">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="young-repository">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:github:repository-ci_link">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:github:repository-size">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:github:repository-has_license">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:github:repository-has_wiki">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:github:repository-updated_at">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:github:repository-open_issues">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:github:repository-closed_issues">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:github:repository-created_at">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:i:low_popularity">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:i:low_forks_count">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:SkillPatch">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:SkillComm">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:SkillRel">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="ability-in-patching-code">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="ability-in-integrating-modifications">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="ability-of-interaction-with-community">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+        </entities>
+    </model>
+    <script><![CDATA[function zeroes( sources ) {
+  for( i = 0; i < sources.size(); i++ ) {
+    if( sources.get( i ).getPositive() > 0 ) return fx.e( 0, 0 );
+  }
+  return fx.e( 1, 0 );
+}
+
+function inverse( sources ) {
+  if( sources.size() < 1 ) return fx.e( 0, 0 );
+  return fx.e( 1 - sources.get(0).getPositive(), 0 );
+}
+
+var watchers = program.getScenario().getConstraint( "github:repository-watchers_count", "st" );
+var stargazers = program.getScenario().getConstraint( "github:repository-stargazers_count", "st" );
+var contributors = program.getScenario().getConstraint( "github:repository-contributors", "st" );
+var subscribers = program.getScenario().getConstraint( "github:repository-subscribers_count", "st" );
+var forks = program.getScenario().getConstraint( "github:repository-forks_count", "st" );
+
+var low_pop = Number(watchers) + Number(stargazers) + Number(contributors) + Number(subscribers);
+low_pop = low_pop /4;
+
+//println( low_pop );
+
+//program.getScenario().setConstraint( "i:low_popularity", "st", low_pop );
+program.getScenario().setConstraint( "i:low_popularity", "st", 1 - fx.asynt2( Number(low_pop), 10 ) );
+program.getScenario().setConstraint( "i:low_forks_count", "st", 1 - fx.asynt2( Number(forks), 10 ) );
+
+
+function ptr( name ) {
+  println( name + ": " + program.getScenario().getConstraint( name, "st" ) );
+}]]></script>
+</riscoss>

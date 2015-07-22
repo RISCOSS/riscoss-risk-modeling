@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <satisfy weight="1.0" source="high-duplication-ranking" target="missed-duplicate-location-that-require-modification"/>
+            <satisfy weight="-1.0" source="high-man-year-ranking-via-back-firing-function-points" target="large-code-bases-hard-to-understand"/>
+            <satisfy source="high-duplication-ranking" target="duplicate-code-locations-take-longer-to-identify"/>
+            <satisfy source="high-rating-of-complexity-risk-distribution" target="complex-code-hard-to-understand"/>
+            <satisfy weight="1.0" source="high-unit-test-ranking" target="system-becomes-inconsistent-after-modifications"/>
+            <satisfy source="high-rating-of-complexity-risk-distribution" target="complex-code-hard-to-test"/>
+            <expose source="missed-duplicate-location-that-require-modification" target="changeability-risk" function="fx.join.avg(sources)"/>
+            <expose source="system-becomes-inconsistent-after-modifications" target="stability-risk" function="fx.join.avg(sources)"/>
+            <expose source="analysability-risk,changeability-risk,stability-risk,testability-risk" target="maintainability-risk" function="fx.join.avg(sources)"/>
+            <expose source="large-code-bases-hard-to-understand,complex-code-hard-to-test,duplicate-code-locations-take-longer-to-identify" target="analysability-risk" function="fx.join.avg(sources)"/>
+            <expose source="complex-code-hard-to-test" target="testability-risk" function="fx.join.avg(sources)"/>
+            <indicate source="Sonar complexity_Rank_Java" target="high-rating-of-complexity-risk-distribution" function="fx.join.avg(fx.transform.range(sources,-2,2))"/>
+            <indicate source="Sonar duplication_Rank" target="high-duplication-ranking" function="fx.join.avg(fx.transform.range(sources,-2,2))"/>
+            <indicate source="Sonar volume_Rank_Java" target="high-man-year-ranking-via-back-firing-function-points" function="fx.join.avg(fx.transform.range(sources,-2,2))"/>
+            <indicate source="Sonar coverage_Rank" target="high-unit-test-ranking" function="fx.join.avg(fx.transform.range(sources,-2,2))"/>
+        </relationships>
+        <entities>
+            <indicator id="Sonar volume_Rank_Java">
+                <property name="min" value="-2"/>
+                <property name="input" value="true"/>
+                <property name="max" value="2"/>
+                <property name="datatype" value="integer"/>
+                <property name="step" value="1"/>
+            </indicator>
+            <indicator id="Sonar complexity_Rank_Java">
+                <property name="min" value="-2"/>
+                <property name="input" value="true"/>
+                <property name="max" value="2"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="Sonar duplication_Rank">
+                <property name="min" value="-2"/>
+                <property name="input" value="true"/>
+                <property name="max" value="2"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="Sonar coverage_Rank">
+                <property name="min" value="-2"/>
+                <property name="input" value="true"/>
+                <property name="max" value="2"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <event id="maintainability-risk">
+                <property name="label" value="Maintainability risk"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="analysability-risk">
+                <property name="label" value="Analysability risk"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="changeability-risk">
+                <property name="label" value="Changeability risk"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="stability-risk">
+                <property name="label" value="Stability risk"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="testability-risk">
+                <property name="label" value="Testability risk"/>
+                <property name="output" value="true"/>
+            </event>
+            <situation id="large-code-bases-hard-to-understand"/>
+            <situation id="large-code-uints-hard-to-understand"/>
+            <situation id="complex-code-hard-to-understand"/>
+            <situation id="duplicate-code-locations-take-longer-to-identify"/>
+            <situation id="complex-code-hard-to-test"/>
+            <situation id="missed-duplicate-location-that-require-modification"/>
+            <situation id="system-becomes-inconsistent-after-modifications"/>
+            <situation id="unit-tests-not-testing-anything"/>
+            <situation id="high-man-year-ranking-via-back-firing-function-points"/>
+            <situation id="high-unit-size-ranking"/>
+            <situation id="high-rating-of-complexity-risk-distribution"/>
+            <situation id="high-duplication-ranking"/>
+            <situation id="high-unit-test-ranking"/>
+        </entities>
+    </model>
+</riscoss>
