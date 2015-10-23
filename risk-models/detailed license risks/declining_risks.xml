@@ -1,126 +1,126 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
     <model>
         <relationships>
-            <expose source="fuzzified:#obsolete-target" target="Obsolete Target Licenses"/>
             <expose source="fuzzified:#obsolete-components" target="Obsolete Component Licenses"/>
             <expose source="fuzzified:#declining-components" target="Declining Component Licenses"/>
             <expose source="fuzzified:#declining-target" target="Declining Target License"/>
-            <indicate source="#usage-factor-of-BSD4,#max-usage" target="#normalized-usage-of-BSD4" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-BSD4','#max-usage')"/>
-            <indicate source="#target:LGPL2.1+,#licenses,#normalized-usage-of-LGPL2.1+" target="#trending-factor-of-target-LGPL2.1+" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-LGPL2.1+','#target:LGPL2.1+')"/>
-            <indicate source="#obsolete-target" target="fuzzified:#obsolete-target" function="decl_avg(relation)"/>
-            <indicate source="#count:MIT,#normalized-modernity-MIT,#licenses" target="#modernity-factor-MIT" function="decl_calcModernityFactor(relation,'#count:MIT','#normalized-modernity-MIT','#licenses')"/>
-            <indicate source="#target:ASL2,#normalized-modernity-ASL2,#target-licenses" target="#target-modernity-factor-ASL2" function="decl_calcModernityFactor(relation,'#target:ASL2','#normalized-modernity-ASL2','#target-licenses')"/>
-            <indicate source="#usage-factor-of-GPL2,#max-usage" target="#normalized-usage-of-GPL2" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-GPL2','#max-usage')"/>
-            <indicate source="#count:Artistic2,#licenses,#normalized-usage-of-Artistic2" target="#trending-factor-of-Artistic2" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-Artistic2','#count:Artistic2','#licenses')"/>
-            <indicate source="#usage-factor-of-EUPL,#max-usage" target="#normalized-usage-of-EUPL" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-EUPL','#max-usage')"/>
-            <indicate source="#obsolete-components" target="fuzzified:#obsolete-components" function="decl_avg(relation)"/>
-            <indicate source="#count:ASL2,#normalized-modernity-ASL2,#licenses" target="#modernity-factor-ASL2" function="decl_calcModernityFactor(relation,'#count:ASL2','#normalized-modernity-ASL2','#licenses')"/>
-            <indicate source="#target:CDDL,#licenses,#normalized-usage-of-CDDL" target="#trending-factor-of-target-CDDL" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-CDDL','#target:CDDL')"/>
-            <indicate source="#target:LGPL2.1+,#normalized-modernity-LGPL2.1+,#target-licenses" target="#target-modernity-factor-LGPL2.1+" function="decl_calcModernityFactor(relation,'#target:LGPL2.1+','#normalized-modernity-LGPL2.1+','#target-licenses')"/>
-            <indicate source="#count:GPL3,#licenses,#normalized-usage-of-GPL3" target="#trending-factor-of-GPL3" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-GPL3','#count:GPL3','#licenses')"/>
-            <indicate source="#target:Artistic2,#licenses,#normalized-usage-of-Artistic2" target="#trending-factor-of-target-Artistic2" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-Artistic2','#target:Artistic2')"/>
-            <indicate source="#target:BSD4,#licenses,#normalized-usage-of-BSD4" target="#trending-factor-of-target-BSD4" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-BSD4','#target:BSD4')"/>
-            <indicate source="#use-of-MIT,#use-of-BSD4,#use-of-BSD3,#use-of-ASL1,#use-of-ASL2,#use-of-Artistic2,#use-of-LGPL2.1,#use-of-LGPL2.1+,#use-of-LGPL3+,#use-of-MPL,#use-of-CDDL,#use-of-CPL-EPL,#use-of-EUPL,#use-of-GPL2,#use-of-GPL2+,#use-of-GPL3,#use-of-AGPL3" target="#min-use" function="decl_min(relation)"/>
-            <indicate source="#usage-factor-of-MPL,#max-usage" target="#normalized-usage-of-MPL" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-MPL','#max-usage')"/>
-            <indicate source="#target:ASL1,#licenses,#normalized-usage-of-ASL1" target="#trending-factor-of-target-ASL1" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-ASL1','#target:ASL1')"/>
-            <indicate source="#modernity-factor-MIT,#modernity-factor-BSD4,#modernity-factor-BSD3,#modernity-factor-ASL1,#modernity-factor-ASL2,#modernity-factor-Artistic2,#modernity-factor-LGPL2.1,#modernity-factor-LGPL2.1+,#modernity-factor-LGPL3+,#modernity-factor-MPL,#modernity-factor-CDDL,#modernity-factor-CPL-EPL,#modernity-factor-EUPL,#modernity-factor-GPL2,#modernity-factor-GPL2+,#modernity-factor-GPL3,#modernity-factor-AGPL3" target="#obsolete-components" function="decl_calcObsoleteComponentsIndex(relation)"/>
-            <indicate source="#target:GPL2+,#licenses,#normalized-usage-of-GPL2+" target="#trending-factor-of-target-GPL2+" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-GPL2+','#target:GPL2+')"/>
-            <indicate source="#use-of-CPL-EPL,#min-use" target="#usage-factor-of-CPL-EPL" function="decl_calcUsage(relation,'#use-of-CPL-EPL','#min-use')"/>
-            <indicate source="#count:MIT,#licenses,#normalized-usage-of-MIT" target="#trending-factor-of-MIT" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-MIT','#count:MIT','#licenses')"/>
-            <indicate source="#use-of-GPL2+,#min-use" target="#usage-factor-of-GPL2+" function="decl_calcUsage(relation,'#use-of-GPL2+','#min-use')"/>
-            <indicate source="#count:ASL1,#licenses,#normalized-usage-of-ASL1" target="#trending-factor-of-ASL1" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-ASL1','#count:ASL1','#licenses')"/>
-            <indicate source="#use-of-ASL1,#min-use" target="#usage-factor-of-ASL1" function="decl_calcUsage(relation,'#use-of-ASL1','#min-use')"/>
-            <indicate source="#usage-factor-of-ASL1,#max-usage" target="#normalized-usage-of-ASL1" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-ASL1','#max-usage')"/>
-            <indicate source="#usage-factor-of-LGPL2.1,#max-usage" target="#normalized-usage-of-LGPL2.1" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-LGPL2.1','#max-usage')"/>
-            <indicate source="#target-modernity-factor-MIT,#target-modernity-factor-BSD4,#target-modernity-factor-BSD3,#target-modernity-factor-ASL1,#target-modernity-factor-ASL2,#target-modernity-factor-Artistic2,#target-modernity-factor-LGPL2.1,#target-modernity-factor-LGPL2.1+,#target-modernity-factor-LGPL3+,#target-modernity-factor-MPL,#target-modernity-factor-CDDL,#target-modernity-factor-CPL-EPL,#target-modernity-factor-EUPL,#target-modernity-factor-GPL2,#target-modernity-factor-GPL2+,#target-modernity-factor-GPL3,#target-modernity-factor-AGPL3" target="#obsolete-target" function="decl_calcObsoleteComponentsIndex(relation)"/>
-            <indicate source="#use-of-LGPL3+,#min-use" target="#usage-factor-of-LGPL3+" function="decl_calcUsage(relation,'#use-of-LGPL3+','#min-use')"/>
-            <indicate source="#target:MPL,#licenses,#normalized-usage-of-MPL" target="#trending-factor-of-target-MPL" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-MPL','#target:MPL')"/>
-            <indicate source="#count:AGPL3,#normalized-modernity-AGPL3,#licenses" target="#modernity-factor-AGPL3" function="decl_calcModernityFactor(relation,'#count:AGPL3','#normalized-modernity-AGPL3','#licenses')"/>
-            <indicate source="#usage-factor-of-MIT,#usage-factor-of-BSD4,#usage-factor-of-BSD3,#usage-factor-of-ASL1,#usage-factor-of-ASL2,#usage-factor-of-Artistic2,#usage-factor-of-LGPL2.1,#usage-factor-of-LGPL2.1+,#usage-factor-of-LGPL3+,#usage-factor-of-MPL,#usage-factor-of-CDDL,#usage-factor-of-CPL-EPL,#usage-factor-of-EUPL,#usage-factor-of-GPL2,#usage-factor-of-GPL2+,#usage-factor-of-GPL3,#usage-factor-of-AGPL3" target="#max-usage" function="decl_max(relation)"/>
-            <indicate source="#count:MPL,#licenses,#normalized-usage-of-MPL" target="#trending-factor-of-MPL" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-MPL','#count:MPL','#licenses')"/>
-            <indicate source="#target:CPL-EPL,#licenses,#normalized-usage-of-CPL-EPL" target="#trending-factor-of-target-CPL-EPL" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-CPL-EPL','#target:CPL-EPL')"/>
-            <indicate source="#target:AGPL3,#normalized-modernity-AGPL3,#target-licenses" target="#target-modernity-factor-AGPL3" function="decl_calcModernityFactor(relation,'#target:AGPL3','#normalized-modernity-AGPL3','#target-licenses')"/>
-            <indicate source="#count:BSD3,#licenses,#normalized-usage-of-BSD3" target="#trending-factor-of-BSD3" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-BSD3','#count:BSD3','#licenses')"/>
-            <indicate source="#use-of-ASL2,#min-use" target="#usage-factor-of-ASL2" function="decl_calcUsage(relation,'#use-of-ASL2','#min-use')"/>
-            <indicate source="#target:BSD3,#licenses,#normalized-usage-of-BSD3" target="#trending-factor-of-target-BSD3" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-BSD3','#target:BSD3')"/>
-            <indicate source="#usage-factor-of-CDDL,#max-usage" target="#normalized-usage-of-CDDL" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-CDDL','#max-usage')"/>
-            <indicate source="#count:LGPL2.1+,#normalized-modernity-LGPL2.1+,#licenses" target="#modernity-factor-LGPL2.1+" function="decl_calcModernityFactor(relation,'#count:LGPL2.1+','#normalized-modernity-LGPL2.1+','#licenses')"/>
-            <indicate source="#count:LGPL2.1,#licenses,#normalized-usage-of-LGPL2.1" target="#trending-factor-of-LGPL2.1" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-LGPL2.1','#count:LGPL2.1','#licenses')"/>
-            <indicate source="#usage-factor-of-GPL2+,#max-usage" target="#normalized-usage-of-GPL2+" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-GPL2+','#max-usage')"/>
-            <indicate source="#count:Artistic2,#normalized-modernity-Artistic2,#licenses" target="#modernity-factor-Artistic2" function="decl_calcModernityFactor(relation,'#count:Artistic2','#normalized-modernity-Artistic2','#licenses')"/>
-            <indicate source="#target:LGPL3+,#normalized-modernity-LGPL3+,#target-licenses" target="#target-modernity-factor-LGPL3+" function="decl_calcModernityFactor(relation,'#target:LGPL3+','#normalized-modernity-LGPL3+','#target-licenses')"/>
-            <indicate source="#count:GPL2,#normalized-modernity-GPL2,#licenses" target="#modernity-factor-GPL2" function="decl_calcModernityFactor(relation,'#count:GPL2','#normalized-modernity-GPL2','#licenses')"/>
-            <indicate source="#usage-factor-of-ASL2,#max-usage" target="#normalized-usage-of-ASL2" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-ASL2','#max-usage')"/>
-            <indicate source="#target:GPL3,#normalized-modernity-GPL3,#target-licenses" target="#target-modernity-factor-GPL3" function="decl_calcModernityFactor(relation,'#target:GPL3','#normalized-modernity-GPL3','#target-licenses')"/>
-            <indicate source="#target:GPL3,#licenses,#normalized-usage-of-GPL3" target="#trending-factor-of-target-GPL3" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-GPL3','#target:GPL3')"/>
-            <indicate source="#usage-factor-of-BSD3,#max-usage" target="#normalized-usage-of-BSD3" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-BSD3','#max-usage')"/>
-            <indicate source="#count:MPL,#normalized-modernity-MPL,#licenses" target="#modernity-factor-MPL" function="decl_calcModernityFactor(relation,'#count:MPL','#normalized-modernity-MPL','#licenses')"/>
-            <indicate source="#use-of-GPL3,#min-use" target="#usage-factor-of-GPL3" function="decl_calcUsage(relation,'#use-of-GPL3','#min-use')"/>
-            <indicate source="#usage-factor-of-AGPL3,#max-usage" target="#normalized-usage-of-AGPL3" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-AGPL3','#max-usage')"/>
-            <indicate source="#target:ASL2,#licenses,#normalized-usage-of-ASL2" target="#trending-factor-of-target-ASL2" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-ASL2','#target:ASL2')"/>
-            <indicate source="#target:MIT,#normalized-modernity-MIT,#target-licenses" target="#target-modernity-factor-MIT" function="decl_calcModernityFactor(relation,'#target:MIT','#normalized-modernity-MIT','#target-licenses')"/>
-            <indicate source="#count:CPL-EPL,#normalized-modernity-CPL-EPL,#licenses" target="#modernity-factor-CPL-EPL" function="decl_calcModernityFactor(relation,'#count:CPL-EPL','#normalized-modernity-CPL-EPL','#licenses')"/>
-            <indicate source="#target:CDDL,#normalized-modernity-CDDL,#target-licenses" target="#target-modernity-factor-CDDL" function="decl_calcModernityFactor(relation,'#target:CDDL','#normalized-modernity-CDDL','#target-licenses')"/>
-            <indicate source="#target:MIT,#licenses,#normalized-usage-of-MIT" target="#trending-factor-of-target-MIT" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-MIT','#target:MIT')"/>
-            <indicate source="#target:GPL2,#licenses,#normalized-usage-of-GPL2" target="#trending-factor-of-target-GPL2" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-GPL2','#target:GPL2')"/>
-            <indicate source="#count:ASL2,#licenses,#normalized-usage-of-ASL2" target="#trending-factor-of-ASL2" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-ASL2','#count:ASL2','#licenses')"/>
-            <indicate source="#count:BSD4,#normalized-modernity-BSD4,#licenses" target="#modernity-factor-BSD4" function="decl_calcModernityFactor(relation,'#count:BSD4','#normalized-modernity-BSD4','#licenses')"/>
-            <indicate source="#count:BSD4,#licenses,#normalized-usage-of-BSD4" target="#trending-factor-of-BSD4" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-BSD4','#count:BSD4','#licenses')"/>
-            <indicate source="#count:CDDL,#normalized-modernity-CDDL,#licenses" target="#modernity-factor-CDDL" function="decl_calcModernityFactor(relation,'#count:CDDL','#normalized-modernity-CDDL','#licenses')"/>
-            <indicate source="#use-of-MPL,#min-use" target="#usage-factor-of-MPL" function="decl_calcUsage(relation,'#use-of-MPL','#min-use')"/>
-            <indicate source="#use-of-AGPL3,#min-use" target="#usage-factor-of-AGPL3" function="decl_calcUsage(relation,'#use-of-AGPL3','#min-use')"/>
-            <indicate source="#target:ASL1,#normalized-modernity-ASL1,#target-licenses" target="#target-modernity-factor-ASL1" function="decl_calcModernityFactor(relation,'#target:ASL1','#normalized-modernity-ASL1','#target-licenses')"/>
-            <indicate source="#target:LGPL3+,#licenses,#normalized-usage-of-LGPL3+" target="#trending-factor-of-target-LGPL3+" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-LGPL3+','#target:LGPL3+')"/>
-            <indicate source="#trending-factor-of-target-MIT,#trending-factor-of-target-BSD4,#trending-factor-of-target-BSD3,#trending-factor-of-target-ASL1,#trending-factor-of-target-ASL2,#trending-factor-of-target-Artistic2,#trending-factor-of-target-LGPL2.1,#trending-factor-of-target-LGPL2.1+,#trending-factor-of-target-LGPL3+,#trending-factor-of-target-MPL,#trending-factor-of-target-CDDL,#trending-factor-of-target-CPL-EPL,#trending-factor-of-target-EUPL,#trending-factor-of-target-GPL2,#trending-factor-of-target-GPL2+,#trending-factor-of-target-GPL3,#trending-factor-of-target-AGPL3" target="#declining-target" function="decl_calcDecliningRiskIndicator(relation)"/>
-            <indicate source="#target:BSD3,#normalized-modernity-BSD3,#target-licenses" target="#target-modernity-factor-BSD3" function="decl_calcModernityFactor(relation,'#target:BSD3','#normalized-modernity-BSD3','#target-licenses')"/>
-            <indicate source="#target:BSD4,#normalized-modernity-BSD4,#target-licenses" target="#target-modernity-factor-BSD4" function="decl_calcModernityFactor(relation,'#target:BSD4','#normalized-modernity-BSD4','#target-licenses')"/>
-            <indicate source="#count:GPL2,#licenses,#normalized-usage-of-GPL2" target="#trending-factor-of-GPL2" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-GPL2','#count:GPL2','#licenses')"/>
-            <indicate source="#target:EUPL,#normalized-modernity-EUPL,#target-licenses" target="#target-modernity-factor-EUPL" function="decl_calcModernityFactor(relation,'#target:EUPL','#normalized-modernity-EUPL','#target-licenses')"/>
-            <indicate source="#use-of-LGPL2.1+,#min-use" target="#usage-factor-of-LGPL2.1+" function="decl_calcUsage(relation,'#use-of-LGPL2.1+','#min-use')"/>
-            <indicate source="#use-of-BSD3,#min-use" target="#usage-factor-of-BSD3" function="decl_calcUsage(relation,'#use-of-BSD3','#min-use')"/>
-            <indicate source="#target:GPL2,#normalized-modernity-GPL2,#target-licenses" target="#target-modernity-factor-GPL2" function="decl_calcModernityFactor(relation,'#target:GPL2','#normalized-modernity-GPL2','#target-licenses')"/>
-            <indicate source="#count:AGPL3,#licenses,#normalized-usage-of-AGPL3" target="#trending-factor-of-AGPL3" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-AGPL3','#count:AGPL3','#licenses')"/>
-            <indicate source="#target:GPL2+,#normalized-modernity-GPL2+,#target-licenses" target="#target-modernity-factor-GPL2+" function="decl_calcModernityFactor(relation,'#target:GPL2+','#normalized-modernity-GPL2+','#target-licenses')"/>
-            <indicate source="#target:LGPL2.1,#licenses,#normalized-usage-of-LGPL2.1" target="#trending-factor-of-target-LGPL2.1" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-LGPL2.1','#target:LGPL2.1')"/>
-            <indicate source="#use-of-MIT,#min-use" target="#usage-factor-of-MIT" function="decl_calcUsage(relation,'#use-of-MIT','#min-use')"/>
-            <indicate source="#count:EUPL,#normalized-modernity-EUPL,#licenses" target="#modernity-factor-EUPL" function="decl_calcModernityFactor(relation,'#count:EUPL','#normalized-modernity-EUPL','#licenses')"/>
-            <indicate source="#usage-factor-of-MIT,#max-usage" target="#normalized-usage-of-MIT" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-MIT','#max-usage')"/>
-            <indicate source="#target:MPL,#normalized-modernity-MPL,#target-licenses" target="#target-modernity-factor-MPL" function="decl_calcModernityFactor(relation,'#target:MPL','#normalized-modernity-MPL','#target-licenses')"/>
-            <indicate source="#count:GPL2+,#normalized-modernity-GPL2+,#licenses" target="#modernity-factor-GPL2+" function="decl_calcModernityFactor(relation,'#count:GPL2+','#normalized-modernity-GPL2+','#licenses')"/>
-            <indicate source="#target:CPL-EPL,#normalized-modernity-CPL-EPL,#target-licenses" target="#target-modernity-factor-CPL-EPL" function="decl_calcModernityFactor(relation,'#target:CPL-EPL','#normalized-modernity-CPL-EPL','#target-licenses')"/>
-            <indicate source="#use-of-LGPL2.1,#min-use" target="#usage-factor-of-LGPL2.1" function="decl_calcUsage(relation,'#use-of-LGPL2.1','#min-use')"/>
-            <indicate source="#trending-factor-of-MIT,#trending-factor-of-BSD4,#trending-factor-of-BSD3,#trending-factor-of-ASL1,#trending-factor-of-ASL2,#trending-factor-of-Artistic2,#trending-factor-of-LGPL2.1,#trending-factor-of-LGPL2.1+,#trending-factor-of-LGPL3+,#trending-factor-of-MPL,#trending-factor-of-CDDL,#trending-factor-of-CPL-EPL,#trending-factor-of-EUPL,#trending-factor-of-GPL2,#trending-factor-of-GPL2+,#trending-factor-of-GPL3,#trending-factor-of-AGPL3" target="#declining-components" function="decl_calcDecliningRiskIndicator(relation)"/>
-            <indicate source="#count:CPL-EPL,#licenses,#normalized-usage-of-CPL-EPL" target="#trending-factor-of-CPL-EPL" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-CPL-EPL','#count:CPL-EPL','#licenses')"/>
-            <indicate source="#count:LGPL3+,#normalized-modernity-LGPL3+,#licenses" target="#modernity-factor-LGPL3+" function="decl_calcModernityFactor(relation,'#count:LGPL3+','#normalized-modernity-LGPL3+','#licenses')"/>
-            <indicate source="#count:ASL1,#normalized-modernity-ASL1,#licenses" target="#modernity-factor-ASL1" function="decl_calcModernityFactor(relation,'#count:ASL1','#normalized-modernity-ASL1','#licenses')"/>
-            <indicate source="#count:LGPL2.1+,#licenses,#normalized-usage-of-LGPL2.1+" target="#trending-factor-of-LGPL2.1+" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-LGPL2.1+','#count:LGPL2.1+','#licenses')"/>
+            <expose source="fuzzified:#obsolete-target" target="Obsolete Target Licenses"/>
             <indicate source="#usage-factor-of-GPL3,#max-usage" target="#normalized-usage-of-GPL3" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-GPL3','#max-usage')"/>
-            <indicate source="#declining-target" target="fuzzified:#declining-target" function="decl_avg(relation)"/>
-            <indicate source="#use-of-Artistic2,#min-use" target="#usage-factor-of-Artistic2" function="decl_calcUsage(relation,'#use-of-Artistic2','#min-use')"/>
+            <indicate source="#trending-factor-of-MIT,#trending-factor-of-BSD4,#trending-factor-of-BSD3,#trending-factor-of-ASL1,#trending-factor-of-ASL2,#trending-factor-of-Artistic2,#trending-factor-of-LGPL2.1,#trending-factor-of-LGPL2.1+,#trending-factor-of-LGPL3+,#trending-factor-of-MPL,#trending-factor-of-CDDL,#trending-factor-of-CPL-EPL,#trending-factor-of-EUPL,#trending-factor-of-GPL2,#trending-factor-of-GPL2+,#trending-factor-of-GPL3,#trending-factor-of-AGPL3" target="#declining-components" function="decl_calcDecliningRiskIndicator(relation)"/>
+            <indicate source="#count:BSD4,#normalized-modernity-BSD4,#licenses" target="#modernity-factor-BSD4" function="decl_calcModernityFactor(relation,'#count:BSD4','#normalized-modernity-BSD4','#licenses')"/>
             <indicate source="#count:LGPL2.1,#normalized-modernity-LGPL2.1,#licenses" target="#modernity-factor-LGPL2.1" function="decl_calcModernityFactor(relation,'#count:LGPL2.1','#normalized-modernity-LGPL2.1','#licenses')"/>
-            <indicate source="#usage-factor-of-CPL-EPL,#max-usage" target="#normalized-usage-of-CPL-EPL" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-CPL-EPL','#max-usage')"/>
-            <indicate source="#target:AGPL3,#licenses,#normalized-usage-of-AGPL3" target="#trending-factor-of-target-AGPL3" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-AGPL3','#target:AGPL3')"/>
-            <indicate source="#usage-factor-of-LGPL2.1+,#max-usage" target="#normalized-usage-of-LGPL2.1+" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-LGPL2.1+','#max-usage')"/>
-            <indicate source="#usage-factor-of-LGPL3+,#max-usage" target="#normalized-usage-of-LGPL3+" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-LGPL3+','#max-usage')"/>
-            <indicate source="#target:EUPL,#licenses,#normalized-usage-of-EUPL" target="#trending-factor-of-target-EUPL" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-EUPL','#target:EUPL')"/>
-            <indicate source="#usage-factor-of-Artistic2,#max-usage" target="#normalized-usage-of-Artistic2" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-Artistic2','#max-usage')"/>
-            <indicate source="#use-of-BSD4,#min-use" target="#usage-factor-of-BSD4" function="decl_calcUsage(relation,'#use-of-BSD4','#min-use')"/>
-            <indicate source="#target:LGPL2.1,#normalized-modernity-LGPL2.1,#target-licenses" target="#target-modernity-factor-LGPL2.1" function="decl_calcModernityFactor(relation,'#target:LGPL2.1','#normalized-modernity-LGPL2.1','#target-licenses')"/>
-            <indicate source="#declining-components" target="fuzzified:#declining-components" function="decl_avg(relation)"/>
-            <indicate source="#use-of-CDDL,#min-use" target="#usage-factor-of-CDDL" function="decl_calcUsage(relation,'#use-of-CDDL','#min-use')"/>
-            <indicate source="#count:CDDL,#licenses,#normalized-usage-of-CDDL" target="#trending-factor-of-CDDL" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-CDDL','#count:CDDL','#licenses')"/>
-            <indicate source="#use-of-GPL2,#min-use" target="#usage-factor-of-GPL2" function="decl_calcUsage(relation,'#use-of-GPL2','#min-use')"/>
-            <indicate source="#count:GPL2+,#licenses,#normalized-usage-of-GPL2+" target="#trending-factor-of-GPL2+" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-GPL2+','#count:GPL2+','#licenses')"/>
-            <indicate source="#target:Artistic2,#normalized-modernity-Artistic2,#target-licenses" target="#target-modernity-factor-Artistic2" function="decl_calcModernityFactor(relation,'#target:Artistic2','#normalized-modernity-Artistic2','#target-licenses')"/>
-            <indicate source="#count:BSD3,#normalized-modernity-BSD3,#licenses" target="#modernity-factor-BSD3" function="decl_calcModernityFactor(relation,'#count:BSD3','#normalized-modernity-BSD3','#licenses')"/>
-            <indicate source="#count:EUPL,#licenses,#normalized-usage-of-EUPL" target="#trending-factor-of-EUPL" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-EUPL','#count:EUPL','#licenses')"/>
-            <indicate source="#count:LGPL3+,#licenses,#normalized-usage-of-LGPL3+" target="#trending-factor-of-LGPL3+" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-LGPL3+','#count:LGPL3+','#licenses')"/>
             <indicate source="#use-of-EUPL,#min-use" target="#usage-factor-of-EUPL" function="decl_calcUsage(relation,'#use-of-EUPL','#min-use')"/>
+            <indicate source="#target:BSD3,#licenses,#normalized-usage-of-BSD3" target="#trending-factor-of-target-BSD3" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-BSD3','#target:BSD3')"/>
+            <indicate source="#count:CPL-EPL,#licenses,#normalized-usage-of-CPL-EPL" target="#trending-factor-of-CPL-EPL" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-CPL-EPL','#count:CPL-EPL','#licenses')"/>
+            <indicate source="#target:ASL2,#licenses,#normalized-usage-of-ASL2" target="#trending-factor-of-target-ASL2" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-ASL2','#target:ASL2')"/>
+            <indicate source="#target:GPL2+,#licenses,#normalized-usage-of-GPL2+" target="#trending-factor-of-target-GPL2+" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-GPL2+','#target:GPL2+')"/>
+            <indicate source="#count:LGPL3+,#normalized-modernity-LGPL3+,#licenses" target="#modernity-factor-LGPL3+" function="decl_calcModernityFactor(relation,'#count:LGPL3+','#normalized-modernity-LGPL3+','#licenses')"/>
+            <indicate source="#use-of-BSD3,#min-use" target="#usage-factor-of-BSD3" function="decl_calcUsage(relation,'#use-of-BSD3','#min-use')"/>
             <indicate source="#count:GPL3,#normalized-modernity-GPL3,#licenses" target="#modernity-factor-GPL3" function="decl_calcModernityFactor(relation,'#count:GPL3','#normalized-modernity-GPL3','#licenses')"/>
-            <increase source="component-selected" target="Obsolete Component Licenses"/>
+            <indicate source="#usage-factor-of-ASL1,#max-usage" target="#normalized-usage-of-ASL1" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-ASL1','#max-usage')"/>
+            <indicate source="#target:LGPL2.1,#normalized-modernity-LGPL2.1,#target-licenses" target="#target-modernity-factor-LGPL2.1" function="decl_calcModernityFactor(relation,'#target:LGPL2.1','#normalized-modernity-LGPL2.1','#target-licenses')"/>
+            <indicate source="#use-of-LGPL2.1,#min-use" target="#usage-factor-of-LGPL2.1" function="decl_calcUsage(relation,'#use-of-LGPL2.1','#min-use')"/>
+            <indicate source="#count:CDDL,#licenses,#normalized-usage-of-CDDL" target="#trending-factor-of-CDDL" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-CDDL','#count:CDDL','#licenses')"/>
+            <indicate source="#modernity-factor-MIT,#modernity-factor-BSD4,#modernity-factor-BSD3,#modernity-factor-ASL1,#modernity-factor-ASL2,#modernity-factor-Artistic2,#modernity-factor-LGPL2.1,#modernity-factor-LGPL2.1+,#modernity-factor-LGPL3+,#modernity-factor-MPL,#modernity-factor-CDDL,#modernity-factor-CPL-EPL,#modernity-factor-EUPL,#modernity-factor-GPL2,#modernity-factor-GPL2+,#modernity-factor-GPL3,#modernity-factor-AGPL3" target="#obsolete-components" function="decl_calcObsoleteComponentsIndex(relation)"/>
+            <indicate source="#declining-components" target="fuzzified:#declining-components" function="decl_avg(relation)"/>
+            <indicate source="#count:GPL2+,#licenses,#normalized-usage-of-GPL2+" target="#trending-factor-of-GPL2+" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-GPL2+','#count:GPL2+','#licenses')"/>
+            <indicate source="#use-of-MIT,#min-use" target="#usage-factor-of-MIT" function="decl_calcUsage(relation,'#use-of-MIT','#min-use')"/>
+            <indicate source="#target:AGPL3,#licenses,#normalized-usage-of-AGPL3" target="#trending-factor-of-target-AGPL3" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-AGPL3','#target:AGPL3')"/>
+            <indicate source="#use-of-GPL3,#min-use" target="#usage-factor-of-GPL3" function="decl_calcUsage(relation,'#use-of-GPL3','#min-use')"/>
+            <indicate source="#obsolete-components" target="fuzzified:#obsolete-components" function="decl_avg(relation)"/>
+            <indicate source="#declining-target" target="fuzzified:#declining-target" function="decl_avg(relation)"/>
+            <indicate source="#target:ASL1,#licenses,#normalized-usage-of-ASL1" target="#trending-factor-of-target-ASL1" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-ASL1','#target:ASL1')"/>
+            <indicate source="#count:LGPL2.1,#licenses,#normalized-usage-of-LGPL2.1" target="#trending-factor-of-LGPL2.1" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-LGPL2.1','#count:LGPL2.1','#licenses')"/>
+            <indicate source="#use-of-MIT,#use-of-BSD4,#use-of-BSD3,#use-of-ASL1,#use-of-ASL2,#use-of-Artistic2,#use-of-LGPL2.1,#use-of-LGPL2.1+,#use-of-LGPL3+,#use-of-MPL,#use-of-CDDL,#use-of-CPL-EPL,#use-of-EUPL,#use-of-GPL2,#use-of-GPL2+,#use-of-GPL3,#use-of-AGPL3" target="#min-use" function="decl_min(relation)"/>
+            <indicate source="#use-of-GPL2+,#min-use" target="#usage-factor-of-GPL2+" function="decl_calcUsage(relation,'#use-of-GPL2+','#min-use')"/>
+            <indicate source="#count:CPL-EPL,#normalized-modernity-CPL-EPL,#licenses" target="#modernity-factor-CPL-EPL" function="decl_calcModernityFactor(relation,'#count:CPL-EPL','#normalized-modernity-CPL-EPL','#licenses')"/>
+            <indicate source="#usage-factor-of-MIT,#usage-factor-of-BSD4,#usage-factor-of-BSD3,#usage-factor-of-ASL1,#usage-factor-of-ASL2,#usage-factor-of-Artistic2,#usage-factor-of-LGPL2.1,#usage-factor-of-LGPL2.1+,#usage-factor-of-LGPL3+,#usage-factor-of-MPL,#usage-factor-of-CDDL,#usage-factor-of-CPL-EPL,#usage-factor-of-EUPL,#usage-factor-of-GPL2,#usage-factor-of-GPL2+,#usage-factor-of-GPL3,#usage-factor-of-AGPL3" target="#max-usage" function="decl_max(relation)"/>
+            <indicate source="#count:AGPL3,#normalized-modernity-AGPL3,#licenses" target="#modernity-factor-AGPL3" function="decl_calcModernityFactor(relation,'#count:AGPL3','#normalized-modernity-AGPL3','#licenses')"/>
+            <indicate source="#count:LGPL2.1+,#normalized-modernity-LGPL2.1+,#licenses" target="#modernity-factor-LGPL2.1+" function="decl_calcModernityFactor(relation,'#count:LGPL2.1+','#normalized-modernity-LGPL2.1+','#licenses')"/>
+            <indicate source="#usage-factor-of-LGPL2.1,#max-usage" target="#normalized-usage-of-LGPL2.1" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-LGPL2.1','#max-usage')"/>
+            <indicate source="#count:BSD4,#licenses,#normalized-usage-of-BSD4" target="#trending-factor-of-BSD4" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-BSD4','#count:BSD4','#licenses')"/>
+            <indicate source="#count:ASL2,#normalized-modernity-ASL2,#licenses" target="#modernity-factor-ASL2" function="decl_calcModernityFactor(relation,'#count:ASL2','#normalized-modernity-ASL2','#licenses')"/>
+            <indicate source="#target:LGPL3+,#licenses,#normalized-usage-of-LGPL3+" target="#trending-factor-of-target-LGPL3+" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-LGPL3+','#target:LGPL3+')"/>
+            <indicate source="#count:LGPL2.1+,#licenses,#normalized-usage-of-LGPL2.1+" target="#trending-factor-of-LGPL2.1+" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-LGPL2.1+','#count:LGPL2.1+','#licenses')"/>
+            <indicate source="#trending-factor-of-target-MIT,#trending-factor-of-target-BSD4,#trending-factor-of-target-BSD3,#trending-factor-of-target-ASL1,#trending-factor-of-target-ASL2,#trending-factor-of-target-Artistic2,#trending-factor-of-target-LGPL2.1,#trending-factor-of-target-LGPL2.1+,#trending-factor-of-target-LGPL3+,#trending-factor-of-target-MPL,#trending-factor-of-target-CDDL,#trending-factor-of-target-CPL-EPL,#trending-factor-of-target-EUPL,#trending-factor-of-target-GPL2,#trending-factor-of-target-GPL2+,#trending-factor-of-target-GPL3,#trending-factor-of-target-AGPL3" target="#declining-target" function="decl_calcDecliningRiskIndicator(relation)"/>
+            <indicate source="#usage-factor-of-CDDL,#max-usage" target="#normalized-usage-of-CDDL" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-CDDL','#max-usage')"/>
+            <indicate source="#use-of-AGPL3,#min-use" target="#usage-factor-of-AGPL3" function="decl_calcUsage(relation,'#use-of-AGPL3','#min-use')"/>
+            <indicate source="#target:BSD4,#licenses,#normalized-usage-of-BSD4" target="#trending-factor-of-target-BSD4" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-BSD4','#target:BSD4')"/>
+            <indicate source="#usage-factor-of-GPL2,#max-usage" target="#normalized-usage-of-GPL2" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-GPL2','#max-usage')"/>
+            <indicate source="#target:ASL2,#normalized-modernity-ASL2,#target-licenses" target="#target-modernity-factor-ASL2" function="decl_calcModernityFactor(relation,'#target:ASL2','#normalized-modernity-ASL2','#target-licenses')"/>
+            <indicate source="#usage-factor-of-GPL2+,#max-usage" target="#normalized-usage-of-GPL2+" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-GPL2+','#max-usage')"/>
+            <indicate source="#target:Artistic2,#licenses,#normalized-usage-of-Artistic2" target="#trending-factor-of-target-Artistic2" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-Artistic2','#target:Artistic2')"/>
+            <indicate source="#target:MIT,#normalized-modernity-MIT,#target-licenses" target="#target-modernity-factor-MIT" function="decl_calcModernityFactor(relation,'#target:MIT','#normalized-modernity-MIT','#target-licenses')"/>
+            <indicate source="#count:MPL,#licenses,#normalized-usage-of-MPL" target="#trending-factor-of-MPL" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-MPL','#count:MPL','#licenses')"/>
+            <indicate source="#target:CDDL,#licenses,#normalized-usage-of-CDDL" target="#trending-factor-of-target-CDDL" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-CDDL','#target:CDDL')"/>
+            <indicate source="#usage-factor-of-BSD4,#max-usage" target="#normalized-usage-of-BSD4" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-BSD4','#max-usage')"/>
+            <indicate source="#count:EUPL,#normalized-modernity-EUPL,#licenses" target="#modernity-factor-EUPL" function="decl_calcModernityFactor(relation,'#count:EUPL','#normalized-modernity-EUPL','#licenses')"/>
+            <indicate source="#target:GPL3,#normalized-modernity-GPL3,#target-licenses" target="#target-modernity-factor-GPL3" function="decl_calcModernityFactor(relation,'#target:GPL3','#normalized-modernity-GPL3','#target-licenses')"/>
+            <indicate source="#usage-factor-of-MIT,#max-usage" target="#normalized-usage-of-MIT" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-MIT','#max-usage')"/>
+            <indicate source="#usage-factor-of-LGPL3+,#max-usage" target="#normalized-usage-of-LGPL3+" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-LGPL3+','#max-usage')"/>
+            <indicate source="#count:Artistic2,#licenses,#normalized-usage-of-Artistic2" target="#trending-factor-of-Artistic2" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-Artistic2','#count:Artistic2','#licenses')"/>
+            <indicate source="#use-of-GPL2,#min-use" target="#usage-factor-of-GPL2" function="decl_calcUsage(relation,'#use-of-GPL2','#min-use')"/>
+            <indicate source="#target:MPL,#licenses,#normalized-usage-of-MPL" target="#trending-factor-of-target-MPL" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-MPL','#target:MPL')"/>
+            <indicate source="#use-of-LGPL3+,#min-use" target="#usage-factor-of-LGPL3+" function="decl_calcUsage(relation,'#use-of-LGPL3+','#min-use')"/>
+            <indicate source="#target:MIT,#licenses,#normalized-usage-of-MIT" target="#trending-factor-of-target-MIT" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-MIT','#target:MIT')"/>
+            <indicate source="#target:AGPL3,#normalized-modernity-AGPL3,#target-licenses" target="#target-modernity-factor-AGPL3" function="decl_calcModernityFactor(relation,'#target:AGPL3','#normalized-modernity-AGPL3','#target-licenses')"/>
+            <indicate source="#target:GPL2+,#normalized-modernity-GPL2+,#target-licenses" target="#target-modernity-factor-GPL2+" function="decl_calcModernityFactor(relation,'#target:GPL2+','#normalized-modernity-GPL2+','#target-licenses')"/>
+            <indicate source="#target:MPL,#normalized-modernity-MPL,#target-licenses" target="#target-modernity-factor-MPL" function="decl_calcModernityFactor(relation,'#target:MPL','#normalized-modernity-MPL','#target-licenses')"/>
+            <indicate source="#use-of-ASL2,#min-use" target="#usage-factor-of-ASL2" function="decl_calcUsage(relation,'#use-of-ASL2','#min-use')"/>
+            <indicate source="#target:GPL2,#licenses,#normalized-usage-of-GPL2" target="#trending-factor-of-target-GPL2" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-GPL2','#target:GPL2')"/>
+            <indicate source="#count:ASL1,#normalized-modernity-ASL1,#licenses" target="#modernity-factor-ASL1" function="decl_calcModernityFactor(relation,'#count:ASL1','#normalized-modernity-ASL1','#licenses')"/>
+            <indicate source="#target:GPL3,#licenses,#normalized-usage-of-GPL3" target="#trending-factor-of-target-GPL3" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-GPL3','#target:GPL3')"/>
+            <indicate source="#count:GPL2+,#normalized-modernity-GPL2+,#licenses" target="#modernity-factor-GPL2+" function="decl_calcModernityFactor(relation,'#count:GPL2+','#normalized-modernity-GPL2+','#licenses')"/>
+            <indicate source="#obsolete-target" target="fuzzified:#obsolete-target" function="decl_avg(relation)"/>
+            <indicate source="#use-of-CDDL,#min-use" target="#usage-factor-of-CDDL" function="decl_calcUsage(relation,'#use-of-CDDL','#min-use')"/>
+            <indicate source="#count:Artistic2,#normalized-modernity-Artistic2,#licenses" target="#modernity-factor-Artistic2" function="decl_calcModernityFactor(relation,'#count:Artistic2','#normalized-modernity-Artistic2','#licenses')"/>
+            <indicate source="#target:CDDL,#normalized-modernity-CDDL,#target-licenses" target="#target-modernity-factor-CDDL" function="decl_calcModernityFactor(relation,'#target:CDDL','#normalized-modernity-CDDL','#target-licenses')"/>
+            <indicate source="#count:CDDL,#normalized-modernity-CDDL,#licenses" target="#modernity-factor-CDDL" function="decl_calcModernityFactor(relation,'#count:CDDL','#normalized-modernity-CDDL','#licenses')"/>
+            <indicate source="#usage-factor-of-LGPL2.1+,#max-usage" target="#normalized-usage-of-LGPL2.1+" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-LGPL2.1+','#max-usage')"/>
+            <indicate source="#usage-factor-of-BSD3,#max-usage" target="#normalized-usage-of-BSD3" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-BSD3','#max-usage')"/>
+            <indicate source="#target:EUPL,#licenses,#normalized-usage-of-EUPL" target="#trending-factor-of-target-EUPL" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-EUPL','#target:EUPL')"/>
+            <indicate source="#target-modernity-factor-MIT,#target-modernity-factor-BSD4,#target-modernity-factor-BSD3,#target-modernity-factor-ASL1,#target-modernity-factor-ASL2,#target-modernity-factor-Artistic2,#target-modernity-factor-LGPL2.1,#target-modernity-factor-LGPL2.1+,#target-modernity-factor-LGPL3+,#target-modernity-factor-MPL,#target-modernity-factor-CDDL,#target-modernity-factor-CPL-EPL,#target-modernity-factor-EUPL,#target-modernity-factor-GPL2,#target-modernity-factor-GPL2+,#target-modernity-factor-GPL3,#target-modernity-factor-AGPL3" target="#obsolete-target" function="decl_calcObsoleteComponentsIndex(relation)"/>
+            <indicate source="#target:CPL-EPL,#normalized-modernity-CPL-EPL,#target-licenses" target="#target-modernity-factor-CPL-EPL" function="decl_calcModernityFactor(relation,'#target:CPL-EPL','#normalized-modernity-CPL-EPL','#target-licenses')"/>
+            <indicate source="#target:Artistic2,#normalized-modernity-Artistic2,#target-licenses" target="#target-modernity-factor-Artistic2" function="decl_calcModernityFactor(relation,'#target:Artistic2','#normalized-modernity-Artistic2','#target-licenses')"/>
+            <indicate source="#use-of-MPL,#min-use" target="#usage-factor-of-MPL" function="decl_calcUsage(relation,'#use-of-MPL','#min-use')"/>
+            <indicate source="#usage-factor-of-MPL,#max-usage" target="#normalized-usage-of-MPL" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-MPL','#max-usage')"/>
+            <indicate source="#target:LGPL3+,#normalized-modernity-LGPL3+,#target-licenses" target="#target-modernity-factor-LGPL3+" function="decl_calcModernityFactor(relation,'#target:LGPL3+','#normalized-modernity-LGPL3+','#target-licenses')"/>
+            <indicate source="#count:MIT,#licenses,#normalized-usage-of-MIT" target="#trending-factor-of-MIT" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-MIT','#count:MIT','#licenses')"/>
+            <indicate source="#usage-factor-of-CPL-EPL,#max-usage" target="#normalized-usage-of-CPL-EPL" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-CPL-EPL','#max-usage')"/>
+            <indicate source="#use-of-BSD4,#min-use" target="#usage-factor-of-BSD4" function="decl_calcUsage(relation,'#use-of-BSD4','#min-use')"/>
+            <indicate source="#count:GPL3,#licenses,#normalized-usage-of-GPL3" target="#trending-factor-of-GPL3" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-GPL3','#count:GPL3','#licenses')"/>
+            <indicate source="#count:MPL,#normalized-modernity-MPL,#licenses" target="#modernity-factor-MPL" function="decl_calcModernityFactor(relation,'#count:MPL','#normalized-modernity-MPL','#licenses')"/>
+            <indicate source="#target:LGPL2.1,#licenses,#normalized-usage-of-LGPL2.1" target="#trending-factor-of-target-LGPL2.1" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-LGPL2.1','#target:LGPL2.1')"/>
+            <indicate source="#count:LGPL3+,#licenses,#normalized-usage-of-LGPL3+" target="#trending-factor-of-LGPL3+" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-LGPL3+','#count:LGPL3+','#licenses')"/>
+            <indicate source="#target:GPL2,#normalized-modernity-GPL2,#target-licenses" target="#target-modernity-factor-GPL2" function="decl_calcModernityFactor(relation,'#target:GPL2','#normalized-modernity-GPL2','#target-licenses')"/>
+            <indicate source="#count:ASL1,#licenses,#normalized-usage-of-ASL1" target="#trending-factor-of-ASL1" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-ASL1','#count:ASL1','#licenses')"/>
+            <indicate source="#usage-factor-of-EUPL,#max-usage" target="#normalized-usage-of-EUPL" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-EUPL','#max-usage')"/>
+            <indicate source="#count:ASL2,#licenses,#normalized-usage-of-ASL2" target="#trending-factor-of-ASL2" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-ASL2','#count:ASL2','#licenses')"/>
+            <indicate source="#count:GPL2,#normalized-modernity-GPL2,#licenses" target="#modernity-factor-GPL2" function="decl_calcModernityFactor(relation,'#count:GPL2','#normalized-modernity-GPL2','#licenses')"/>
+            <indicate source="#use-of-ASL1,#min-use" target="#usage-factor-of-ASL1" function="decl_calcUsage(relation,'#use-of-ASL1','#min-use')"/>
+            <indicate source="#count:GPL2,#licenses,#normalized-usage-of-GPL2" target="#trending-factor-of-GPL2" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-GPL2','#count:GPL2','#licenses')"/>
+            <indicate source="#usage-factor-of-ASL2,#max-usage" target="#normalized-usage-of-ASL2" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-ASL2','#max-usage')"/>
+            <indicate source="#target:EUPL,#normalized-modernity-EUPL,#target-licenses" target="#target-modernity-factor-EUPL" function="decl_calcModernityFactor(relation,'#target:EUPL','#normalized-modernity-EUPL','#target-licenses')"/>
+            <indicate source="#count:AGPL3,#licenses,#normalized-usage-of-AGPL3" target="#trending-factor-of-AGPL3" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-AGPL3','#count:AGPL3','#licenses')"/>
+            <indicate source="#target:LGPL2.1+,#normalized-modernity-LGPL2.1+,#target-licenses" target="#target-modernity-factor-LGPL2.1+" function="decl_calcModernityFactor(relation,'#target:LGPL2.1+','#normalized-modernity-LGPL2.1+','#target-licenses')"/>
+            <indicate source="#count:BSD3,#licenses,#normalized-usage-of-BSD3" target="#trending-factor-of-BSD3" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-BSD3','#count:BSD3','#licenses')"/>
+            <indicate source="#usage-factor-of-AGPL3,#max-usage" target="#normalized-usage-of-AGPL3" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-AGPL3','#max-usage')"/>
+            <indicate source="#target:CPL-EPL,#licenses,#normalized-usage-of-CPL-EPL" target="#trending-factor-of-target-CPL-EPL" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-CPL-EPL','#target:CPL-EPL')"/>
+            <indicate source="#use-of-CPL-EPL,#min-use" target="#usage-factor-of-CPL-EPL" function="decl_calcUsage(relation,'#use-of-CPL-EPL','#min-use')"/>
+            <indicate source="#count:BSD3,#normalized-modernity-BSD3,#licenses" target="#modernity-factor-BSD3" function="decl_calcModernityFactor(relation,'#count:BSD3','#normalized-modernity-BSD3','#licenses')"/>
+            <indicate source="#count:MIT,#normalized-modernity-MIT,#licenses" target="#modernity-factor-MIT" function="decl_calcModernityFactor(relation,'#count:MIT','#normalized-modernity-MIT','#licenses')"/>
+            <indicate source="#usage-factor-of-Artistic2,#max-usage" target="#normalized-usage-of-Artistic2" function="decl_calcNormalizedUsage(relation,'#usage-factor-of-Artistic2','#max-usage')"/>
+            <indicate source="#target:LGPL2.1+,#licenses,#normalized-usage-of-LGPL2.1+" target="#trending-factor-of-target-LGPL2.1+" function="decl_calcTargetTrendingFactor(relation,'#normalized-usage-of-LGPL2.1+','#target:LGPL2.1+')"/>
+            <indicate source="#use-of-Artistic2,#min-use" target="#usage-factor-of-Artistic2" function="decl_calcUsage(relation,'#use-of-Artistic2','#min-use')"/>
+            <indicate source="#target:BSD4,#normalized-modernity-BSD4,#target-licenses" target="#target-modernity-factor-BSD4" function="decl_calcModernityFactor(relation,'#target:BSD4','#normalized-modernity-BSD4','#target-licenses')"/>
+            <indicate source="#target:ASL1,#normalized-modernity-ASL1,#target-licenses" target="#target-modernity-factor-ASL1" function="decl_calcModernityFactor(relation,'#target:ASL1','#normalized-modernity-ASL1','#target-licenses')"/>
+            <indicate source="#use-of-LGPL2.1+,#min-use" target="#usage-factor-of-LGPL2.1+" function="decl_calcUsage(relation,'#use-of-LGPL2.1+','#min-use')"/>
+            <indicate source="#count:EUPL,#licenses,#normalized-usage-of-EUPL" target="#trending-factor-of-EUPL" function="decl_calcTrendingFactor(relation,'#normalized-usage-of-EUPL','#count:EUPL','#licenses')"/>
+            <indicate source="#target:BSD3,#normalized-modernity-BSD3,#target-licenses" target="#target-modernity-factor-BSD3" function="decl_calcModernityFactor(relation,'#target:BSD3','#normalized-modernity-BSD3','#target-licenses')"/>
             <increase source="component-selected" target="Declining Component Licenses"/>
-            <increase source="target-selected" target="Obsolete Target Licenses"/>
+            <increase source="component-selected" target="Obsolete Component Licenses"/>
             <increase source="target-selected" target="Declining Target License"/>
+            <increase source="target-selected" target="Obsolete Target Licenses"/>
         </relationships>
         <entities>
             <indicator id="#count:MIT"/>
@@ -838,18 +838,22 @@
                 <property name="datatype" value="real"/>
             </indicator>
             <event id="Declining Component Licenses">
+                <property name="argument" value="There is risk that the usage of the component licenses will decline"/>
                 <property name="description" value="Risk that the project includes components released under declining licenses"/>
                 <property name="output" value="true"/>
             </event>
             <event id="Declining Target License">
+                <property name="argument" value="There is risk that the usage of the target license will decline"/>
                 <property name="description" value="Risk that the selected target license is declining"/>
                 <property name="output" value="true"/>
             </event>
             <event id="Obsolete Component Licenses">
+                <property name="argument" value="There is risk that the component licenses are obsolete"/>
                 <property name="description" value="Risk that the project includes components released under obsolete licenses. A license is obsolete when at least a greater version of the same license exists. It is &#8220;more obsoleted&#8221; as the number of subsequent versions is greater"/>
                 <property name="output" value="true"/>
             </event>
             <event id="Obsolete Target Licenses">
+                <property name="argument" value="There is risk that the target license is obsolete"/>
                 <property name="description" value="Risk that the selected target license is obsolete. A license is obsolete when at least a greater version of the same license exists. It is &#8220;more obsoleted&#8221; as the number of subsequent versions is greater"/>
                 <property name="output" value="true"/>
             </event>
