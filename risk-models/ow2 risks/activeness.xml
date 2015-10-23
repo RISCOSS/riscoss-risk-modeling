@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <satisfy source="fuzzified:Activity_Ratio" target="activity_risk_indicator_2"/>
+            <satisfy source="fuzzified:Number_Contribs,fuzzified:Number_Devs" target="contribution_risk_indicator" function="fx.join.avg(sources)"/>
+            <satisfy source="fuzzified:Project_Activity" target="activity_risk_indicator_1"/>
+            <satisfy source="activity_risk_indicator_1,activity_risk_indicator_2,contribution_risk_indicator,governance_risk_indicator" target="activeness_risk_indicator" function="fx.join.avg(sources)"/>
+            <satisfy source="fuzzified:omm_CM,fuzzified:omm_PP,fuzzified:omm_RDMP,fuzzified:omm_REQM,fuzzified:omm_STK" target="governance_risk_indicator" function="fx.join.avg(sources)"/>
+            <expose source="activeness_risk_indicator" target="Activeness Risk"/>
+            <indicate source="omm_REQM" target="fuzzified:omm_REQM" function="fx.join.avg(fx.transform.range(sources,0,2))"/>
+            <indicate source="omm_RDMP" target="fuzzified:omm_RDMP" function="fx.join.avg(fx.transform.range(sources,0,3))"/>
+            <indicate source="omm_CM" target="fuzzified:omm_CM" function="fx.join.avg(fx.transform.range(sources,0,6))"/>
+            <indicate source="Number_Devs" target="fuzzified:Number_Devs" function="fx.evidence.pos(fx.evidence.inverse(fx.join.avg(fx.transform.thresholds(sources,[0,2,6,15,30,1000]))))"/>
+            <indicate source="Number_Contribs" target="fuzzified:Number_Contribs" function="fx.evidence.pos(fx.evidence.inverse(fx.join.avg(fx.transform.thresholds(sources,[0,2,3,4,6,100]))))"/>
+            <indicate source="omm_STK" target="fuzzified:omm_STK" function="fx.join.avg(fx.transform.range(sources,0,9))"/>
+            <indicate source="Activity_Ratio" target="fuzzified:Activity_Ratio" function="fx.evidence.pos(fx.evidence.inverse(fx.join.avg(fx.transform.thresholds(sources,[0,0.1,0.3,0.6,1.0,10]))))"/>
+            <indicate source="Project_Activity" target="fuzzified:Project_Activity" function="fx.join.avg(fx.transform.range(sources,5,0))"/>
+            <indicate source="omm_PP" target="fuzzified:omm_PP" function="fx.join.avg(fx.transform.range(sources,0,4))"/>
+        </relationships>
+        <entities>
+            <indicator id="omm_CM">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="6"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="omm_PP">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="4"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="omm_REQM">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="2"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="omm_RDMP">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="3"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="omm_STK">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="9"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="Project_Activity">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="5"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="Number_Contribs">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="100"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="Number_Devs">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1000"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="Activity_Ratio">
+                <property name="min" value="0"/>
+                <property name="input" value="false"/>
+                <property name="max" value="10"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <event id="Activeness Risk">
+                <property name="output" value="true"/>
+            </event>
+            <situation id="fuzzified:omm_CM"/>
+            <situation id="fuzzified:omm_PP"/>
+            <situation id="fuzzified:omm_REQM"/>
+            <situation id="fuzzified:omm_RDMP"/>
+            <situation id="fuzzified:omm_STK"/>
+            <situation id="fuzzified:Project_Activity"/>
+            <situation id="fuzzified:Number_Contribs"/>
+            <situation id="fuzzified:Number_Devs"/>
+            <situation id="fuzzified:Activity_Ratio"/>
+            <situation id="governance_risk_indicator"/>
+            <situation id="activity_risk_indicator_1"/>
+            <situation id="contribution_risk_indicator"/>
+            <situation id="activity_risk_indicator_2"/>
+            <situation id="activeness_risk_indicator"/>
+        </entities>
+    </model>
+    <script><![CDATA[var contribs = program.getScenario().getConstraint( "Number_Contribs", "st" );
+var devs = program.getScenario().getConstraint( "Number_Devs", "st" );
+
+var ratio = 0;
+
+if( Number(devs) != 0 ) {
+  ratio = Number( Number(contribs) / Number(devs) );
+}
+
+program.getScenario().setConstraint( "Activity_Ratio", "st", ratio );]]></script>
+</riscoss>

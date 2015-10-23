@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <satisfy source="license-not-provided,license-is-permissive" target="[license-is-permissive]-[license-not-provided]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-not-provided,license-is-unknown" target="[license-is-unknown]-[license-not-provided]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-commercial,license-is-permissive" target="[license-is-permissive]-[license-is-commercial]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-not-provided,license-is-copyleft" target="[license-is-copyleft]-[license-not-provided]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-not-provided,license-is-copyleft-with-linking" target="[license-is-copyleft-with-linking]-[license-not-provided]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-public-domain,license-is-permissive" target="[license-is-permissive]-[license-is-public-domain]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-permissive,license-is-copyleft" target="[license-is-copyleft]-[license-is-permissive]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-public-domain,license-is-copyleft" target="[license-is-copyleft]-[license-is-public-domain]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-commercial,license-not-provided" target="[license-not-provided]-[license-is-commercial]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-permissive,license-is-copyleft-with-linking" target="[license-is-copyleft-with-linking]-[license-is-permissive]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-public-domain,license-is-unknown" target="[license-is-unknown]-[license-is-public-domain]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="[license-is-copyleft-with-linking]-[license-is-commercial],[license-is-copyleft-with-linking]-[license-is-permissive],[license-is-copyleft-with-linking]-[license-is-public-domain],[license-is-copyleft-with-linking]-[license-not-provided],[license-is-copyleft]-[license-is-commercial],[license-is-copyleft]-[license-is-copyleft-with-linking],[license-is-copyleft]-[license-is-permissive],[license-is-copyleft]-[license-is-public-domain],[license-is-copyleft]-[license-is-unknown],[license-is-copyleft]-[license-not-provided],[license-is-permissive]-[license-is-commercial],[license-is-permissive]-[license-is-public-domain],[license-is-permissive]-[license-not-provided],[license-is-public-domain]-[license-is-commercial],[license-is-public-domain]-[license-not-provided],[license-is-unknown]-[license-is-commercial],[license-is-unknown]-[license-is-copyleft-with-linking],[license-is-unknown]-[license-is-permissive],[license-is-unknown]-[license-is-public-domain],[license-is-unknown]-[license-not-provided],[license-not-provided]-[license-is-commercial],license-is-commercial" target="license_conflict" function="fx.join.or(sources)"/>
+            <satisfy source="license-is-commercial,license-is-public-domain" target="[license-is-public-domain]-[license-is-commercial]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-commercial,license-is-unknown" target="[license-is-unknown]-[license-is-commercial]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-not-provided,license-is-public-domain" target="[license-is-public-domain]-[license-not-provided]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-permissive,license-is-unknown" target="[license-is-unknown]-[license-is-permissive]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-public-domain,license-is-copyleft-with-linking" target="[license-is-copyleft-with-linking]-[license-is-public-domain]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-commercial,license-is-copyleft-with-linking" target="[license-is-copyleft-with-linking]-[license-is-commercial]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-public-domain,license-is-unknown,license-not-provided" target="license-is-unclear" function="fx.join.or(sources)"/>
+            <satisfy source="license-is-permissive,license-is-public-domain" target="license-does-not- put-restrictions" function="fx.join.or(sources)"/>
+            <satisfy source="license-is-copyleft-with-linking,license-is-unknown" target="[license-is-unknown]-[license-is-copyleft-with-linking]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-unknown,license-is-copyleft" target="[license-is-copyleft]-[license-is-unknown]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-commercial,license-is-copyleft" target="[license-is-copyleft]-[license-is-commercial]" ccmatrix="license_concurrency_matrix"/>
+            <satisfy source="license-is-copyleft-with-linking,license-is-copyleft" target="[license-is-copyleft]-[license-is-copyleft-with-linking]" ccmatrix="license_concurrency_matrix"/>
+            <expose source="fuzzified:omm_LCS,license-is-unclear,too-many-different-licenses" target="license-uncertainty"/>
+            <expose source="license_conflict" target="license-violation" function="fx.join.or(sources)"/>
+            <expose source="license-is-copyleft-with-linking,license-is-copyleft" target="constraint-on-modification" function="fx.join.or(sources)"/>
+            <indicate source="percentage-of-files-with-permissive-license" target="license-is-permissive"/>
+            <indicate source="omm_LCS" target="fuzzified:omm_LCS" function="fx.join.avg(fx.transform.range(sources,0,6))"/>
+            <indicate source="number-of-different-licenses" target="too-many-different-licenses" function="fx.join.avg(fx.transform.asynt(sources,10))"/>
+            <indicate source="files-with-unknown-license" target="license-is-unknown"/>
+            <indicate source="copyleft-licenses" target="license-is-copyleft" function="atLeastOne(sources)"/>
+            <indicate source="percentage-of-files-without-license" target="license-not-provided"/>
+            <indicate source="files-with-commercial-license" target="license-is-commercial" function="atLeastOne(sources)"/>
+            <indicate source="copyleft-licenses-with-linking" target="license-is-copyleft-with-linking"/>
+            <indicate source="percentage-of-files-with-public-domain-license" target="license-is-public-domain"/>
+            <protect source="license-does-not- put-restrictions" target="license-violation"/>
+        </relationships>
+        <entities>
+            <indicator id="copyleft-licenses">
+                <property name="input" value="true"/>
+                <property name="description" value=""/>
+                <property name="label" value="Percentage of files with copyleft license"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="files-with-unknown-license">
+                <property name="input" value="true"/>
+                <property name="description" value=""/>
+                <property name="label" value="Percentage of files with unknown license"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="copyleft-licenses-with-linking">
+                <property name="input" value="true"/>
+                <property name="description" value=""/>
+                <property name="label" value="Percentage of files with a copyleft licenses which permits linking"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="percentage-of-files-with-permissive-license">
+                <property name="input" value="true"/>
+                <property name="description" value=""/>
+                <property name="label" value="Percentage of files with permissive license"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="percentage-of-files-with-public-domain-license">
+                <property name="input" value="true"/>
+                <property name="description" value=""/>
+                <property name="label" value="Percentage of files with public domain license"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="percentage-of-files-without-license">
+                <property name="input" value="true"/>
+                <property name="description" value=""/>
+                <property name="label" value="Percentage of files with no license"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="files-with-commercial-license">
+                <property name="input" value="true"/>
+                <property name="description" value=""/>
+                <property name="label" value="Percentage of files with commercial license"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="number-of-different-licenses">
+                <property name="input" value="true"/>
+                <property name="description" value=""/>
+                <property name="label" value="Number of different license types"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="omm_LCS">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="6"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <event id="license-violation">
+                <property name="description" value="Summarizes the risk that comes form other risks"/>
+                <property name="label" value="License violation risk"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="constraint-on-modification">
+                <property name="description" value="It is possible to embed the component into a product with a less permissive license, but in case a modification to the sources is needed, this will require a revision of licensing"/>
+                <property name="label" value="Inability to modify the OSS component"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="license-uncertainty">
+                <property name="description" value="Licensing of the component is unknown or conflicting"/>
+                <property name="label" value="License uncertainty"/>
+                <property name="output" value="true"/>
+            </event>
+            <situation id="too-many-different-licenses">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="license-is-copyleft">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="license-is-unknown">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="license-is-copyleft-with-linking">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="license-is-permissive">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="license-is-public-domain">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="license-not-provided">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="license-is-commercial">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="license-is-unclear">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="license-does-not- put-restrictions">
+                <property name="description" value=""/>
+                <property name="label" value=""/>
+            </situation>
+            <situation id="fuzzified:omm_LCS"/>
+            <situation id="[license-is-copyleft]-[license-is-unknown]"/>
+            <situation id="[license-is-copyleft]-[license-is-copyleft-with-linking]"/>
+            <situation id="[license-is-copyleft]-[license-is-permissive]"/>
+            <situation id="[license-is-copyleft]-[license-is-public-domain]"/>
+            <situation id="[license-is-copyleft]-[license-not-provided]"/>
+            <situation id="[license-is-copyleft]-[license-is-commercial]"/>
+            <situation id="[license-is-unknown]-[license-is-copyleft-with-linking]"/>
+            <situation id="[license-is-unknown]-[license-is-permissive]"/>
+            <situation id="[license-is-unknown]-[license-is-public-domain]"/>
+            <situation id="[license-is-unknown]-[license-not-provided]"/>
+            <situation id="[license-is-unknown]-[license-is-commercial]"/>
+            <situation id="[license-is-copyleft-with-linking]-[license-is-permissive]"/>
+            <situation id="[license-is-copyleft-with-linking]-[license-is-public-domain]"/>
+            <situation id="[license-is-copyleft-with-linking]-[license-not-provided]"/>
+            <situation id="[license-is-copyleft-with-linking]-[license-is-commercial]"/>
+            <situation id="[license-is-permissive]-[license-is-public-domain]"/>
+            <situation id="[license-is-permissive]-[license-not-provided]"/>
+            <situation id="[license-is-permissive]-[license-is-commercial]"/>
+            <situation id="[license-is-public-domain]-[license-not-provided]"/>
+            <situation id="[license-is-public-domain]-[license-is-commercial]"/>
+            <situation id="[license-not-provided]-[license-is-commercial]"/>
+            <situation id="license_conflict"/>
+        </entities>
+    </model>
+    <script><![CDATA[
+function atLeastOne( sources ) {
+var i;
+for( i = 0; i < sources.size(); i++ ) {
+  if( sources.get(i).getPositive() > 0 ) {
+    return fx.e( 1, 0 );
+    }
+  }
+return fx.e( 0, 0 );
+}
+]]></script>
+</riscoss>

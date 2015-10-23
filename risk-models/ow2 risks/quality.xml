@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <satisfy source="fuzzified:Test_Coverage" target="testing_risk_indicator_1"/>
+            <satisfy source="issue_handling_risk_indicator,project_management_risk_indicator,testing_risk_indicator_1,testing_risk_indicator_2" target="quality_risk_indicator" function="fx.join.avg(sources)"/>
+            <satisfy source="fuzzified:Blocker_Issue,fuzzified:Critical_Issue" target="issue_handling_risk_indicator" function="fx.join.avg(sources)"/>
+            <satisfy source="fuzzified:Test_Success" target="testing_risk_indicator_2"/>
+            <satisfy source="fuzzified:omm_DFCT,fuzzified:omm_ENV,fuzzified:omm_MST,fuzzified:omm_PDOC,fuzzified:omm_QTP,fuzzified:omm_STD" target="project_management_risk_indicator" function="fx.join.avg(sources)"/>
+            <expose source="quality_risk_indicator" target="Quality Risk"/>
+            <indicate source="omm_ENV" target="fuzzified:omm_ENV" function="fx.join.avg(fx.transform.range(sources,0,6))"/>
+            <indicate source="omm_STD" target="fuzzified:omm_STD" function="fx.join.avg(fx.transform.range(sources,0,4))"/>
+            <indicate source="omm_DFCT" target="fuzzified:omm_DFCT" function="fx.join.avg(fx.transform.range(sources,0,7))"/>
+            <indicate source="Test_Coverage" target="fuzzified:Test_Coverage" function="fx.join.avg(fx.transform.range(sources,1,0))"/>
+            <indicate source="Blocker_Issue" target="fuzzified:Blocker_Issue" function="fx.join.avg(fx.transform.thresholds(sources,[0,1,3,5,10,20]))"/>
+            <indicate source="Test_Success" target="fuzzified:Test_Success" function="fx.join.avg(fx.transform.range(sources,1,0))"/>
+            <indicate source="Critical_Issue" target="fuzzified:Critical_Issue" function="fx.join.avg(fx.transform.thresholds(sources,[0,5,10,30,50,100]))"/>
+            <indicate source="omm_MST" target="fuzzified:omm_MST"/>
+            <indicate source="omm_QTP" target="fuzzified:omm_QTP" function="fx.join.avg(fx.transform.range(sources,0,7))"/>
+            <indicate source="omm_PDOC" target="fuzzified:omm_PDOC" function="fx.join.avg(fx.transform.range(sources,0,9))"/>
+        </relationships>
+        <entities>
+            <indicator id="Blocker_Issue">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="20"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="Critical_Issue">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="100"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="Test_Coverage">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="Test_Success">
+                <property name="input" value="true"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="omm_PDOC">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="9"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="omm_STD">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="4"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="omm_QTP">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="7"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="omm_ENV">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="6"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="omm_DFCT">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="7"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="omm_MST">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="5"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <event id="Quality Risk">
+                <property name="output" value="true"/>
+            </event>
+            <situation id="fuzzified:Blocker_Issue"/>
+            <situation id="fuzzified:Critical_Issue"/>
+            <situation id="fuzzified:Test_Coverage"/>
+            <situation id="fuzzified:Test_Success"/>
+            <situation id="fuzzified:omm_PDOC"/>
+            <situation id="fuzzified:omm_STD"/>
+            <situation id="fuzzified:omm_QTP"/>
+            <situation id="fuzzified:omm_ENV"/>
+            <situation id="fuzzified:omm_DFCT"/>
+            <situation id="fuzzified:omm_MST"/>
+            <situation id="issue_handling_risk_indicator"/>
+            <situation id="testing_risk_indicator_1"/>
+            <situation id="testing_risk_indicator_2"/>
+            <situation id="project_management_risk_indicator"/>
+            <situation id="quality_risk_indicator"/>
+        </entities>
+    </model>
+</riscoss>

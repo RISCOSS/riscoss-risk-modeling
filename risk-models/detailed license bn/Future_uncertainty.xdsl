@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Future_uncertainty" numsamples="1000" discsamples="10000">
+	<properties>
+		<property id="Type">INDICATOR</property>
+	</properties>
+	<nodes>
+		<cpt id="licenses">
+			<state id="MIT" />
+			<state id="BSD4" />
+			<state id="BSD3" />
+			<state id="ASL1" />
+			<state id="ASL2" />
+			<state id="Artistic2" />
+			<state id="LGPL2_1" />
+			<state id="LGPL2_1_plus" />
+			<state id="LGPL3_plus" />
+			<state id="MPL" />
+			<state id="CDDL" />
+			<state id="CPL_EPL" />
+			<state id="EUPL" />
+			<state id="GPL2" />
+			<state id="GPL2_plus" />
+			<state id="GPL3" />
+			<state id="AGPL3" />
+			<probabilities>0.06 0.06 0.06 0.06 0.06 0.06 0.06 0.06 0.06 0.06 0.06 0.06 0.06 0.06 0.06 0.06 0.03999999999999959</probabilities>
+			<property id="Type">INPUT</property>
+		</cpt>
+		<cpt id="Type_of_linking">
+			<state id="Static" />
+			<state id="Dynamic" />
+			<probabilities>0.5 0.5</probabilities>
+			<property id="Type">INPUT</property>
+		</cpt>
+		<cpt id="Future_uncertainty">
+			<state id="s0" />
+			<state id="s1" />
+			<state id="s2" />
+			<state id="s3" />
+			<state id="s4" />
+			<parents>licenses Type_of_linking</parents>
+			<probabilities>0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2</probabilities>
+			<property id="Type">INDICATOR</property>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.5219.0" name="Future_uncertainty" faultnameformat="nodestate">
+			<node id="licenses">
+				<name>licenses</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>798 261 870 309</position>
+				<barchart active="true" width="197" height="342" />
+			</node>
+			<node id="Type_of_linking">
+				<name>Type_of_linking</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>126 209 198 257</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="Future_uncertainty">
+				<name>Future_uncertainty</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>459 232 531 280</position>
+				<barchart active="true" width="180" height="108" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

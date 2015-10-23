@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <indicate source="#GPL2+,linking" target="#s:GPL2+" function="ifValue(nodes,'#GPL2+','linking',0)"/>
+            <indicate source="#CDDL,linking" target="#s:CDDL" function="ifValue(nodes,'#CDDL','linking',0)"/>
+            <indicate source="#Artistic2,linking" target="#s:Artistic2" function="ifValue(nodes,'#Artistic2','linking',0)"/>
+            <indicate source="#CPL-EPL,linking" target="#d:CPL-EPL" function="ifValue(nodes,'#CPL-EPL','linking',1)"/>
+            <indicate source="#GPL2,linking" target="#s:GPL2" function="ifValue(nodes,'#GPL2','linking',0)"/>
+            <indicate source="#MPL,linking" target="#d:MPL" function="ifValue(nodes,'#MPL','linking',1)"/>
+            <indicate source="#CPL-EPL,linking" target="#s:CPL-EPL" function="ifValue(nodes,'#CPL-EPL','linking',0)"/>
+            <indicate source="#LGPL3+,linking" target="#d:LGPL3+" function="ifValue(nodes,'#LGPL3+','linking',1)"/>
+            <indicate source="#BSD4,linking" target="#s:BSD4" function="ifValue(nodes,'#BSD4','linking',0)"/>
+            <indicate source="#BSD4,linking" target="#d:BSD4" function="ifValue(nodes,'#BSD4','linking',1)"/>
+            <indicate source="#LGPL2.1,linking" target="#d:LGPL2.1" function="ifValue(nodes,'#LGPL2.1','linking',1)"/>
+            <indicate source="#ASL1,linking" target="#s:ASL1" function="ifValue(nodes,'#ASL1','linking',0)"/>
+            <indicate source="#ASL1,linking" target="#d:ASL1" function="ifValue(nodes,'#ASL1','linking',1)"/>
+            <indicate source="#GPL2,linking" target="#d:GPL2" function="ifValue(nodes,'#GPL2','linking',1)"/>
+            <indicate source="#EUPL,linking" target="#d:EUPL" function="ifValue(nodes,'#EUPL','linking',1)"/>
+            <indicate source="#MIT,linking" target="#d:MIT" function="ifValue(nodes,'#MIT','linking',1)"/>
+            <indicate source="#MPL,linking" target="#s:MPL" function="ifValue(nodes,'#MPL','linking',0)"/>
+            <indicate source="#BSD3,linking" target="#d:BSD3" function="ifValue(nodes,'#BSD3','linking',1)"/>
+            <indicate source="#GPL3,linking" target="#s:GPL3" function="ifValue(nodes,'#GPL3','linking',0)"/>
+            <indicate source="#GPL2+,linking" target="#d:GPL2+" function="ifValue(nodes,'#GPL2+','linking',1)"/>
+            <indicate source="#MIT,linking" target="#s:MIT" function="ifValue(nodes,'#MIT','linking',0)"/>
+            <indicate source="#LGPL2.1+,linking" target="#d:LGPL2.1+" function="ifValue(nodes,'#LGPL2.1+','linking',1)"/>
+            <indicate source="#LGPL2.1,linking" target="#s:LGPL2.1" function="ifValue(nodes,'#LGPL2.1','linking',0)"/>
+            <indicate source="#ASL2,linking" target="#d:ASL2" function="ifValue(nodes,'#ASL2','linking',1)"/>
+            <indicate source="#Artistic2,linking" target="#d:Artistic2" function="ifValue(nodes,'#Artistic2','linking',1)"/>
+            <indicate source="#LGPL2.1+,linking" target="#s:LGPL2.1+" function="ifValue(nodes,'#LGPL2.1+','linking',0)"/>
+            <indicate source="#AGPL3,linking" target="#s:AGPL3" function="ifValue(nodes,'#AGPL3','linking',0)"/>
+            <indicate source="#ASL2,linking" target="#s:ASL2" function="ifValue(nodes,'#ASL2','linking',0)"/>
+            <indicate source="#LGPL3+,linking" target="#s:LGPL3+" function="ifValue(nodes,'#LGPL3+','linking',0)"/>
+            <indicate source="#EUPL,linking" target="#s:EUPL" function="ifValue(nodes,'#EUPL','linking',0)"/>
+            <indicate source="#CDDL,linking" target="#d:CDDL" function="ifValue(nodes,'#CDDL','linking',1)"/>
+            <indicate source="#BSD3,linking" target="#s:BSD3" function="ifValue(nodes,'#BSD3','linking',0)"/>
+            <indicate source="#GPL3,linking" target="#d:GPL3" function="ifValue(nodes,'#GPL3','linking',1)"/>
+            <indicate source="#AGPL3,linking" target="#d:AGPL3" function="ifValue(nodes,'#AGPL3','linking',1)"/>
+        </relationships>
+        <entities>
+            <indicator id="linking">
+                <property name="min" value="0"/>
+                <property name="input" value="true"/>
+                <property name="max" value="1"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#MIT">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of MIT licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#BSD4">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of BSD4 licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#BSD3">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of BSD3 licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#ASL1">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of ASL1 licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#ASL2">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of ASL2 licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#Artistic2">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of Artistic2 licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#LGPL2.1">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of LGPL2.1 licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#LGPL2.1+">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of LGPL2.1+ licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#LGPL3+">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of LGPL3+ licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#MPL">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of MPL licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#CDDL">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of CDDL licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#CPL-EPL">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of CPL-EPL licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#EUPL">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of EUPL licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#GPL2">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of GPL2 licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#GPL2+">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of GPL2+ licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#GPL3">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of GPL3 licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#AGPL3">
+                <property name="input" value="true"/>
+                <property name="description" value="Number of AGPL3 licenses"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="#s:MIT">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:BSD4">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:BSD3">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:ASL1">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:ASL2">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:Artistic2">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:LGPL2.1">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:LGPL2.1+">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:LGPL3+">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:MPL">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:CDDL">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:CPL-EPL">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:EUPL">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:GPL2">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:GPL2+">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:GPL3">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#s:AGPL3">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:MIT">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:BSD4">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:BSD3">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:ASL1">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:ASL2">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:Artistic2">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:LGPL2.1">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:LGPL2.1+">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:LGPL3+">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:MPL">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:CDDL">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:CPL-EPL">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:EUPL">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:GPL2">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:GPL2+">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:GPL3">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+            <indicator id="#d:AGPL3">
+                <property name="input" value="true"/>
+                <property name="default-value" value="0"/>
+                <property name="datatype" value="integer"/>
+                <property name="output" value="true"/>
+            </indicator>
+        </entities>
+    </model>
+    <script><![CDATA[function ifValue(nodes,src,trigger,triggerValue) {
+  var value1 = program.getScenario().getConstraint(target.getName(),"st");
+  var value2 = relation.getSource(src).getValue();
+  if( relation.getSource(trigger).getValue() == triggerValue ) {
+    target.setValue( Number(value1) + Number(value2) );
+  }
+}
+]]></script>
+</riscoss>
