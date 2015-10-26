@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <impact source="Lack of Knowledge" target="GOAL-ACQ-Legal"/>
+            <impact source="Internal Incompatibility" target="GOAL-DEP"/>
+            <impact source="External Incompatibility,Internal Incompatibility" target="GOAL-LicenseCompatible"/>
+            <impact source="Lack of Affinity" target="GOAL-EasyLicenseManagement"/>
+            <impact source="Declining Component Licenses,Declining Target License,Obsolete Component Licenses,Obsolete Target Licenses,Infrequent Component Licenses,Infrequent Target License,Reduced Target License Set" target="GOAL-FutureLicenseStability"/>
+        </relationships>
+        <entities>
+            <event id="Internal Incompatibility">
+                <property name="argument" value="There is risk of incompatibility among component licenses"/>
+                <property name="description" value="Risk that the project components have licenses that are incompatible"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="External Incompatibility">
+                <property name="argument" value="There is risk of incompatibility between component licenses and target license"/>
+                <property name="description" value="Risk that the project components have licenses that are incompatible with the target license"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Lack of Affinity">
+                <property name="argument" value="There is risk of lack of affinity among licenses"/>
+                <property name="description" value="Risk that arises from the need of maintaining a given corporate licensing scheme. It indicates how this set of components deviates from the desired scheme (specified by the target license)"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Reduced Target License Set">
+                <property name="argument" value="There is risk due to a reduced degree of freedom"/>
+                <property name="description" value="Risk due to the low degree of freedom in the choice of the target license because of the licenses of all components"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Infrequent Component Licenses">
+                <property name="argument" value="There is the risk of adopting components with not widely used licenses"/>
+                <property name="description" value="Risk that the project includes components released under rare or unusual licenses"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Infrequent Target License">
+                <property name="argument" value="There is risk of choosing a target license type which is not widely used"/>
+                <property name="description" value="Risk that the selected target licens is rare or unusual"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Lack of Knowledge">
+                <property name="argument" value="There is a risk arisong from the precence of unknown licenses"/>
+                <property name="description" value="Risk that, because of lack of knowledge in relation to the number of components licenses, the rest of the risk analysis is not completely trustable. The model support only 17 licenses. There are more than 70 OSI recognized licenses and an undefined number of non-OSS ones. These 17 covers the majority of the cases but there is an error margin where uncertainty exists. This risk represents this uncertainty"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Declining Component Licenses">
+                <property name="argument" value="There is risk that the usage of the component licenses will decline"/>
+                <property name="description" value="Risk that the project includes components released under declining licenses"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Declining Target License">
+                <property name="argument" value="There is risk that the usage of the target license will decline"/>
+                <property name="description" value="Risk that the selected target license is declining"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Obsolete Component Licenses">
+                <property name="argument" value="There is risk that the component licenses are obsolete"/>
+                <property name="description" value="Risk that the project includes components released under obsolete licenses. A license is obsolete when at least a greater version of the same license exists. It is &#8220;more obsoleted&#8221; as the number of subsequent versions is greater"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Obsolete Target Licenses">
+                <property name="argument" value="There is risk that the target license is obsolete"/>
+                <property name="description" value="Risk that the selected target license is obsolete. A license is obsolete when at least a greater version of the same license exists. It is &#8220;more obsoleted&#8221; as the number of subsequent versions is greater"/>
+                <property name="output" value="true"/>
+            </event>
+            <goal id="GOAL-FutureLicenseStability"/>
+            <goal id="GOAL-EasyLicenseManagement"/>
+            <goal id="GOAL-LicenseCompatible"/>
+            <goal id="GOAL-DEP"/>
+            <goal id="GOAL-ACQ-Legal"/>
+        </entities>
+    </model>
+</riscoss>
