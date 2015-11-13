@@ -1,6 +1,7 @@
 <?xml version='1.0'?>
 <istarml version='1.0'>
-    <diagram name='OSS Integration' strategy_version='2.0' description='Goal model describing the relationship between the adopter organization and the OSS community when the adopter is playing an active role in the community with the purpose to share and co-create.' last_modification='04/11/2014'>
+    <diagram name='OSS Integration' strategy_version='2.1' last_modification='04/11/2014'>
+		<description>Goal model describing the relationship between the adopter organization and the OSS community when the adopter is playing an active role in the community with the purpose to share and co-create</description>
         <actor id='COMM' name='OSS Community'/>
         <actor id='CMP' name='OSS Adopter'>
             <boundary>

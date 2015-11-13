@@ -1,6 +1,7 @@
 <?xml version='1.0'?>
 <istarml version='1.0'>
-    <diagram name='OSS Acquisition' strategy_version='2.1' description='Goal model describing the relationship between the adopter organization and the OSS community when the adopter is not contributing to the community.' last_modification='15/04/2015'>
+    <diagram name='OSS Acquisition' strategy_version='2.1.1' last_modification='15/04/2015'>
+		<description>Goal model describing the relationship between the adopter organization and the OSS community when the adopter is not contributing to the community</description>
         <actor id='COMM' name='OSS Community'>
         </actor>
         <actor id='CMP' name='OSS Adopter'>
