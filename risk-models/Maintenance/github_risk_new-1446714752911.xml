@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <satisfy function="fx.join.avg(sources)" weight="0.2" source="fuzzified:has_wiki" target="documentation-unavailable"/>
+            <satisfy function="fx.join.avg(sources)" source="fuzzified:github:repository-issue-open-close-diff-avg,fuzzified:github:repository-issue-openratio" target="high-open-closed-issues-ratio"/>
+            <satisfy function="fx.join.avg(sources)" source="fuzzified:github:repository-contributions_sum,fuzzified:repository_age_years" target="young-repository"/>
+            <satisfy function="fx.join.avg(sources)" source="fuzzified:github:repository-stargazers_count,fuzzified:github:repository-subscribers_count,fuzzified:i:low_forks_count" target="not-popular"/>
+            <satisfy function="fx.join.avg(sources)" source="documentation-unavailable,high-open-closed-issues-ratio,CI-not-available" target="unmaintained-repository"/>
+            <satisfy source="fuzzified:has_license" target="license-unavailable"/>
+            <satisfy source="fuzzified:ci_link" target="CI-not-available"/>
+            <satisfy function="fx.join.avg(sources)" source="fuzzified:github:repository-percent_contributors_did_80_percent_of_commits,fuzzified:github:repository-percent_contributors_did_90_percent_of_commits,license-unavailable,young-repository" target="project-is-fragile"/>
+            <indicate function="zeroes( sources )" source="github:repository-ci_link" target="fuzzified:ci_link"/>
+            <indicate source="github:repository-issue-openratio" target="fuzzified:github:repository-issue-openratio"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,10)))" source="github:repository-contributors" target="fuzzified:github:repository-contributors"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,100)))" source="github:repository-contributions_sum" target="fuzzified:github:repository-contributions_sum"/>
+            <indicate function="zeroes( sources )" source="github:repository-has_license" target="fuzzified:has_license"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,100)))" source="github:repository-pull-requests" target="fuzzified:github:repository-pull-requests"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,100)))" source="github:repository-subscribers_count" target="fuzzified:github:repository-subscribers_count"/>
+            <indicate source="github:repository-percent_contributors_did_80_percent_of_commits" target="fuzzified:github:repository-percent_contributors_did_80_percent_of_commits"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,1000)))" source="github:repository-stargazers_count" target="fuzzified:github:repository-stargazers_count"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(sources))" source="github:repository-percent_contributors_did_90_percent_of_commits" target="fuzzified:github:repository-percent_contributors_did_90_percent_of_commits"/>
+            <indicate function="zeroes( sources )" source="github:repository-has_wiki" target="fuzzified:has_wiki"/>
+            <indicate function="fx.join.avg(fx.transform.range(sources,0,30))" source="github:repository-issue-open-close-diff-avg" target="fuzzified:github:repository-issue-open-close-diff-avg"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,2)))" source="github:repository-issue-comments-avg" target="fuzzified:github:repository-issue-comments-avg"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,5)))" source="github:repository-repository_age_years" target="fuzzified:repository_age_years"/>
+            <indicate function="fx.join.avg(fx.transform.tanh(sources))" source="i:low_forks_count" target="fuzzified:i:low_forks_count"/>
+            <expose function="fx.join.avg(sources)" source="fuzzified:github:repository-contributors,fuzzified:github:repository-percent_contributors_did_80_percent_of_commits,fuzzified:github:repository-issue-comments-avg,young-repository,fuzzified:github:repository-pull-requests,project-is-fragile" target="Project Activity Risk"/>
+            <expose function="fx.join.avg(sources)" source="not-popular,unmaintained-repository" target="Obsolescence Risk"/>
+            <expose function="fx.join.avg(sources)" source="CI-not-available,high-open-closed-issues-ratio,young-repository" target="Bug Risk"/>
+            <expose function="fx.join.avg(sources)" source="documentation-unavailable" target="Analysability Risk"/>
+        </relationships>
+        <entities>
+            <indicator id="github:repository-ci_link">
+                <property name="input" value="true"/>
+                <property name="min" value="0"/>
+                <property name="max" value="1"/>
+                <property name="datatype" value="integer"/>
+                <property name="description" value="Link to TravisCI service (www.travis-ci.org). TravisCI is a continuous integration  framework, which automatically tests the build of a given Github project. Although this is not included in the Github API, it can be extracted from the list of files present in the repository"/>
+                <property name="label" value="Link to Travis CI"/>
+            </indicator>
+            <indicator id="github:repository-has_license">
+                <property name="input" value="true"/>
+                <property name="min" value="0"/>
+                <property name="max" value="1"/>
+                <property name="datatype" value="integer"/>
+                <property name="description" value="true if the developer(s) has specified a license according to the Github license  specification rules"/>
+                <property name="label" value="Presence of a license"/>
+            </indicator>
+            <indicator id="github:repository-stargazers_count">
+                <property name="input" value="true"/>
+                <property name="min" value="0"/>
+                <property name="max" value="1000"/>
+                <property name="datatype" value="integer"/>
+                <property name="description" value="Repository Starring is a feature that lets users bookmark repositories. Stars are shown next to repositories to show an approximate level of interest. Stars have no effect on notifications or the activity feed"/>
+                <property name="label" value="Number of stargazers"/>
+            </indicator>
+            <indicator id="github:repository-contributors">
+                <property name="input" value="true"/>
+                <property name="min" value="0"/>
+                <property name="max" value="50"/>
+                <property name="datatype" value="integer"/>
+                <property name="description" value=""/>
+                <property name="label" value="Number of contributors (persons that did at least one commit)"/>
+            </indicator>
+            <indicator id="github:repository-subscribers_count">
+                <property name="input" value="true"/>
+                <property name="datatype" value="integer"/>
+                <property name="description" value=""/>
+                <property name="label" value="Number of subscribers (Watchers in the Github UI): Watching a Repository registers the user to receive notifications on new discussions, as well as events in the users activity feed"/>
+            </indicator>
+            <indicator id="github:repository-has_wiki">
+                <property name="input" value="true"/>
+                <property name="min" value="0"/>
+                <property name="max" value="1"/>
+                <property name="datatype" value="integer"/>
+                <property name="description" value="true is a wiki has been set up in the repository."/>
+                <property name="label" value="Presence of a wiki"/>
+            </indicator>
+            <indicator id="github:repository-forks_count">
+                <property name="input" value="true"/>
+                <property name="datatype" value="integer"/>
+                <property name="description" value="Number of git forks (i.e. repository clones on github)"/>
+                <property name="label" value="Number of forks"/>
+            </indicator>
+            <indicator id="github:repository-repository_age_years">
+                <property name="input" value="true"/>
+                <property name="min" value="0"/>
+                <property name="max" value="10"/>
+                <property name="datatype" value="integer"/>
+                <property name="description" value="This indicator represents the age of the repository, in years"/>
+                <property name="label" value="Age of repository in years"/>
+            </indicator>
+            <indicator id="i:low_forks_count">
+                <property name="input" value="false"/>
+                <property name="datatype" value="integer"/>
+            </indicator>
+            <indicator id="github:repository-pull-requests">
+                <property name="input" value="true"/>
+                <property name="min" value="0"/>
+                <property name="max" value="100"/>
+                <property name="datatype" value="integer"/>
+                <property name="label" value="Number of pull requests (last year)"/>
+            </indicator>
+            <indicator id="github:repository-percent_contributors_did_90_percent_of_commits">
+                <property name="input" value="true"/>
+                <property name="min" value="0"/>
+                <property name="max" value="1"/>
+                <property name="datatype" value="real"/>
+                <property name="label" value="Percent of contributors that did &gt;90% of all commits (last year)"/>
+            </indicator>
+            <indicator id="github:repository-percent_contributors_did_80_percent_of_commits">
+                <property name="input" value="true"/>
+                <property name="min" value="0"/>
+                <property name="max" value="1"/>
+                <property name="datatype" value="real"/>
+                <property name="label" value="Percent of contributors that did &gt;50% of all commits (last year)"/>
+            </indicator>
+            <indicator id="github:repository-issue-open-close-diff-avg">
+                <property name="input" value="true"/>
+                <property name="min" value="0"/>
+                <property name="max" value="50"/>
+                <property name="datatype" value="integer"/>
+                <property name="label" value="Days elapsed from opening to closing an issue, in average (last year)"/>
+            </indicator>
+            <indicator id="github:repository-issue-openratio">
+                <property name="input" value="true"/>
+                <property name="min" value="0"/>
+                <property name="max" value="1"/>
+                <property name="datatype" value="real"/>
+                <property name="label" value="Ratio of issues still open (from issues opened last year)"/>
+            </indicator>
+            <indicator id="github:repository-issue-comments-avg">
+                <property name="input" value="true"/>
+                <property name="min" value="0"/>
+                <property name="max" value="3"/>
+                <property name="datatype" value="real"/>
+                <property name="label" value="Average number of comments per issue (last year)"/>
+            </indicator>
+            <indicator id="github:repository-contributions_sum">
+                <property name="input" value="true"/>
+                <property name="datatype" value="integer"/>
+                <property name="label" value="Sum of all contributions (i.e. commits) to the project"/>
+            </indicator>
+            <event id="Bug Risk">
+                <property name="output" value="true"/>
+                <property name="description" value="Refers to the possibility that critical bugs are present and/or not promptly patched."/>
+            </event>
+            <event id="Obsolescence Risk">
+                <property name="output" value="true"/>
+                <property name="description" value="Refers to a lack of popularity of the project, due to a reduced number of people following it and reporting bugs and opening issues"/>
+            </event>
+            <event id="Analysability Risk">
+                <property name="output" value="true"/>
+                <property name="description" value="Refers to the (lack of) quality of the software to be easily understood from the adopter"/>
+            </event>
+            <event id="Project Activity Risk">
+                <property name="output" value="true"/>
+                <property name="description" value="Refers to the activeness of the project developers (contributors), their responsiveness in the issue tracker and the stability of the project (including project age)"/>
+            </event>
+            <situation id="unmaintained-repository">
+                <property name="argument" value="The repository seems to be unmaintained"/>
+            </situation>
+            <situation id="CI-not-available">
+                <property name="argument" value="There is no link to a Continuous Integration framework"/>
+            </situation>
+            <situation id="license-unavailable">
+                <property name="argument" value="The license has not been specified"/>
+            </situation>
+            <situation id="not-popular">
+                <property name="argument" value="The repository is not followed by many people"/>
+            </situation>
+            <situation id="documentation-unavailable">
+                <property name="argument" value="There is no documentation available"/>
+            </situation>
+            <situation id="high-open-closed-issues-ratio">
+                <property name="argument" value="The ratio between open and closed issues is high"/>
+            </situation>
+            <situation id="young-repository">
+                <property name="argument" value="The repository is relatively young"/>
+            </situation>
+            <situation id="fuzzified:ci_link">
+                <property name="argument" value="No link to a Continuous Integration found"/>
+            </situation>
+            <situation id="fuzzified:has_license">
+                <property name="argument" value="No license found"/>
+            </situation>
+            <situation id="fuzzified:has_wiki">
+                <property name="argument" value="No wiki found"/>
+            </situation>
+            <situation id="fuzzified:i:low_forks_count">
+                <property name="argument" value="Low forks count"/>
+            </situation>
+            <situation id="fuzzified:repository_age_years">
+                <property name="argument" value="Long time passed from the last activity"/>
+            </situation>
+            <situation id="fuzzified:github:repository-stargazers_count">
+                <property name="argument" value="The number of stargazers is high"/>
+            </situation>
+            <situation id="fuzzified:github:repository-contributors">
+                <property name="argument" value="The number of stargazers is high"/>
+            </situation>
+            <situation id="fuzzified:github:repository-subscribers_count">
+                <property name="argument" value="The number of contributors is high"/>
+            </situation>
+            <situation id="fuzzified:github:repository-pull-requests">
+                <property name="argument" value="There are many pull requests"/>
+            </situation>
+            <situation id="fuzzified:github:repository-percent_contributors_did_90_percent_of_commits">
+                <property name="argument" value="A relatively high number of developers made mode than 90 parcent of commits"/>
+            </situation>
+            <situation id="fuzzified:github:repository-percent_contributors_did_80_percent_of_commits">
+                <property name="argument" value="A relatively high number of developers made mode than 80 parcent of commits"/>
+            </situation>
+            <situation id="fuzzified:github:repository-issue-open-close-diff-avg"/>
+            <situation id="fuzzified:github:repository-issue-openratio"/>
+            <situation id="fuzzified:github:repository-issue-comments-avg"/>
+            <situation id="fuzzified:github:repository-contributions_sum"/>
+            <situation id="project-is-fragile">
+                <property name="argument" value="Project is fragile"/>
+            </situation>
+        </entities>
+    </model>
+    <script><![CDATA[function zeroes( sources ) {
+  for( i = 0; i < sources.size(); i++ ) {
+    if( sources.get( i ).getPositive() > 0 ) return fx.e( 0, 0 );
+  }
+  return fx.e( 1, 0 );
+}
+
+function inverse( sources ) {
+  if( sources.size() < 1 ) return fx.e( 0, 0 );
+  return fx.e( 1 - sources.get(0).getPositive(), 0 );
+}
+
+var forks = program.getScenario().getConstraint( "github:repository-forks_count", "st" );
+
+program.getScenario().setConstraint( "i:low_forks_count", "st", 1 - fx.asynt2( Number(forks), 10 ) );
+
+function ptr( name ) {
+  println( name + ": " + program.getScenario().getConstraint( name, "st" ) );
+}
+
+]]></script>
+</riscoss>
