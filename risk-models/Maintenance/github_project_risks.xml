@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <expose source="Analysability Risk" target="Project Analysability Risk"/>
+            <expose source="Bug Risk" target="Project Bug Risk"/>
+            <expose source="Project Obsolescence Risk" target="Project Obsolescence Risk"/>
+            <expose source="Activity Risk" target="Project Activity Risk"/>
+        </relationships>
+        <entities>
+            <event id="Bug Risk">
+                <property name="input" value="true"/>
+            </event>
+            <event id="Obsolescence Risk">
+                <property name="input" value="true"/>
+            </event>
+            <event id="Analysability Risk">
+                <property name="input" value="true"/>
+            </event>
+            <event id="Activity Risk">
+                <property name="input" value="true"/>
+            </event>
+            <event id="Project Bug Risk">
+                <property name="output" value="true"/>
+                <property name="description" value="Refers to the possibility that critical bugs are present and/or not promptly patched."/>
+            </event>
+            <event id="Project Obsolescence Risk">
+                <property name="output" value="true"/>
+                <property name="description" value="Refers to a lack of popularity of the project, due to a reduced number of people following it and reporting bugs and opening issues"/>
+            </event>
+            <event id="Project Analysability Risk">
+                <property name="output" value="true"/>
+                <property name="description" value="Refers to the (lack of) quality of the software to be easily understood from the adopter"/>
+            </event>
+            <event id="Project Activity Risk">
+                <property name="output" value="true"/>
+                <property name="description" value="Refers to the activeness of the project developers (contributors), their responsiveness in the issue tracker and the stability of the project (including project age)"/>
+            </event>
+        </entities>
+    </model>
+</riscoss>
