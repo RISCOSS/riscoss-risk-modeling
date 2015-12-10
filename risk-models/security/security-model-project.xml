@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <expose source="obtain unauthorized access " target="obtain unauthorized access (Project level)"/>
+            <expose source="break security policy" target="break security policy (Project level)"/>
+            <expose source="obtain log trace or disclose confidential data" target="obtain log trace or disclose confidential data (Project level)"/>
+            <expose source="human error risk" target="human error risk (Project level)"/>
+            <expose source="Security risk event" target="Security risk event (Project level)"/>
+            <expose source="component maintenance failure" target="component maintenance failure (Project level)"/>
+            <expose source="introduce security- sensitive data" target="introduce security- sensitive data (Project level)"/>
+        </relationships>
+        <entities>
+            <event id="obtain unauthorized access ">
+                <property name="input" value="true"/>
+                <property name="label" value="obtain unauthorized access "/>
+            </event>
+            <event id="component maintenance failure">
+                <property name="input" value="true"/>
+                <property name="label" value="component maintenance failure"/>
+            </event>
+            <event id="introduce security- sensitive data">
+                <property name="input" value="true"/>
+                <property name="label" value="introduce security- sensitive data"/>
+            </event>
+            <event id="human error risk">
+                <property name="input" value="true"/>
+                <property name="label" value="human error risk"/>
+            </event>
+            <event id="Security risk event">
+                <property name="input" value="true"/>
+                <property name="label" value="Security risk event"/>
+            </event>
+            <event id="break security policy">
+                <property name="input" value="true"/>
+                <property name="label" value="break security policy"/>
+            </event>
+            <event id="modify or destroy data">
+                <property name="input" value="true"/>
+                <property name="label" value="modify or destroy data"/>
+            </event>
+            <event id="obtain log trace or disclose confidential data">
+                <property name="input" value="true"/>
+                <property name="label" value="obtain log trace or disclose confidential data"/>
+            </event>
+            <event id="obtain unauthorized access (Project level)">
+                <property name="output" value="true"/>
+                <property name="label" value="obtain unauthorized access (Project level)"/>
+            </event>
+            <event id="component maintenance failure (Project level)">
+                <property name="output" value="true"/>
+                <property name="label" value="component maintenance failure (Project level)"/>
+            </event>
+            <event id="introduce security- sensitive data (Project level)">
+                <property name="output" value="true"/>
+                <property name="label" value="introduce security- sensitive data (Project level)"/>
+            </event>
+            <event id="human error risk (Project level)">
+                <property name="output" value="true"/>
+                <property name="label" value="human error risk (Project level)"/>
+            </event>
+            <event id="Security risk event (Project level)">
+                <property name="output" value="true"/>
+                <property name="label" value="Security risk event (Project level)"/>
+            </event>
+            <event id="break security policy (Project level)">
+                <property name="output" value="true"/>
+                <property name="label" value="break security policy (Project level)"/>
+            </event>
+            <event id="obtain log trace or disclose confidential data (Project level)">
+                <property name="output" value="true"/>
+                <property name="label" value="obtain log trace or disclose confidential data (Project level)"/>
+            </event>
+        </entities>
+    </model>
+</riscoss>

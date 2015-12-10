@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model>
+        <relationships>
+            <satisfy source="Unreliable community support" target="Need for self- implemented code" function="fx.join.or(sources)"/>
+            <satisfy source="fuzzified:criticality of running instances,fuzzified:availability of 3rd party  documentation,fuzzified:number of installations" target="low confidence of others in the component" function="fx.join.or(sources)"/>
+            <satisfy source="fuzzified:no existing threat analysis,fuzzified:missing security tests,fuzzified:no systematic bug handling" target="low security risk awareness" function="fx.join.or(sources)"/>
+            <satisfy source="late detection of security bugs,Lacks in software quality,increased maintenance effort and cost,degraded security features,presence of security bugs" target="Presence of security vulnerabilities" function="fx.join.or(sources)"/>
+            <satisfy source="Lose community support,Need for self- implemented code,Maintenance planning uncertainty" target="increased maintenance effort and cost" function="fx.join.or(sources)"/>
+            <satisfy source="fuzzified:missing user manual" target="weak documentation" function="fx.join.or(sources)"/>
+            <satisfy source="fuzzified:cyclomatic complexity,critical security issues history,fuzzified:nesting complexity" target="Lacks in software quality" function="fx.join.or(sources)"/>
+            <satisfy source="low security risk awareness" target="degraded security features" function="fx.join.or(sources)"/>
+            <satisfy source="fuzzified:contribution of academic expertise to the community,fuzzified:software maturity measures,fuzzified:no existing academic or 3P  risk analysis,fuzzified:no specification of security features  architecture" target="Uncertainty about quality" function="fx.join.or(sources)"/>
+            <satisfy source="Unreliable community support" target="Lose community support" function="fx.join.or(sources)"/>
+            <satisfy source="fuzzified:#committers,fuzzified:forum posts per day" target="low community activity" function="fx.join.or(sources)"/>
+            <satisfy source="Unknown community roadmap and  development schedules" target="Maintenance planning uncertainty" function="fx.join.or(sources)"/>
+            <satisfy source="fuzzified:past time to update,fuzzified:past response time,fuzzified:past implemen- tation time" target="critical security issues history" function="fx.join.or(sources)"/>
+            <satisfy source="Testing shortfalls" target="late detection of security bugs" function="fx.join.or(sources)"/>
+            <satisfy source="fuzzified:bugs  per year,fuzzified:number of  security bugs" target="presence of security bugs" function="fx.join.or(sources)"/>
+            <satisfy source="critical security issues history,low community activity" target="Unreliable community support" function="fx.join.or(sources)"/>
+            <satisfy source="fuzzified:new communication interfaces" target="possibility to obtain   log and trace data" function="fx.join.or(sources)"/>
+            <satisfy source="weak documentation,Testing shortfalls" target="Lack of a systematic process" function="fx.join.or(sources)"/>
+            <satisfy source="low security risk awareness" target="Testing shortfalls" function="fx.join.or(sources)"/>
+            <satisfy source="low confidence of others in the component,Uncertainty about quality" target="Lack of risk awareness" function="fx.join.or(sources)"/>
+            <satisfy source="fuzzified:missing roadmap,fuzzified:missing development scheduling" target="Unknown community roadmap and  development schedules" function="fx.join.or(sources)"/>
+            <expose source="increased maintenance effort and cost" target="component maintenance failure" function="fx.join.or(sources)"/>
+            <expose source="Lack of a systematic process" target="human error risk" function="fx.join.or(sources)"/>
+            <expose source="introduce security- sensitive data,obtain log trace or disclose confidential data,modify or destroy data,break security policy,component maintenance failure,obtain unauthorized access " target="Security risk event" function="fx.join.or(sources)"/>
+            <expose source="Lack of risk awareness,Lack of a systematic process" target="break security policy" function="fx.join.or(sources)"/>
+            <expose source="Presence of security vulnerabilities" target="modify or destroy data" function="fx.join.or(sources)"/>
+            <expose source="Presence of security vulnerabilities" target="obtain unauthorized access " function="fx.join.or(sources)"/>
+            <expose source="possibility to obtain   log and trace data" target="introduce security- sensitive data" function="fx.join.or(sources)"/>
+            <expose source="Presence of security vulnerabilities" target="obtain log trace or disclose confidential data" function="fx.join.or(sources)"/>
+            <indicate source="number of installations" target="fuzzified:number of installations" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="no specification of security features  architecture" target="fuzzified:no specification of security features  architecture" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="nesting complexity" target="fuzzified:nesting complexity" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="software maturity measures" target="fuzzified:software maturity measures" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="missing security tests" target="fuzzified:missing security tests" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="criticality of running instances" target="fuzzified:criticality of running instances" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="missing user manual" target="fuzzified:missing user manual" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="bugs  per year" target="fuzzified:bugs  per year" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="cyclomatic complexity" target="fuzzified:cyclomatic complexity" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="#committers" target="fuzzified:#committers" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="number of  security bugs" target="fuzzified:number of  security bugs" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="missing roadmap" target="fuzzified:missing roadmap" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="no systematic bug handling" target="fuzzified:no systematic bug handling" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="past response time" target="fuzzified:past response time" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="forum posts per day" target="fuzzified:forum posts per day" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="no existing academic or 3P  risk analysis" target="fuzzified:no existing academic or 3P  risk analysis" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="past implemen- tation time" target="fuzzified:past implemen- tation time" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="availability of 3rd party  documentation" target="fuzzified:availability of 3rd party  documentation" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="past time to update" target="fuzzified:past time to update" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="no existing threat analysis" target="fuzzified:no existing threat analysis" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="contribution of academic expertise to the community" target="fuzzified:contribution of academic expertise to the community" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="new communication interfaces" target="fuzzified:new communication interfaces" function="fx.join.or(fx.transform.tanh(sources))"/>
+            <indicate source="missing development scheduling" target="fuzzified:missing development scheduling" function="fx.join.or(fx.transform.tanh(sources))"/>
+        </relationships>
+        <entities>
+            <indicator id="missing development scheduling">
+                <property name="input" value="true"/>
+                <property name="label" value="missing development scheduling"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="missing user manual">
+                <property name="input" value="true"/>
+                <property name="label" value="missing user manual"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="past response time">
+                <property name="input" value="true"/>
+                <property name="label" value="past response time"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="number of  security bugs">
+                <property name="input" value="true"/>
+                <property name="label" value="number of  security bugs"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="missing security tests">
+                <property name="input" value="true"/>
+                <property name="label" value="missing security tests"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="#committers">
+                <property name="input" value="true"/>
+                <property name="label" value="#committers"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="criticality of running instances">
+                <property name="input" value="true"/>
+                <property name="label" value="criticality of running instances"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="missing roadmap">
+                <property name="input" value="true"/>
+                <property name="label" value="missing roadmap"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="no existing academic or 3P  risk analysis">
+                <property name="input" value="true"/>
+                <property name="label" value="no existing academic or 3P  risk analysis"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="software maturity measures">
+                <property name="input" value="true"/>
+                <property name="label" value="software maturity measures"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="bugs  per year">
+                <property name="input" value="true"/>
+                <property name="label" value="bugs  per year"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="number of installations">
+                <property name="input" value="true"/>
+                <property name="label" value="number of installations"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="past time to update">
+                <property name="input" value="true"/>
+                <property name="label" value="past time to update"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="contribution of academic expertise to the community">
+                <property name="input" value="true"/>
+                <property name="label" value="contribution of academic expertise to the community"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="no systematic bug handling">
+                <property name="input" value="true"/>
+                <property name="label" value="no systematic bug handling"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="new communication interfaces">
+                <property name="input" value="true"/>
+                <property name="label" value="new communication interfaces"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="cyclomatic complexity">
+                <property name="input" value="true"/>
+                <property name="label" value="cyclomatic complexity"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="nesting complexity">
+                <property name="input" value="true"/>
+                <property name="label" value="nesting complexity"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="availability of 3rd party  documentation">
+                <property name="input" value="true"/>
+                <property name="label" value="availability of 3rd party  documentation"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="forum posts per day">
+                <property name="input" value="true"/>
+                <property name="label" value="forum posts per day"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="past implemen- tation time">
+                <property name="input" value="true"/>
+                <property name="label" value="past implemen- tation time"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="no existing threat analysis">
+                <property name="input" value="true"/>
+                <property name="label" value="no existing threat analysis"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <indicator id="no specification of security features  architecture">
+                <property name="input" value="true"/>
+                <property name="label" value="no specification of security features  architecture"/>
+                <property name="datatype" value="real"/>
+            </indicator>
+            <event id="obtain unauthorized access ">
+                <property name="label" value="obtain unauthorized access "/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="component maintenance failure">
+                <property name="label" value="component maintenance failure"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="introduce security- sensitive data">
+                <property name="label" value="introduce security- sensitive data"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="human error risk">
+                <property name="label" value="human error risk"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="Security risk event">
+                <property name="label" value="Security risk event"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="break security policy">
+                <property name="label" value="break security policy"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="modify or destroy data">
+                <property name="label" value="modify or destroy data"/>
+                <property name="output" value="true"/>
+            </event>
+            <event id="obtain log trace or disclose confidential data">
+                <property name="label" value="obtain log trace or disclose confidential data"/>
+                <property name="output" value="true"/>
+            </event>
+            <situation id="Testing shortfalls">
+                <property name="label" value="Testing shortfalls"/>
+            </situation>
+            <situation id="Maintenance planning uncertainty">
+                <property name="label" value="Maintenance planning uncertainty"/>
+            </situation>
+            <situation id="Uncertainty about quality">
+                <property name="label" value="Uncertainty about quality"/>
+            </situation>
+            <situation id="possibility to obtain   log and trace data">
+                <property name="label" value="possibility to obtain   log and trace data"/>
+            </situation>
+            <situation id="low confidence of others in the component">
+                <property name="label" value="low confidence of others in the component"/>
+            </situation>
+            <situation id="Need for self- implemented code">
+                <property name="label" value="Need for self- implemented code"/>
+            </situation>
+            <situation id="Presence of security vulnerabilities">
+                <property name="label" value="Presence of security vulnerabilities"/>
+            </situation>
+            <situation id="degraded security features">
+                <property name="label" value="degraded security features"/>
+            </situation>
+            <situation id="increased maintenance effort and cost">
+                <property name="label" value="increased maintenance effort and cost"/>
+            </situation>
+            <situation id="Lack of risk awareness">
+                <property name="label" value="Lack of risk awareness"/>
+            </situation>
+            <situation id="Unreliable community support">
+                <property name="label" value="Unreliable community support"/>
+            </situation>
+            <situation id="Lack of a systematic process">
+                <property name="label" value="Lack of a systematic process"/>
+            </situation>
+            <situation id="presence of security bugs">
+                <property name="label" value="presence of security bugs"/>
+            </situation>
+            <situation id="Lacks in software quality">
+                <property name="label" value="Lacks in software quality"/>
+            </situation>
+            <situation id="weak documentation">
+                <property name="label" value="weak documentation"/>
+            </situation>
+            <situation id="Lose community support">
+                <property name="label" value="Lose community support"/>
+            </situation>
+            <situation id="late detection of security bugs">
+                <property name="label" value="late detection of security bugs"/>
+            </situation>
+            <situation id="low security risk awareness">
+                <property name="label" value="low security risk awareness"/>
+            </situation>
+            <situation id="Unknown community roadmap and  development schedules">
+                <property name="label" value="Unknown community roadmap and  development schedules"/>
+            </situation>
+            <situation id="low community activity">
+                <property name="label" value="low community activity"/>
+            </situation>
+            <situation id="critical security issues history">
+                <property name="label" value="critical security issues history"/>
+            </situation>
+            <situation id="fuzzified:past time to update"/>
+            <situation id="fuzzified:contribution of academic expertise to the community"/>
+            <situation id="fuzzified:criticality of running instances"/>
+            <situation id="fuzzified:bugs  per year"/>
+            <situation id="fuzzified:missing user manual"/>
+            <situation id="fuzzified:cyclomatic complexity"/>
+            <situation id="fuzzified:missing roadmap"/>
+            <situation id="fuzzified:nesting complexity"/>
+            <situation id="fuzzified:availability of 3rd party  documentation"/>
+            <situation id="fuzzified:#committers"/>
+            <situation id="fuzzified:software maturity measures"/>
+            <situation id="fuzzified:no existing threat analysis"/>
+            <situation id="fuzzified:past response time"/>
+            <situation id="fuzzified:missing development scheduling"/>
+            <situation id="fuzzified:number of  security bugs"/>
+            <situation id="fuzzified:missing security tests"/>
+            <situation id="fuzzified:number of installations"/>
+            <situation id="fuzzified:no existing academic or 3P  risk analysis"/>
+            <situation id="fuzzified:past implemen- tation time"/>
+            <situation id="fuzzified:no systematic bug handling"/>
+            <situation id="fuzzified:new communication interfaces"/>
+            <situation id="fuzzified:forum posts per day"/>
+            <situation id="fuzzified:no specification of security features  architecture"/>
+        </entities>
+    </model>
+</riscoss>
