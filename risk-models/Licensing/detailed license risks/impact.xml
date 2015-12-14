@@ -3,9 +3,10 @@
         <relationships>
             <impact source="Lack of Knowledge" target="GOAL-ACQ-Legal"/>
             <impact source="Internal Incompatibility" target="GOAL-DEP"/>
+            <impact source="Internal Incompatibility" target="GOAL-LawCompliance"/>
             <impact source="External Incompatibility,Internal Incompatibility" target="GOAL-LicenseCompatible"/>
             <impact source="Lack of Affinity" target="GOAL-EasyLicenseManagement"/>
-            <impact source="Declining Component Licenses,Declining Target License,Obsolete Component Licenses,Obsolete Target Licenses,Infrequent Component Licenses,Infrequent Target License,Reduced Target License Set" target="GOAL-FutureLicenseStability"/>
+            <impact source="Declinin Component Licenses,Declining Target License,Obsolete Component Licenses,Obsolete Target Licenses,Infrequent Component Licenses,Infrequent Target License,Reduced Target License Set" target="GOAL-FutureLicenseStability"/>
         </relationships>
         <entities>
             <event id="Internal Incompatibility">
