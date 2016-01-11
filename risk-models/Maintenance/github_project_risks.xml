@@ -3,7 +3,7 @@
         <relationships>
             <expose source="Analysability Risk" target="Project Analysability Risk"/>
             <expose source="Bug Risk" target="Project Bug Risk"/>
-            <expose source="Project Obsolescence Risk" target="Project Obsolescence Risk"/>
+            <expose source="Obsolescence Risk" target="Project Obsolescence Risk"/>
             <expose source="Activity Risk" target="Project Activity Risk"/>
         </relationships>
         <entities>
