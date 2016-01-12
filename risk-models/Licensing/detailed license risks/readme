@@ -1,0 +1,8 @@
+You can use these models following these steps:
+
+1) Upload the four models in RISCOSS.
+2) Create two layers. E. g. you can create a OSS_Project layer and another one OSS_Component. OSS_Component as child of OSS_Project.
+3) Create a risk configuration. E. g. you can create a risk configuration called AnyOSSProject.
+4) Assign license_indicators.xml to layer OSS_Component. The other three should be assigned to layer OSS_Project.
+
+Thats all. Now you can create several entities of type OSS_Component; create at least one of type OSS_Project, containing one or more of the OSS_Component you have defined. Then, you will be able to create a Multi-layer analysis session by associating the entity of type OSS_Project you have created to the risk configuration you also created previously (AnyOSSProject)
