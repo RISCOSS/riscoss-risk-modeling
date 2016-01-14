@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
-    <model>
+    <model version='1.0' last_modification='14/01/2016'>
         <relationships>
-            <impact source="Lack of Knowledge" target="GOAL-ACQ-Legal"/>
-            <impact source="Internal Incompatibility" target="GOAL-DEP"/>
-            <impact source="Internal Incompatibility" target="GOAL-LawCompliance"/>
-            <impact source="External Incompatibility,Internal Incompatibility" target="GOAL-LicenseCompatible"/>
+            <impact source="Lack of Knowledge" target="Act-ACQ-Legal"/>
+            <impact source="Internal Incompatibility" target="Act-DEP"/>
+            <impact source="Internal Incompatibility" target="Act-INT"/>
+            <impact source="External Incompatibility" target="Act-CompatibleLicense"/>
             <impact source="Lack of Affinity" target="GOAL-EasyLicenseManagement"/>
-            <impact source="Declinin Component Licenses,Declining Target License,Obsolete Component Licenses,Obsolete Target Licenses,Infrequent Component Licenses,Infrequent Target License,Reduced Target License Set" target="GOAL-FutureLicenseStability"/>
+            <impact source="Declining Component Licenses,Declining Target License,Obsolete Component Licenses,Obsolete Target Licenses,Infrequent Component Licenses,Infrequent Target License,Reduced Target License Set" target="GOAL-FutureLicenseStability"/>
         </relationships>
         <entities>
             <event id="Internal Incompatibility">
@@ -66,9 +66,10 @@
             </event>
             <goal id="GOAL-FutureLicenseStability"/>
             <goal id="GOAL-EasyLicenseManagement"/>
-            <goal id="GOAL-LicenseCompatible"/>
-            <goal id="GOAL-DEP"/>
-            <goal id="GOAL-ACQ-Legal"/>
+            <goal id="Act-CompatibleLicense"/>
+            <goal id="Act-DEP"/>
+            <goal id="Act-INT"/>
+            <goal id="Act-ACQ-Legal"/>
         </entities>
     </model>
 </riscoss>
