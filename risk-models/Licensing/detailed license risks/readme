@@ -7,4 +7,4 @@ You can use these models following these steps:
 2) Create a risk configuration. E. g. you can create a risk configuration called 'License Risks'.
 4) Assign license_indicators.xml to layer OSS Component. The other two should be assigned to layer Project.
 
-Thats all. Now you can create several entities of type _OSS Component_; create at least one of type _Project_, containing one or more of the _OSS Component_ you have defined. Then, you will be able to create a Multi-layer analysis sessions choosing an entity of type _Project_ you have created to the risk configuration you also created previously _License Risks_.
+Thats all. Now you can create several entities of type 'OSS Component'; create at least one of type 'Project', containing one or more of the 'OSS Component' you have defined. Then, you will be able to create a Multi-layer analysis sessions choosing an entity of type 'Project' you have created to the risk configuration you also created previously 'License Risks'.
