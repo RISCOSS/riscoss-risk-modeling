@@ -153,7 +153,7 @@
                 <property name="output" value="true"/>
                 <property name="description" value="Refers to the (lack of) quality of the software to be easily understood from the adopter"/>
             </event>
-            <event id="Project ">
+            <event id="Activity Risk">
                 <property name="output" value="true"/>
                 <property name="description" value="Refers to the activeness of the project developers (contributors), their responsiveness in the issue tracker and the stability of the project (including project age)"/>
             </event>
