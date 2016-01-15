@@ -1,5 +1,5 @@
 The detailed license risk can be used for 2-layer configurations: 
-- _Project_: in the sense of a software artifact including other software artifacts (OSS or not)
+- _Project_: in the sense of a software artefact including other software artifacts (OSS or not)
 - _OSS Component_: OSS software components included in Projects
 
 You can use these models following these steps:
