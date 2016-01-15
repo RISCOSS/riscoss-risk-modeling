@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
-    <modeln version='2.0' last_modification='04/01/2016'>
+    <model version='2.0' last_modification='04/01/2016'>
         <relationships>
             <satisfy source="fuzzified:ci_link" target="CI-not-available"/>
             <satisfy function="fx.join.avg(sources)" weight="0.2" source="fuzzified:has_wiki" target="documentation-unavailable"/>
