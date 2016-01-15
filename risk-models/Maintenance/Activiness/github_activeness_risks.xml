@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
-    <model>
+    <modeln version='2.0' last_modification='04/01/2016'>
         <relationships>
-            <satisfy function="fx.join.avg(sources)" weight="0.2" source="fuzzified:has_wiki" target="documentation-unavailable"/>
-            <satisfy function="fx.join.avg(sources)" source="fuzzified:github:repository-issue-open-close-diff-avg,fuzzified:github:repository-issue-openratio" target="high-open-closed-issues-ratio"/>
-            <satisfy function="fx.join.avg(sources)" source="fuzzified:github:repository-contributions_sum,fuzzified:repository_age_years" target="young-repository"/>
-            <satisfy function="fx.join.avg(sources)" source="fuzzified:github:repository-stargazers_count,fuzzified:github:repository-subscribers_count,fuzzified:i:low_forks_count" target="not-popular"/>
-            <satisfy function="fx.join.avg(sources)" source="documentation-unavailable,high-open-closed-issues-ratio,CI-not-available" target="unmaintained-repository"/>
-            <satisfy source="fuzzified:has_license" target="license-unavailable"/>
             <satisfy source="fuzzified:ci_link" target="CI-not-available"/>
+            <satisfy function="fx.join.avg(sources)" weight="0.2" source="fuzzified:has_wiki" target="documentation-unavailable"/>
             <satisfy function="fx.join.avg(sources)" source="fuzzified:github:repository-percent_contributors_did_80_percent_of_commits,fuzzified:github:repository-percent_contributors_did_90_percent_of_commits,license-unavailable,young-repository" target="project-is-fragile"/>
-            <indicate function="zeroes( sources )" source="github:repository-ci_link" target="fuzzified:ci_link"/>
-            <indicate source="github:repository-issue-openratio" target="fuzzified:github:repository-issue-openratio"/>
+            <satisfy function="fx.join.avg(sources)" source="fuzzified:github:repository-stargazers_count,fuzzified:github:repository-subscribers_count,fuzzified:i:low_forks_count" target="not-popular"/>
+            <satisfy function="fx.join.avg(sources)" source="fuzzified:github:repository-contributions_sum,fuzzified:repository_age_years" target="young-repository"/>
+            <satisfy function="fx.join.avg(sources)" source="documentation-unavailable,high-open-closed-issues-ratio,CI-not-available" target="unmaintained-repository"/>
+            <satisfy function="fx.join.avg(sources)" source="fuzzified:github:repository-issue-open-close-diff-avg,fuzzified:github:repository-issue-openratio" target="high-open-closed-issues-ratio"/>
+            <satisfy source="fuzzified:has_license" target="license-unavailable"/>
             <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,10)))" source="github:repository-contributors" target="fuzzified:github:repository-contributors"/>
-            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,100)))" source="github:repository-contributions_sum" target="fuzzified:github:repository-contributions_sum"/>
-            <indicate function="zeroes( sources )" source="github:repository-has_license" target="fuzzified:has_license"/>
-            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,100)))" source="github:repository-pull-requests" target="fuzzified:github:repository-pull-requests"/>
-            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,100)))" source="github:repository-subscribers_count" target="fuzzified:github:repository-subscribers_count"/>
-            <indicate source="github:repository-percent_contributors_did_80_percent_of_commits" target="fuzzified:github:repository-percent_contributors_did_80_percent_of_commits"/>
+            <indicate function="zeroes( sources )" source="github:repository-ci_link" target="fuzzified:ci_link"/>
             <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,1000)))" source="github:repository-stargazers_count" target="fuzzified:github:repository-stargazers_count"/>
-            <indicate function="fx.evidence.inverse(fx.join.avg(sources))" source="github:repository-percent_contributors_did_90_percent_of_commits" target="fuzzified:github:repository-percent_contributors_did_90_percent_of_commits"/>
-            <indicate function="zeroes( sources )" source="github:repository-has_wiki" target="fuzzified:has_wiki"/>
-            <indicate function="fx.join.avg(fx.transform.range(sources,0,30))" source="github:repository-issue-open-close-diff-avg" target="fuzzified:github:repository-issue-open-close-diff-avg"/>
-            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,2)))" source="github:repository-issue-comments-avg" target="fuzzified:github:repository-issue-comments-avg"/>
-            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,5)))" source="github:repository-repository_age_years" target="fuzzified:repository_age_years"/>
             <indicate function="fx.join.avg(fx.transform.tanh(sources))" source="i:low_forks_count" target="fuzzified:i:low_forks_count"/>
-            <expose function="fx.join.avg(sources)" source="fuzzified:github:repository-contributors,fuzzified:github:repository-percent_contributors_did_80_percent_of_commits,fuzzified:github:repository-issue-comments-avg,young-repository,fuzzified:github:repository-pull-requests,project-is-fragile" target="Project Activity Risk"/>
+            <indicate function="fx.join.avg(fx.transform.range(sources,0,30))" source="github:repository-issue-open-close-diff-avg" target="fuzzified:github:repository-issue-open-close-diff-avg"/>
+            <indicate source="github:repository-percent_contributors_did_80_percent_of_commits" target="fuzzified:github:repository-percent_contributors_did_80_percent_of_commits"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,5)))" source="github:repository-repository_age_years" target="fuzzified:repository_age_years"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,2)))" source="github:repository-issue-comments-avg" target="fuzzified:github:repository-issue-comments-avg"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,100)))" source="github:repository-subscribers_count" target="fuzzified:github:repository-subscribers_count"/>
+            <indicate function="zeroes( sources )" source="github:repository-has_wiki" target="fuzzified:has_wiki"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,100)))" source="github:repository-pull-requests" target="fuzzified:github:repository-pull-requests"/>
+            <indicate function="zeroes( sources )" source="github:repository-has_license" target="fuzzified:has_license"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(sources))" source="github:repository-percent_contributors_did_90_percent_of_commits" target="fuzzified:github:repository-percent_contributors_did_90_percent_of_commits"/>
+            <indicate function="fx.evidence.inverse(fx.join.avg(fx.transform.range(sources,0,100)))" source="github:repository-contributions_sum" target="fuzzified:github:repository-contributions_sum"/>
+            <indicate source="github:repository-issue-openratio" target="fuzzified:github:repository-issue-openratio"/>
+            <expose function="fx.join.avg(sources)" source="documentation-unavailable" target="Analysability Risk"/>
+            <expose function="fx.join.avg(sources)" source="fuzzified:github:repository-contributors,fuzzified:github:repository-percent_contributors_did_80_percent_of_commits,fuzzified:github:repository-issue-comments-avg,young-repository,fuzzified:github:repository-pull-requests,project-is-fragile" target="Project "/>
             <expose function="fx.join.avg(sources)" source="not-popular,unmaintained-repository" target="Obsolescence Risk"/>
             <expose function="fx.join.avg(sources)" source="CI-not-available,high-open-closed-issues-ratio,young-repository" target="Bug Risk"/>
-            <expose function="fx.join.avg(sources)" source="documentation-unavailable" target="Analysability Risk"/>
         </relationships>
         <entities>
             <indicator id="github:repository-ci_link">
@@ -153,7 +153,7 @@
                 <property name="output" value="true"/>
                 <property name="description" value="Refers to the (lack of) quality of the software to be easily understood from the adopter"/>
             </event>
-            <event id="Project Activity Risk">
+            <event id="Project ">
                 <property name="output" value="true"/>
                 <property name="description" value="Refers to the activeness of the project developers (contributors), their responsiveness in the issue tracker and the stability of the project (including project age)"/>
             </event>
@@ -206,13 +206,17 @@
                 <property name="argument" value="There are many pull requests"/>
             </situation>
             <situation id="fuzzified:github:repository-percent_contributors_did_90_percent_of_commits">
-                <property name="argument" value="A relatively high number of developers made mode than 90 parcent of commits"/>
+                <property name="argument" value="A relatively low number of developers made more than 90 parcent of commits"/>
             </situation>
             <situation id="fuzzified:github:repository-percent_contributors_did_80_percent_of_commits">
                 <property name="argument" value="A relatively high number of developers made mode than 80 parcent of commits"/>
             </situation>
-            <situation id="fuzzified:github:repository-issue-open-close-diff-avg"/>
-            <situation id="fuzzified:github:repository-issue-openratio"/>
+            <situation id="fuzzified:github:repository-issue-open-close-diff-avg">
+                <property name="argument" value="On average, the number of days required to close issues is relatively high"/>
+            </situation>
+            <situation id="fuzzified:github:repository-issue-openratio">
+                <property name="argument" value="There is a relatively high number of open issues"/>
+            </situation>
             <situation id="fuzzified:github:repository-issue-comments-avg"/>
             <situation id="fuzzified:github:repository-contributions_sum"/>
             <situation id="project-is-fragile">

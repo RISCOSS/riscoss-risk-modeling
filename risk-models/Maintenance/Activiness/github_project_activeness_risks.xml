@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
-    <model>
+    <model version='1.0' last_modification='04/01/2016'>
         <relationships>
             <expose source="Analysability Risk" target="Project Analysability Risk"/>
             <expose source="Bug Risk" target="Project Bug Risk"/>
