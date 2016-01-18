@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><riscoss>
+    <model version='1.0' last_modification='18/01/2016'>
+        <relationships>
+            <impact source="Project Analysability Risk,Analysability Risk" target="Act-LEARN"/>
+            <impact source="Project Analysability Risk,Analysability Risk" target="Act-Act-Tech"/>
+            <impact source="Project Bug Risk,Bug Risk" target="Goal-Evolve-Q"/>
+            <impact source="Project Obsolescence Risk,Obsolescence Risk,Project Activity Risk,Activity Risk" target="Goal-Evolve-DF"/>
+            <impact source="Project Activity Risk,Activity Risk" target="Act-ASK"/>
+        </relationships>
+        <entities>
+            <event id="Project Analysability Risk"/>
+            <event id="Project Bug Risk"/>
+            <event id="Project Obsolescence Risk"/>
+            <event id="Project Activity Risk"/>
+            <event id="Analysability Risk"/>
+            <event id="Bug Risk"/>
+            <event id="Obsolescence Risk"/>
+            <event id="Activity Risk"/>
+			
+            <goal id="Act-LEARN"/>
+            <goal id="Act-Act-Tech"/>
+            <goal id="Goal-Evolve-Q"/>
+            <goal id="Goal-Evolve-DF"/>
+            <goal id="Act-ASK"/>
+        </entities>
+    </model>
+</riscoss>
