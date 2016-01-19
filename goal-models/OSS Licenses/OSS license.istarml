@@ -11,7 +11,7 @@
 							<ielementLink type='contribution' value='Help'>
 								<ielement id='GOAL-LawCompliance' name='Law compliance' type='goal' output='true'>
 									<ielementLink type='means-end'>
-										<ielement id='Act-CompatibleLicense' name='Choose compatible target license' type='task' output="true">
+										<ielement id='Act-CompatibleLicense' name='Choose compatible target license' type='task' output="false">
 											<ielementLink type='decomposition'>
 												<ielement id='Act-ACQ-Legal' name='Acquire OSS legal skills' type='task' output='false'>
 													<ielementLink type='decomposition'>
