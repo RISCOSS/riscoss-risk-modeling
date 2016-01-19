@@ -31,27 +31,27 @@
             </event>
             <event id="Infrequent Component Licenses">
                 <property name="argument" value="There is the risk of adopting components with not widely used licenses"/>
-                <property name="description" value="Risk that the project includes components released under rare or unusual licenses"/>
+                <property name="description" value="Risk that the project includes components released under rare or unusual licenses (number of current projects using this license)"/>
                 <property name="output" value="true"/>
             </event>
             <event id="Infrequent Target License">
                 <property name="argument" value="There is risk of choosing a target license type which is not widely used"/>
-                <property name="description" value="Risk that the selected target licens is rare or unusual"/>
+                <property name="description" value="Risk that the selected target licens is rare or unusual (number of current projects using this license)"/>
                 <property name="output" value="true"/>
             </event>
             <event id="Lack of Knowledge">
-                <property name="argument" value="There is a risk arisong from the precence of unknown licenses"/>
+                <property name="argument" value="There is a risk arising from the precence of unknown licenses"/>
                 <property name="description" value="Risk that, because of lack of knowledge in relation to the number of components licenses, the rest of the risk analysis is not completely trustable. The model support only 17 licenses. There are more than 70 OSI recognized licenses and an undefined number of non-OSS ones. These 17 covers the majority of the cases but there is an error margin where uncertainty exists. This risk represents this uncertainty"/>
                 <property name="output" value="true"/>
             </event>
             <event id="Declining Component Licenses">
-                <property name="argument" value="There is risk that the usage of the component licenses will decline"/>
-                <property name="description" value="Risk that the project includes components released under declining licenses"/>
+                <property name="argument" value="There is risk that the component licenses will decline"/>
+                <property name="description" value="Risk that the project includes components released under declining licenses, the number of project of using this license is decreasing on time"/>
                 <property name="output" value="true"/>
             </event>
             <event id="Declining Target License">
-                <property name="argument" value="There is risk that the usage of the target license will decline"/>
-                <property name="description" value="Risk that the selected target license is declining"/>
+                <property name="argument" value="There is risk that the target license will decline"/>
+                <property name="description" value="Risk that the selected target license is declining, the number of project of using this license is decreasing on time""/>
                 <property name="output" value="true"/>
             </event>
             <event id="Obsolete Component Licenses">
