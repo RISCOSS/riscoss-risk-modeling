@@ -15,7 +15,7 @@
 											<ielementLink type='decomposition'>
 												<ielement id='Act-ACQ-Legal' name='Acquire OSS legal skills' type='task' output='false'>
 													<ielementLink type='decomposition'>
-														<ielement iref='Act-ASK' name='Ask doubts to the community' type='task' output='false'/>
+														<ielement id='Act-ASK' name='Ask doubts to the community' type='task' output='false'/>
 													</ielementLink>
 												</ielement>
 											</ielementLink>
