@@ -145,15 +145,15 @@
                 <property name="output" value="true"/>
                 <property name="description" value="Refers to the possibility that critical bugs are present and/or not promptly patched."/>
             </event>
-            <event id="Obsolescence Risk">
-                <property name="output" value="true"/>
-                <property name="description" value="Refers to a lack of popularity of the project, due to a reduced number of people following it and reporting bugs and opening issues"/>
-            </event>
             <event id="Analysability Risk">
                 <property name="output" value="true"/>
                 <property name="description" value="Refers to the (lack of) quality of the software to be easily understood from the adopter"/>
             </event>
-            <event id="Project ">
+            <event id="Obsolescence Risk">
+                <property name="output" value="true"/>
+                <property name="description" value="Refers to a lack of popularity of the project, due to a reduced number of people following it and reporting bugs and opening issues"/>
+            </event>
+            <event id="Activity Risk">
                 <property name="output" value="true"/>
                 <property name="description" value="Refers to the activeness of the project developers (contributors), their responsiveness in the issue tracker and the stability of the project (including project age)"/>
             </event>

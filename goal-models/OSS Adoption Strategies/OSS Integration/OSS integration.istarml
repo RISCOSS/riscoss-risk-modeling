@@ -6,27 +6,27 @@
             <boundary>
                 <ielement id='OSS-INT' name='Integrate OSS Community' type='task'>
                     <ielementLink type='decomposition'>
-						<ielement id='Act-SEL' name='Select OSS component' type='task' output="true">
+						<ielement id='Act-SEL' name='Select OSS component' type='task' output="false">
 							<ielementLink type='decomposition'>
-								<ielement id='Act-LEARN' name='Acquire user skills' type='task' output="true">
+								<ielement id='Act-LEARN' name='Acquire user skills' type='task' output="false">
 									<ielementLink type='decomposition'>
-										<ielement id='Act-ASK' name='Ask doubts to the community' type='task'  output="true"/>
+										<ielement id='Act-ASK' name='Ask doubts to the community' type='task'  output="false"/>
 									</ielementLink>
 								</ielement>
 							</ielementLink>
 						</ielement>
 						<ielement id='Goal-USE' name='OSS component used' type='goal'>
 							<ielementLink type='means-end'>
-								<ielement id='Act-DEP' name='Deploy OSS component' type='task' output="true">
+								<ielement id='Act-DEP' name='Deploy OSS component' type='task' output="false">
 									<ielementLink type='decomposition'>
 										<ielement iref='Act-LEARN'/>
 									</ielementLink>
 								</ielement>
-								<ielement id='Act-INT' name='Integrate OSS component in other software' type='task' output="true">
+								<ielement id='Act-INT' name='Integrate OSS component in other software' type='task' output="false">
 									<ielementLink type='decomposition'>
-										<ielement id='Act-ACQ-Tech' name='Acquire technical skills' type='task' output="true">
+										<ielement id='Act-ACQ-Tech' name='Acquire technical skills' type='task' output="false">
 											<ielementLink type='decomposition'>
-												<ielement iref='Act-ASK' output="true"/>
+												<ielement iref='Act-ASK' output="false"/>
 											</ielementLink>
 										</ielement>
 									</ielementLink>
@@ -39,28 +39,28 @@
 								<ielement iref='Act-LEARN'/>
 							</ielementLink>
 						</ielement>
-						<ielement id='Act-TEST-Prod' name='Test product' type='task' output="true"/>
-						<ielement id='Act-MAINT-Prod' name='Maintain product' type='task' output="true">
+						<ielement id='Act-TEST-Prod' name='Test product' type='task' output="false"/>
+						<ielement id='Act-MAINT-Prod' name='Maintain product' type='task' output="false">
 							<ielementLink type='decomposition'>
-								<ielement id='Goal-COMM-Contribute' name='OSS community contributed' type='goal' output="true">
+								<ielement id='Goal-COMM-Contribute' name='OSS community contributed' type='goal' output="false">
 									<ielementLink type='means-end'>
-										<ielement id='Act-PATCH' name='Develop patch' type='task' output="true">
+										<ielement id='Act-PATCH' name='Develop patch' type='task' output="false">
 											<ielementLink type='decomposition'>
-												<ielement id='Goal-COMM-Practices' name='According to OSS community practices' type='softgoal' output="true">
+												<ielement id='Goal-COMM-Practices' name='According to OSS community practices' type='softgoal' output="false">
 													<ielementLink type='contribution' value='And'>
-														<ielement id='Act-ACQ-Man' name= 'Acquire management skills' type='task' output="true"/>
+														<ielement id='Act-ACQ-Man' name= 'Acquire management skills' type='task' output="false"/>
 													</ielementLink>
 												</ielement>
-												<ielement id='Act-RepPATCH' name='Report patch' type='task' output="true"/>
+												<ielement id='Act-RepPATCH' name='Report patch' type='task' output="false"/>
 											</ielementLink>	
 										</ielement>
-										<ielement id='Act-RepBUG' name='Report bug' type='task' output="true"/>
+										<ielement id='Act-RepBUG' name='Report bug' type='task' output="false"/>
 											<ielementLink type='decomposition'>
-												<ielement iref='Goal-COMM-Practices' output="true"/>
+												<ielement iref='Goal-COMM-Practices' output="false"/>
 											</ielementLink>
-										<ielement id='Act-SUPP' name='Give support to activities' type='task' output="true">
+										<ielement id='Act-SUPP' name='Give support to activities' type='task' output="false">
 											<ielementLink type='decomposition'>
-												<ielement iref='Goal-COMM-Practices' output="true"/>
+												<ielement iref='Goal-COMM-Practices' output="false"/>
 											</ielementLink>
 										</ielement>
 									</ielementLink>
@@ -69,13 +69,13 @@
 									<ielementLink type='contribution' value='Help' iref='Goal-COMM-Contribute'/>
 									<ielementLink type='contribution' value='Help' iref='Goal-COMM-Practices'/>
 								</ielement>
-								<ielement id='Goal-Evolve-Q' name='Quality of the evolved OSS component' type='softgoal'/>
+								<ielement id='Goal-Evolve-Q' name='Quality of the evolved OSS component' type='softgoal' output="true"/>
 							</ielementLink>
 						</ielement>
-						<ielement id='Act-DECIDE-Wishlist' name='Decide OSS wishlist' type='task' output="true"/>
+						<ielement id='Act-DECIDE-Wishlist' name='Decide OSS wishlist' type='task' output="false"/>
                     </ielementLink>
                 </ielement>
-				<ielement id='GOAL-InfluenceEvolution' name='OSS evolution influenced' type='softgoal' output="true">
+				<ielement id='GOAL-InfluenceEvolution' name='OSS evolution influenced' type='softgoal' output="false">
 					<ielementLink type='contribution' value='Help' iref='Goal-Evolve-DF'/>
 				</ielement>
 				<ielement id='GOAL-OSSInvolvement' name='OSS involvement' type='softgoal' output="true">
