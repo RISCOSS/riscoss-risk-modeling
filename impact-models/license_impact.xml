@@ -51,7 +51,7 @@
             </event>
             <event id="Declining Target License">
                 <property name="argument" value="There is risk that the target license will decline"/>
-                <property name="description" value="Risk that the selected target license is declining, the number of project of using this license is decreasing on time""/>
+                <property name="description" value="Risk that the selected target license is declining, the number of project of using this license is decreasing on time"/>
                 <property name="output" value="true"/>
             </event>
             <event id="Obsolete Component Licenses">
