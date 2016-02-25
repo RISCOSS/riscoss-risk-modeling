@@ -5,13 +5,13 @@
         </actor>
         <actor id='CMP' name='OSS Adopter'>
             <boundary>
-				<ielement id='GOAL-ImproveBrand' name='Brand improved' type='softgoal' output="true">
+				<ielement id='GOAL-ImproveBrand' name='Brand improved' type='softgoal' output='true'>
 					<ielementLink type='contribution' value='Help'>
 						<ielement id='GOAL-GoodReputation' name='Good reputation' type='softgoal' output='true'>
 							<ielementLink type='contribution' value='Help'>
 								<ielement id='GOAL-LawCompliance' name='Law compliance' type='goal' output='true'>
 									<ielementLink type='means-end'>
-										<ielement id='Act-CompatibleLicense' name='Choose compatible target license' type='task' output="false">
+										<ielement id='Act-CompatibleLicense' name='Choose compatible target license' type='task' output='true'>
 											<ielementLink type='decomposition'>
 												<ielement id='Act-ACQ-Legal' name='Acquire OSS legal skills' type='task' output='false'>
 													<ielementLink type='decomposition'>

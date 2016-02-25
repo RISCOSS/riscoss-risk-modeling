@@ -64,9 +64,25 @@
                 <property name="description" value="Risk that the selected target license is obsolete. A license is obsolete when at least a greater version of the same license exists. It is &#8220;more obsoleted&#8221; as the number of subsequent versions is greater"/>
                 <property name="output" value="true"/>
             </event>
-            <goal id="GOAL-FutureLicenseStability"/>
-            <goal id="GOAL-EasyLicenseManagement"/>
-            <goal id="Act-CompatibleLicense"/>
+            <goal id="GOAL-FutureLicenseStability">
+               <property name="output" value="true"/>
+			</goal>
+            <goal id="GOAL-EasyLicenseManagement">
+               <property name="output" value="true"/>
+			</goal>
+            <goal id="Act-CompatibleLicense">
+               <property name="output" value="true"/>
+			</goal>
+            <goal id="GOAL-ImproveBrand">
+               <property name="output" value="true"/>
+			</goal>
+            <goal id="GOAL-GoodReputation">
+               <property name="output" value="true"/>
+			</goal>
+            <goal id="GOAL-LawCompliance">
+               <property name="output" value="true"/>
+			</goal>
+			
             <goal id="Act-DEP"/>
             <goal id="Act-INT"/>
             <goal id="Act-ACQ-Legal"/>
